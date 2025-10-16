@@ -1,4 +1,4 @@
-import QtQuick
+import QtQuick 6.5
 import QtQuick.Controls
 
 Rectangle {
@@ -7,71 +7,172 @@ Rectangle {
     height: Constants.height
     color: "#d9d9d9"
 
-    signal nextClicked  // Signal để chuyển sang màn hình Analysis
+    signal nextClicked
+    signal backClicked
+
+    property string inputPath: ""
+    property string selectMode: ""
+    property bool isProcessing: false
+    property bool isCompleted: false
+    property string resultMessage: ""
 
     Rectangle {
         id: mainPanel
-        width: 1150
-        height: 600
+        width: 1000
+        height: 750
         anchors.centerIn: parent
-        color: "#c3bdde"
-        radius: 20
-        border.color: "#000000"
-        border.width: 3
+        color: "#b3cdde"
+        radius: 10
+        border.color: "#ffffff"
+        border.width: 2
 
-        // Input Artifacts Section
+        // ===== Header =====
         Column {
-            id: inputSection
-            x: 50
-            y: 40
-            spacing: 10
+            id: headerSection
+            anchors.top: parent.top
+            anchors.topMargin: 30
+            anchors.horizontalCenter: parent.horizontalCenter
+            spacing: 15
 
             Text {
-                text: "Input Artifacts:"
-                font.pixelSize: 18
+                text: "Stage 1: Extraction & Conversion"
+                font.pixelSize: 22
                 font.bold: true
+                color: "#1976D2"
+                anchors.horizontalCenter: parent.horizontalCenter
             }
 
-            Row {
-                spacing: 10
-                Text {
-                    text: "✓"
-                    font.pixelSize: 16
-                    color: "#7c4dff"
-                    font.bold: true
-                }
-                Text {
-                    text: "logcat.txt"
-                    font.pixelSize: 16
-                }
+            Text {
+                text: "Extract and convert data from RAW to standardized WORK structure"
+                font.pixelSize: 13
+                color: "#555555"
+                anchors.horizontalCenter: parent.horizontalCenter
             }
+        }
 
-            Row {
-                spacing: 10
+        // ===== Input Summary =====
+        Rectangle {
+            id: inputSummary
+            anchors.top: headerSection.bottom
+            anchors.topMargin: 25
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width - 80
+            height: 120
+            color: "#ffffff"
+            radius: 10
+            border.color: "#e0e0e0"
+            border.width: 2
+
+            Column {
+                anchors.fill: parent
+                anchors.margins: 20
+                spacing: 12
+
                 Text {
-                    text: "✓"
+                    text: "📋 Input Summary"
                     font.pixelSize: 16
-                    color: "#7c4dff"
                     font.bold: true
+                    color: "#333333"
                 }
-                Text {
-                    text: "system.db"
-                    font.pixelSize: 16
+
+                Row {
+                    spacing: 10
+                    width: parent.width - 40
+
+                    Text {
+                        text: "Source:"
+                        font.pixelSize: 13
+                        font.bold: true
+                        color: "#555555"
+                        width: 100
+                    }
+                    Text {
+                        text: inputPath
+                        font.pixelSize: 13
+                        color: "#000000"
+                        width: parent.width - 110
+                        wrapMode: Text.WrapAnywhere
+                        elide: Text.ElideMiddle
+                    }
+                }
+
+                Row {
+                    spacing: 10
+                    width: parent.width - 40
+
+                    Text {
+                        text: "Mode:"
+                        font.pixelSize: 13
+                        font.bold: true
+                        color: "#555555"
+                        width: 100
+                    }
+                    Text {
+                        text: selectMode === "file" ? "📄 Single File" : "📁 Folder (Recursive)"
+                        font.pixelSize: 13
+                        color: "#1976D2"
+                    }
                 }
             }
         }
 
-        // Mapping Rules Panel
+        // ===== Case ID Input =====
         Rectangle {
-            id: mappingPanel
-            x: 150
-            y: 180
-            width: 600
-            height: 250
-            color: "#f5f5f5"
+            id: caseIdSection
+            anchors.top: inputSummary.bottom
+            anchors.topMargin: 20
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width - 80
+            height: 100
+            color: "#ffffff"
             radius: 10
-            border.color: "#cccccc"
-            border.width: 1
+            border.color: "#e0e0e0"
+            border.width: 2
+
+            Column {
+                anchors.fill: parent
+                anchors.margins: 20
+                spacing: 12
+
+                Text {
+                    text: "Case ID (for output folder):"
+                    font.pixelSize: 14
+                    font.bold: true
+                    color: "#333333"
+                }
+
+                TextField {
+                    id: caseIdInput
+                    width: parent.width - 40
+                    height: 40
+                    placeholderText: "e.g., CASE_2025_Android01"
+                    text: "CASE_2025_Android01"
+                    font.pixelSize: 13
+                    enabled: !isProcessing && !isCompleted
+
+                    background: Rectangle {
+                        color: caseIdInput.enabled ? "#ffffff" : "#f5f5f5"
+                        border.color: caseIdInput.activeFocus ? "#1976D2" : "#cccccc"
+                        border.width: 2
+                        radius: 5
+                    }
+                }
+            }
+        }
+
+        // ===== Progress Section =====
+        Rectangle {
+            id: progressSection
+            anchors.top: caseIdSection.bottom
+            anchors.topMargin: 20
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width - 80
+            height: 200
+            color: "#ffffff"
+            radius: 10
+            border.color: "#e0e0e0"
+            border.width: 2
+            visible: isProcessing || isCompleted
 
             Column {
                 anchors.fill: parent
@@ -79,124 +180,246 @@ Rectangle {
                 spacing: 15
 
                 Text {
-                    text: "Mapping Rules Panel:"
-                    font.pixelSize: 18
+                    text: isCompleted ? "✅ Completed" : "⚙️ Processing..."
+                    font.pixelSize: 16
                     font.bold: true
-                    anchors.horizontalCenter: parent.horizontalCenter
+                    color: isCompleted ? "#4CAF50" : "#1976D2"
+                }
+
+                ProgressBar {
+                    id: progressBar
+                    width: parent.width - 40
+                    height: 30
+                    value: 0
+
+                    background: Rectangle {
+                        color: "#e0e0e0"
+                        radius: 5
+                    }
+
+                    contentItem: Item {
+                        Rectangle {
+                            width: progressBar.visualPosition * parent.width
+                            height: parent.height
+                            color: isCompleted ? "#4CAF50" : "#1976D2"
+                            radius: 5
+                        }
+                    }
                 }
 
                 Text {
-                    text: "[Timestamp] ← log_time"
-                    font.pixelSize: 16
-                    font.family: "Courier New"
+                    id: progressText
+                    text: "Ready to start..."
+                    font.pixelSize: 13
+                    color: "#555555"
+                    width: parent.width - 40
+                    wrapMode: Text.WordWrap
                 }
 
-                Text {
-                    text: "[Package Name] ← app_id"
-                    font.pixelSize: 16
-                    font.family: "Courier New"
-                }
+                // Result message area
+                ScrollView {
+                    width: parent.width - 40
+                    height: 80
+                    visible: isCompleted
 
-                Text {
-                    text: "[Action/Event] ← intent_action"
-                    font.pixelSize: 16
-                    font.family: "Courier New"
+                    TextArea {
+                        text: resultMessage
+                        font.pixelSize: 12
+                        color: "#333333"
+                        wrapMode: Text.WordWrap
+                        readOnly: true
+                        background: Rectangle {
+                            color: "#f5f5f5"
+                            border.color: "#cccccc"
+                            border.width: 1
+                            radius: 5
+                        }
+                    }
                 }
             }
         }
 
-        // Preview Normalized Table Button
-        Button {
-            id: previewButton
-            text: "Preview Normalized Table"
-            anchors.right: parent.right
-            anchors.rightMargin: 50
-            anchors.top: parent.top
-            anchors.topMargin: 180
-            width: 250
-            height: 40
+        // ===== Process Info (when not processing) =====
+        Rectangle {
+            id: infoSection
+            anchors.top: caseIdSection.bottom
+            anchors.topMargin: 20
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width - 80
+            height: 180
+            color: "#FFF3E0"
+            radius: 10
+            border.color: "#FFB74D"
+            border.width: 2
+            visible: !isProcessing && !isCompleted
 
-            background: Rectangle {
-                color: previewButton.hovered ? "#e0e0e0" : "#f5f5f5"
-                border.color: "#999999"
-                border.width: 1
-                radius: 5
-            }
+            Column {
+                anchors.fill: parent
+                anchors.margins: 20
+                spacing: 10
 
-            contentItem: Text {
-                text: previewButton.text
-                font.pixelSize: 14
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                color: "#000000"
-            }
+                Text {
+                    text: "ℹ️ What will happen:"
+                    font.pixelSize: 14
+                    font.bold: true
+                    color: "#E65100"
+                }
 
-            onClicked: {
-                console.log("Preview table clicked")
+                Text {
+                    text: "• Create directory structure: RAW and WORK"
+                    font.pixelSize: 12
+                    color: "#555555"
+                }
+
+                Text {
+                    text: "• Copy input files to RAW directory"
+                    font.pixelSize: 12
+                    color: "#555555"
+                }
+
+                Text {
+                    text: "• Classify files by extension (.txt, .log, .xml, .json, .db, others)"
+                    font.pixelSize: 12
+                    color: "#555555"
+                }
+
+                Text {
+                    text: "• Convert SQLite databases (.db) to CSV format"
+                    font.pixelSize: 12
+                    color: "#555555"
+                }
+
+                Text {
+                    text: "• Generate conversion_manifest.txt for audit trail"
+                    font.pixelSize: 12
+                    color: "#555555"
+                }
             }
         }
 
-        // Run Transformation Button
-        Button {
-            id: runButton
-            text: "[Run Transformation]"
-            anchors.left: parent.left
-            anchors.leftMargin: 250
+        // ===== Action Buttons =====
+        Row {
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: 80
-            width: 200
-            height: 45
+            anchors.bottomMargin: 30
+            anchors.horizontalCenter: parent.horizontalCenter
+            spacing: 20
 
-            background: Rectangle {
-                color: runButton.hovered ? "#e0e0e0" : "#ffffff"
-                border.color: "#000000"
-                border.width: 2
-                radius: 5
+            // Back Button
+            Button {
+                id: backButton
+                text: "← Back"
+                width: 120
+                height: 50
+                enabled: !isProcessing
+
+                background: Rectangle {
+                    color: backButton.enabled ?
+                           (backButton.hovered ? "#757575" : "#9E9E9E") :
+                           "#E0E0E0"
+                    radius: 8
+                    border.color: "#616161"
+                    border.width: 2
+                }
+
+                contentItem: Text {
+                    text: backButton.text
+                    font.pixelSize: 14
+                    font.bold: true
+                    color: backButton.enabled ? "white" : "#BDBDBD"
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                }
+
+                onClicked: backClicked()
             }
 
-            contentItem: Text {
-                text: runButton.text
-                font.pixelSize: 14
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                color: "#000000"
-            }
+            // Start/Cancel Button
+            Button {
+                id: startButton
+                text: isProcessing ? "Cancel" : (isCompleted ? "Done ✓" : "Start Extraction")
+                width: 200
+                height: 50
+                enabled: caseIdInput.text.trim() !== "" || isProcessing || isCompleted
 
-            onClicked: {
-                console.log("Run transformation clicked")
+                background: Rectangle {
+                    color: {
+                        if (!startButton.enabled) return "#BDBDBD"
+                        if (isProcessing) return startButton.hovered ? "#D32F2F" : "#F44336"
+                        if (isCompleted) return startButton.hovered ? "#388E3C" : "#4CAF50"
+                        return startButton.hovered ? "#1565C0" : "#1976D2"
+                    }
+                    radius: 8
+                    border.color: {
+                        if (!startButton.enabled) return "#9E9E9E"
+                        if (isProcessing) return "#C62828"
+                        if (isCompleted) return "#2E7D32"
+                        return "#0D47A1"
+                    }
+                    border.width: 2
+                }
+
+                contentItem: Text {
+                    text: startButton.text
+                    font.pixelSize: 15
+                    font.bold: true
+                    color: startButton.enabled ? "white" : "#757575"
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                }
+
+                onClicked: {
+                    if (isProcessing) {
+                        backend.cancelExtraction()
+                    } else if (isCompleted) {
+                        nextClicked()
+                    } else {
+                        startExtraction()
+                    }
+                }
             }
         }
+    }
 
-        // Next → Analysis Button
-        Button {
-            id: nextButton
-            text: "[Next → Analysis]"
-            anchors.right: parent.right
-            anchors.rightMargin: 150
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 80
-            width: 200
-            height: 45
+    // ===== Backend Connections =====
+    Connections {
+        target: backend
 
-            background: Rectangle {
-                color: "#000000"
-                border.color: "#000000"
-                border.width: 2
-                radius: 5
-            }
+        function onExtractionProgress(progress, message) {
+            progressBar.value = progress / 100.0
+            progressText.text = message
+        }
 
-            contentItem: Text {
-                text: nextButton.text
-                font.pixelSize: 14
-                font.bold: true
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                color: "#ffffff"
-            }
+        function onExtractionFinished(success, message) {
+            isProcessing = false
+            isCompleted = true
+            resultMessage = message
 
-            onClicked: {
-                nextClicked()  // Phát signal để chuyển màn hình
+            if (success) {
+                progressBar.value = 1.0
+                progressText.text = "Extraction completed successfully!"
+            } else {
+                progressText.text = "Extraction failed or cancelled."
             }
         }
+    }
+
+    // ===== Functions =====
+    function startExtraction() {
+        if (caseIdInput.text.trim() === "") {
+            return
+        }
+
+        isProcessing = true
+        isCompleted = false
+        progressBar.value = 0
+        progressText.text = "Initializing extraction..."
+        resultMessage = ""
+
+        backend.startExtraction(inputPath, caseIdInput.text.trim(), selectMode)
+    }
+
+    function setInputData(path, mode) {
+        inputPath = path
+        selectMode = mode
     }
 }

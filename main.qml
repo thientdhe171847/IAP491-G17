@@ -6,7 +6,11 @@ Window {
     width: Constants.width
     height: Constants.height
     visible: true
-    title: "UntitledProject1"
+    title: "Malicious Behavior Detection - CACA Mobile"
+
+    // Store selected data
+    property string selectedInputPath: ""
+    property string selectedMode: ""
 
     Loader {
         id: screenLoader
@@ -34,12 +38,16 @@ Window {
         }
     }
 
-
-    // Màn hình cuối cùng (Screen03)
+    // Màn hình chọn input (Screen03)
     Component {
         id: screen03
         Screen03 {
             onNextClicked: {
+                // Lưu dữ liệu được chọn
+                root.selectedInputPath = selectedInput
+                root.selectedMode = selectMode
+
+                // Chuyển sang màn hình Transformation
                 screenLoader.sourceComponent = screen04
             }
         }
@@ -49,9 +57,20 @@ Window {
     Component {
         id: screen04
         Screen04 {
+            Component.onCompleted: {
+                // Truyền dữ liệu vào Screen04
+                setInputData(root.selectedInputPath, root.selectedMode)
+            }
+
             onNextClicked: {
                 // Chuyển sang màn hình Analysis (Screen05) nếu có
                 console.log("Moving to Analysis screen")
+                // screenLoader.sourceComponent = screen05
+            }
+
+            onBackClicked: {
+                // Quay lại màn hình chọn input
+                screenLoader.sourceComponent = screen03
             }
         }
     }

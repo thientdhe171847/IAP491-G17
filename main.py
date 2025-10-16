@@ -2,12 +2,14 @@
 import sys
 from pathlib import Path
 
-from PySide6.QtGui import QGuiApplication
+from PySide6.QtWidgets import QApplication
 from PySide6.QtQml import QQmlApplicationEngine
 
+# === Thêm dòng này để import backend ===
+from backend import Backend
 
 if __name__ == "__main__":
-    app = QGuiApplication(sys.argv)
+    app = QApplication(sys.argv)
     engine = QQmlApplicationEngine()
 
     # Lấy đường dẫn thư mục hiện tại chứa main.py
@@ -15,6 +17,10 @@ if __name__ == "__main__":
 
     # Thêm đường dẫn QML vào import path để tìm module Constants
     engine.addImportPath(str(current_dir))
+
+    # === Đăng ký backend vào QML context ===
+    backend = Backend()
+    engine.rootContext().setContextProperty("backend", backend)
 
     # Load main.qml
     qml_file = current_dir / "main.qml"

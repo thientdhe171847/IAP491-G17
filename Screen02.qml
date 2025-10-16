@@ -34,7 +34,7 @@ Rectangle {
 
         Timer {
             id: progressTimer
-            interval: 100
+            interval: 22
             repeat: true
             running: false
             onTriggered: {

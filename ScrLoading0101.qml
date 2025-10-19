@@ -3,67 +3,63 @@ import QtQuick.Controls
 
 Rectangle {
     id: rectangle
-    width: Constants.width
-    height: Constants.height
-    color: "#d9d9d9"
+    anchors.fill: parent
+    color: "#b3cdde"
 
-    signal loadingCompleted  // Signal để thông báo loading hoàn tất
+    signal loadingCompleted
 
-    Rectangle {
-        id: mainPanel
+    Column {
         anchors.centerIn: parent
-        width: 457
-        height: 546
-        color: "#b3cdde"
+        spacing: 30
 
         Text {
-            id: loadingLabel
-            x: 32
-            y: 425
-            text: "Loading"
-            font.pixelSize: 16
-        }
-
-        ProgressBar {
-            id: progressBar
-            x: 54
-            y: 479
-            width: 350
-            value: 0
-        }
-
-        Timer {
-            id: progressTimer
-            interval: 22
-            repeat: true
-            running: false
-            onTriggered: {
-                if (progressBar.value < 1) {
-                    progressBar.value += 0.05
-                } else {
-                    progressTimer.stop()
-                    loadingCompleted()  // Phát signal khi loading xong
-                }
-            }
+            id: text2
+            text: qsTr("Text....")
+            font.pixelSize: 22
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
         Text {
             id: text1
-            x: 54
-            y: 219
-            width: 251
+            width: 400
             text: qsTr("       Malicious Behavior Detection through\nCross-Artifact Consistency Analysis in Mobile Devices")
             font.pixelSize: 15
+            horizontalAlignment: Text.AlignHCenter
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
-        Text {
-            id: text2
-            x: 133
-            y: 75
-            width: 172
-            height: 60
-            text: qsTr("Text....")
-            font.pixelSize: 22
+        Column {
+            spacing: 15
+            anchors.horizontalCenter: parent.horizontalCenter
+
+            Text {
+                id: loadingLabel
+                text: "Loading"
+                font.pixelSize: 16
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
+
+            ProgressBar {
+                id: progressBar
+                width: 350
+                value: 0
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
+        }
+    }
+
+    Timer {
+        id: progressTimer
+        interval: 22
+        repeat: true
+        running: false
+        onTriggered: {
+            if (progressBar.value < 1) {
+                progressBar.value += 0.05
+            } else {
+                progressTimer.stop()
+                loadingCompleted()
+            }
         }
     }
 

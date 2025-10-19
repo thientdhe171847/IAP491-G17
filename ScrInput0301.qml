@@ -5,22 +5,17 @@ Rectangle {
     id: screen03
     signal nextClicked
 
-    width: Constants.width
-    height: Constants.height
-    color: "#d9d9d9"
+    anchors.fill: parent
+    color: "#b3cdde"
 
     property string selectedInput: ""
     property string selectMode: "file"
 
-    Rectangle {
-        id: mainPanel
-        width: 900
-        height: 700
+    // Main content area
+    Column {
         anchors.centerIn: parent
-        color: "#b3cdde"
-        radius: 10
-        border.color: "#ffffff"
-        border.width: 2
+        width: Math.min(900, parent.width - 100)
+        spacing: 25
 
         // ===== Label =====
         Text {
@@ -28,16 +23,12 @@ Rectangle {
             text: "[Select Input]"
             font.pixelSize: 18
             font.bold: true
-            anchors.top: parent.top
-            anchors.topMargin: 30
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
         // ===== Radio chọn File/Folder =====
         Row {
             id: rowChoose
-            anchors.top: inputLabel.bottom
-            anchors.topMargin: 35
             anchors.horizontalCenter: parent.horizontalCenter
             spacing: 40
 
@@ -60,8 +51,6 @@ Rectangle {
         Button {
             id: chooseButton
             text: selectMode === "file" ? "📁 Choose File..." : "📂 Choose Folder..."
-            anchors.top: rowChoose.bottom
-            anchors.topMargin: 15
             anchors.horizontalCenter: parent.horizontalCenter
             width: 220
             height: 45
@@ -87,21 +76,11 @@ Rectangle {
             }
         }
 
-        // Kết nối signal backend
-        Connections {
-            target: backend
-            function onFileOrFolderSelected(path) {
-                screen03.selectedInput = path
-            }
-        }
-
         // ===== Preview Section =====
         Rectangle {
             id: previewPanel
-            anchors.top: chooseButton.bottom
-            anchors.topMargin: 25
             anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.width - 80
+            width: parent.width
             height: 300
             color: "#ffffff"
             radius: 10
@@ -149,7 +128,7 @@ Rectangle {
                     }
                 }
 
-                // Selection Mode: luôn hiển thị, đổi nội dung và style theo selectedInput
+                // Selection Mode
                 Row {
                     spacing: 10
                     width: parent.width - 40
@@ -204,8 +183,6 @@ Rectangle {
         // ===== Status Indicator =====
         Rectangle {
             id: statusIndicator
-            anchors.top: previewPanel.bottom
-            anchors.topMargin: 20
             anchors.horizontalCenter: parent.horizontalCenter
             width: 220
             height: 40
@@ -240,8 +217,6 @@ Rectangle {
             text: "Next → Transformation"
             width: 240
             height: 55
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 30
             anchors.horizontalCenter: parent.horizontalCenter
             enabled: selectedInput !== ""
 
@@ -270,6 +245,14 @@ Rectangle {
                     nextClicked()
                 }
             }
+        }
+    }
+
+    // Kết nối signal backend
+    Connections {
+        target: backend
+        function onFileOrFolderSelected(path) {
+            screen03.selectedInput = path
         }
     }
 }

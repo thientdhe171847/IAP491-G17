@@ -3,29 +3,42 @@ import QtQuick.Controls
 
 Rectangle {
     id: rectangle
-    width: Constants.width
-    height: Constants.height
-    color: "#d9d9d9"
+    anchors.fill: parent
+    color: "#b3cdde"
 
-    signal startClicked  // Khai báo signal
+    signal startClicked
 
-    Rectangle {
-        id: mainPanel
+    Column {
         anchors.centerIn: parent
-        width: 457
-        height: 546
-        color: "#b3cdde"
+        spacing: 40
+
+        Image {
+            id: image
+            width: 213
+            height: 190
+            source: "logo.png"
+            fillMode: Image.PreserveAspectFit
+            anchors.horizontalCenter: parent.horizontalCenter
+        }
+
+        Text {
+            id: text1
+            width: 400
+            text: qsTr("       Malicious Behavior Detection through\nCross-Artifact Consistency Analysis in Mobile Devices")
+            font.pixelSize: 15
+            horizontalAlignment: Text.AlignHCenter
+            anchors.horizontalCenter: parent.horizontalCenter
+        }
 
         Rectangle {
             id: startButton
-            x: 165
-            y: 392
             width: 118
             height: 64
             radius: 10
             color: mouseArea.containsMouse ? "#CCCCCC" : "#1976D2"
             border.color: "white"
             border.width: 2
+            anchors.horizontalCenter: parent.horizontalCenter
 
             Text {
                 anchors.centerIn: parent
@@ -38,27 +51,8 @@ Rectangle {
                 id: mouseArea
                 anchors.fill: parent
                 hoverEnabled: true
-                onClicked: startClicked()  // Phát tín hiệu khi bấm
+                onClicked: startClicked()
             }
-        }
-
-        Text {
-            id: text1
-            x: 54
-            y: 219
-            width: 251
-            text: qsTr("       Malicious Behavior Detection through\nCross-Artifact Consistency Analysis in Mobile Devices")
-            font.pixelSize: 15
-        }
-
-        Image {
-            id: image
-            x: 118
-            y: 8
-            width: 213
-            height: 190
-            source: "logo.png"
-            fillMode: Image.PreserveAspectFit
         }
     }
 }

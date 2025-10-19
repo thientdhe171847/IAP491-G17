@@ -6,16 +6,23 @@ Window {
     width: Constants.width
     height: Constants.height
     visible: true
+    visibility: Window.Maximized
     title: "Malicious Behavior Detection - CACA Mobile"
 
     // Store selected data
     property string selectedInputPath: ""
     property string selectedMode: ""
 
+    // Background màu xám phủ toàn bộ
+    Rectangle {
+        anchors.fill: parent
+        color: "#d9d9d9"
+    }
+
     Loader {
         id: screenLoader
         anchors.fill: parent
-        sourceComponent: scrLoading0101  // Bắt đầu từ màn hình loading
+        sourceComponent: scrLoading0101
     }
 
     // Màn hình loading (màn hình đầu tiên)

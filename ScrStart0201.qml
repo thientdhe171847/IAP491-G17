@@ -8,9 +8,13 @@ Rectangle {
 
     signal startClicked
 
+    // Logo và Text ở trên
     Column {
-        anchors.centerIn: parent
-        spacing: 40
+        id: topContent
+        anchors.top: parent.top
+        anchors.topMargin: parent.height * 0.15  // Cách top 15% chiều cao
+        anchors.horizontalCenter: parent.horizontalCenter
+        spacing: 70
 
         Image {
             id: image
@@ -29,30 +33,33 @@ Rectangle {
             horizontalAlignment: Text.AlignHCenter
             anchors.horizontalCenter: parent.horizontalCenter
         }
+    }
 
-        Rectangle {
-            id: startButton
-            width: 118
-            height: 64
-            radius: 10
-            color: mouseArea.containsMouse ? "#CCCCCC" : "#1976D2"
-            border.color: "white"
-            border.width: 2
-            anchors.horizontalCenter: parent.horizontalCenter
+    // Nút Start ở dưới
+    Rectangle {
+        id: startButton
+        width: 118
+        height: 64
+        radius: 10
+        color: mouseArea.containsMouse ? "#CCCCCC" : "#1976D2"
+        border.color: "white"
+        border.width: 2
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: parent.height * 0.15  // Cách bottom 15% chiều cao
+        anchors.horizontalCenter: parent.horizontalCenter
 
-            Text {
-                anchors.centerIn: parent
-                text: "Start"
-                font.pixelSize: 16
-                color: "white"
-            }
+        Text {
+            anchors.centerIn: parent
+            text: "Start"
+            font.pixelSize: 16
+            color: "white"
+        }
 
-            MouseArea {
-                id: mouseArea
-                anchors.fill: parent
-                hoverEnabled: true
-                onClicked: startClicked()
-            }
+        MouseArea {
+            id: mouseArea
+            anchors.fill: parent
+            hoverEnabled: true
+            onClicked: startClicked()
         }
     }
 }

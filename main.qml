@@ -3,11 +3,10 @@ import QtQuick.Controls
 
 Window {
     id: root
-    width: Constants.width
-    height: Constants.height
+    width: 1920
+    height: 1080
     visible: true
-    visibility: Window.Maximized
-    title: "Malicious Behavior Detection - CACA Mobile"
+    title: "Mobile Malicious Behavior Detection"
 
     // Store selected data
     property string selectedInputPath: ""
@@ -72,7 +71,7 @@ Window {
             onNextClicked: {
                 // Chuyển sang màn hình Analysis nếu có
                 console.log("Moving to Analysis screen")
-                // screenLoader.sourceComponent = scrAnalysis0501
+                screenLoader.sourceComponent = scrAnalysis0501
             }
 
             onBackClicked: {
@@ -81,4 +80,24 @@ Window {
             }
         }
     }
+
+    // Màn hình Analysis
+    Component {
+        id: scrAnalysis0501
+        ScrAnalysis0501 {
+            Component.onCompleted: {
+                setWorkPath(root.selectedInputPath + "/" + "CASE_ID/WORK")
+            }
+
+            onNextClicked: {
+                console.log("Moving to Report screen")
+                // screenLoader.sourceComponent = scrReport0601
+            }
+
+            onBackClicked: {
+                screenLoader.sourceComponent = scrConversion0401
+            }
+        }
+    }
 }
+

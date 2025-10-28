@@ -5,7 +5,10 @@ Window {
     id: root
     width: 1920
     height: 1080
+    minimumWidth: 800
+    minimumHeight: 600
     visible: true
+    visibility: Window.Maximized
     title: "Mobile Malicious Behavior Detection"
 
     // Store selected data

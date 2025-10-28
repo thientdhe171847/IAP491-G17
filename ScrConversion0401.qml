@@ -141,8 +141,8 @@ Rectangle {
                         id: caseIdInput
                         width: parent.width - 40
                         height: 40
-                        placeholderText: "e.g., CASE_2025_Android01"
-                        text: "CASE_2025_Android01"
+                        placeholderText: "e.g., Root"
+                        text: "Root"
                         font.pixelSize: 13
                         enabled: !isProcessing && !isCompleted && !isFailed
 

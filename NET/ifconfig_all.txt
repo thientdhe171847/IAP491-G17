@@ -1,0 +1,185 @@
+p2p0      Link encap:Ethernet  HWaddr 0e:2f:b0:78:5f:86  Driver scsc_wlbt
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+rmnet1    Link encap:Point-to-Point Protocol  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+epdg7     Link encap:UNSPEC  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:500 
+          RX bytes:0 TX bytes:0 
+
+epdg2     Link encap:UNSPEC  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:500 
+          RX bytes:0 TX bytes:0 
+
+ip6tnl0   Link encap:UNSPEC  
+          NOARP  MTU:1452  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+rmnet6    Link encap:Point-to-Point Protocol  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+epdg4     Link encap:UNSPEC  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:500 
+          RX bytes:0 TX bytes:0 
+
+rmnet4    Link encap:Point-to-Point Protocol  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+umts_dm0  Link encap:Point-to-Point Protocol  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+epdg6     Link encap:UNSPEC  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:500 
+          RX bytes:0 TX bytes:0 
+
+epdg1     Link encap:UNSPEC  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:500 
+          RX bytes:0 TX bytes:0 
+
+sit0      Link encap:IPv6-in-IPv4  
+          NOARP  MTU:1480  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+rmnet2    Link encap:Point-to-Point Protocol  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+rmnet0    Link encap:Point-to-Point Protocol  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+epdg3     Link encap:UNSPEC  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:500 
+          RX bytes:0 TX bytes:0 
+
+rmnet7    Link encap:Point-to-Point Protocol  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+swlan0    Link encap:Ethernet  HWaddr 00:00:0f:11:22:33  Driver scsc_wlbt
+          BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+ip_vti0   Link encap:UNSPEC  
+          NOARP  MTU:1480  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+rmnet5    Link encap:Point-to-Point Protocol  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+ip6_vti0  Link encap:UNSPEC  
+          NOARP  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+wlan0     Link encap:Ethernet  HWaddr a2:09:f6:fb:cb:9f  Driver scsc_wlbt
+          inet addr:192.168.1.234  Bcast:192.168.1.255  Mask:255.255.255.0 
+          inet6 addr: fe80::a009:f6ff:fefb:cb9f/64 Scope: Link
+          inet6 addr: 2405:4802:1d78:6b00:a009:f6ff:fefb:cb9f/64 Scope: Global
+          inet6 addr: 2405:4802:1d78:6b00:e542:e497:64ac:637b/64 Scope: Global
+          inet6 addr: fd00:db80::a009:f6ff:fefb:cb9f/64 Scope: Global
+          inet6 addr: fd00:db80::440d:a832:eb77:cfb3/64 Scope: Global
+          inet6 addr: 2405:4802:1d78:6b00:440d:a832:eb77:cfb3/64 Scope: Global
+          inet6 addr: fd00:db80::e542:e497:64ac:637b/64 Scope: Global
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:601700 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:116260 errors:9 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:276366594 TX bytes:26444958 
+
+epdg5     Link encap:UNSPEC  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:500 
+          RX bytes:0 TX bytes:0 
+
+epdg0     Link encap:UNSPEC  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:500 
+          RX bytes:0 TX bytes:0 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0 
+          inet6 addr: ::1/128 Scope: Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:282 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:282 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:14222 TX bytes:14222 
+
+rmnet3    Link encap:Point-to-Point Protocol  
+          POINTOPOINT NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+

@@ -1,0 +1,1001 @@
+========================================================
+
+== dumpstate: 2025-11-05 22:47:22
+
+========================================================
+
+
+
+Build: RP1A.200720.012.A507FNXXS7DWD1
+
+Build fingerprint: 'samsung/a50sxx/a50s:11/RP1A.200720.012/A507FNXXS7DWD1:user/release-keys'
+
+Bootloader: A507FNXXS7DWD1
+
+Radio: A507FNXXS7DWD1,A507FNXXS7DWD1
+
+Network: ,
+
+Module Metadata version: 311626003
+
+Kernel: Linux version 4.14.113-24260844 (dpi@VPHLR1016) (Android (4639204 based on r316199) clang version 6.0.1 (https://android.googlesource.com/toolchain/clang 279c0d3a962121a6d1d535e7b0b5d9d36d3c829d) (https://android.googlesource.com/toolchain/llvm aadd87ffb6a2eafcb577913073d46b20195a9cdc) (based on LLVM 6.0.1svn)) #1 SMP PREEMPT Wed Apr 26 10:11:57 +07 2023
+
+Command line:  console=ram loglevel=4 sec_debug.pcb_offset=7346944 sec_debug.smd_offset=7348992 sec_debug.lpddr4_size=4 sec_debug.dram_info=01,06,01,4G sec_debug.pwrsrc_rs=0x0000400120000000 sec_debug.reset_reason=7 sec_reset.reset_reason=7 sec_debug.reset_rwc=0 bootmode=2 sec_debug.level=0 sec_watchdog.sec_pet=5 androidboot.debug_level=0x4f4c androidboot.force_upload=0x0 softdog.soft_margin=100 softdog.soft_panic=1 sec_debug.dump_sink=0x0 sec_debug.upload_count=0 androidboot.dram_info=01,06,01,4G androidboot.fmm_lock=0 sec_debug.fmm_lock_offset=7340600 sec_debug.sjl=1 androidboot.sn.param.offset=7343024 androidboot.prototype.param.offset=7351040 androidboot.recovery_offset=7355136 printk.devkmsg=on ess_setup=0xf9000000 sec_avc_log=0x40000@0x91202000 sec_tsp_log=0x40000@0x91244000 sec_disp_log=0x100000@0x91286000 sec_debug_next=0x800000@0x91388000 charging_mode=0x3000 s3cfb.bootloaderfb=0xca000000 lcdtype=9453571 androidboot.carrierid.param.offset=7340608 androidboot.carrierid=XXV consoleblank=0 ehci_hcd.park=3 oops=panic pmic_info=27 ccic_info=1 fg_reset=0 androidboot.emmc_checksum=0 androidboot.sales.param.offset=7340572 sales_code=XXV androidboot.odin_download=0 androidboot.bootloader=A507FNXXS7DWD1 androidboot.selinux=enforcing androidboot.ucs_mode=0 androidboot.revision=4 androidboot.hardware=exynos9611 androidboot.warranty_bit=1 androidboot.wb.hs=0e03 androidboot.rp=7 androidboot.wb.snapQB=64646591R sec_debug.bin=A androidboot.hmac_mismatch=0 androidboot.sec_atd.tty=/dev/ttySAC0 androidboot.serialno=R58MB62SJ9N androidboot.ap_serial=0x13B5CDC019A6 snd_soc_core.pmdown_time=1000 androidboot.cp_reserved_mem=off androidboot.dtbo_idx=2 androidboot.fmp_config=0 androidboot.em.did=2013b5cdc019a611 androidboot.em.model=SM-A507FN androidboot.em.status=0x0 androidboot.fastbootd=false androidboot.sb.debug0=0x0 androidboot.verifiedbootstate=orange androidboot.svb.ver=SVB1.0 bcm_setup=0xffffff80f8e00000 reserve-fimc=0xffffff80f9fe0000 firmware_class.path=/vendor/firmware ecd_setup=disable region1=EUR region2=OPEN factory_mode=0 androidboot.ulcnt=1 root=PARTUUID=52444E41-494F-2044-7379-7374656D0000 
+
+Uptime: up 1 week, 1 day, 6 hours, 37 minutes
+
+Bugreport format version: 2.0
+
+Dumpstate info: id=2 pid=17124 dry_run=0 args=/system/bin/dumpstate -s bugreport_mode=BUGREPORT_DEFAULT
+
+
+
+------ MEMORY INFO (/proc/meminfo) ------
+
+MemTotal:        3691316 kB
+
+MemFree:           95084 kB
+
+MemAvailable:    1319552 kB
+
+Buffers:            2540 kB
+
+Cached:          1345732 kB
+
+SwapCached:       106464 kB
+
+Active:          1523160 kB
+
+Inactive:        1001556 kB
+
+Active(anon):     891476 kB
+
+Inactive(anon):   301040 kB
+
+Active(file):     631684 kB
+
+Inactive(file):   700516 kB
+
+Unevictable:        3812 kB
+
+Mlocked:            3812 kB
+
+SwapTotal:       2097148 kB
+
+SwapFree:        1216200 kB
+
+Dirty:              1788 kB
+
+Writeback:             0 kB
+
+AnonPages:       1173480 kB
+
+Mapped:           872024 kB
+
+Shmem:             13364 kB
+
+Slab:             259668 kB
+
+SReclaimable:      80308 kB
+
+SUnreclaim:       179360 kB
+
+KernelStack:       47808 kB
+
+PageTables:        92856 kB
+
+NFS_Unstable:          0 kB
+
+Bounce:                0 kB
+
+WritebackTmp:          0 kB
+
+CommitLimit:     3942804 kB
+
+Committed_AS:   116124512 kB
+
+VmallocTotal:   263061440 kB
+
+VmallocUsed:           0 kB
+
+VmallocChunk:          0 kB
+
+CmaTotal:         135168 kB
+
+CmaFree:               0 kB
+
+
+
+------ 0.000s was the duration of 'MEMORY INFO' ------
+
+------ VIRTUAL MEMORY STATS (/proc/vmstat) ------
+
+nr_free_pages 23771
+
+nr_zone_inactive_anon 75260
+
+nr_zone_active_anon 222869
+
+nr_zone_inactive_file 175128
+
+nr_zone_active_file 157920
+
+nr_zone_unevictable 953
+
+nr_zone_write_pending 448
+
+nr_mlock 953
+
+nr_page_table_pages 23214
+
+nr_kernel_stack 47808
+
+nr_bounce 0
+
+nr_zspages 36493
+
+nr_free_cma 0
+
+nr_inactive_anon 75260
+
+nr_active_anon 222869
+
+nr_inactive_file 175128
+
+nr_active_file 157920
+
+nr_unevictable 953
+
+nr_slab_reclaimable 20077
+
+nr_slab_unreclaimable 44840
+
+nr_isolated_anon 0
+
+nr_isolated_file 0
+
+workingset_refault 30343138
+
+workingset_activate 4564381
+
+workingset_nodereclaim 3299
+
+nr_anon_pages 293371
+
+nr_mapped 218006
+
+nr_file_pages 363682
+
+nr_dirty 448
+
+nr_writeback 0
+
+nr_writeback_temp 0
+
+nr_shmem 3341
+
+nr_shmem_hugepages 0
+
+nr_shmem_pmdmapped 0
+
+nr_anon_transparent_hugepages 0
+
+nr_unstable 0
+
+nr_vmscan_write 4499710
+
+nr_vmscan_immediate_reclaim 3599
+
+nr_dirtied 2887858
+
+nr_written 7288536
+
+nr_dirty_threshold 12800
+
+nr_dirty_background_threshold 6400
+
+pgpgin 233858436
+
+pgpgout 11198916
+
+pswpin 2182472
+
+pswpout 4499612
+
+pgalloc_normal 597126001
+
+pgalloc_movable 0
+
+allocstall_normal 3761
+
+allocstall_movable 7327
+
+pgskip_normal 0
+
+pgskip_movable 0
+
+pgfree 597724523
+
+pgactivate 24612487
+
+pgdeactivate 35496433
+
+pglazyfree 0
+
+pgfault 713422635
+
+pgmajfault 2925261
+
+pglazyfreed 0
+
+pgrefill 39789550
+
+pgsteal_kswapd 57117300
+
+pgsteal_direct 518372
+
+pgscan_kswapd 76903017
+
+pgscan_direct 966034
+
+pgscan_direct_throttle 0
+
+pginodesteal 44457
+
+slabs_scanned 8719061
+
+kswapd_inodesteal 5040479
+
+kswapd_low_wmark_hit_quickly 12605
+
+kswapd_high_wmark_hit_quickly 4654
+
+pageoutrun 32441
+
+pgrotated 11332
+
+drop_pagecache 0
+
+drop_slab 0
+
+oom_kill 0
+
+pgmigrate_success 562248
+
+pgmigrate_fail 7859
+
+compact_migrate_scanned 17920629
+
+compact_free_scanned 154000597
+
+compact_isolated 1142494
+
+compact_stall 5157
+
+compact_fail 1472
+
+compact_success 3685
+
+compact_daemon_wake 3424
+
+compact_daemon_migrate_scanned 17355197
+
+compact_daemon_free_scanned 145695757
+
+unevictable_pgs_culled 64419
+
+unevictable_pgs_scanned 0
+
+unevictable_pgs_rescued 63542
+
+unevictable_pgs_mlocked 64614
+
+unevictable_pgs_munlocked 63542
+
+unevictable_pgs_cleared 36
+
+unevictable_pgs_stranded 36
+
+swap_ra 0
+
+swap_ra_hit 70
+
+
+
+------ 0.000s was the duration of 'VIRTUAL MEMORY STATS' ------
+
+verbose logging: disabled
+
+------ MEMORY INFO EXTRA (/proc/meminfo_extra) ------
+
+SystemHeap:       304056 kB
+
+SystemHeapPool:      812 kB
+
+VmallocAPIsize:   106972 kB
+
+ZramDevice:      145972 kB
+
+
+
+------ SEC LOG (/proc/sec_log) ------
+
+<6>[173988.731307] I[3:  kworker/u16:1:29094] wlbt: SCSC_HEX->|00 00 00 00 00 00 00 00 57 ae c2 05 33 33 00 00
+
+<6>[173988.731317] I[3:  kworker/u16:1:29094] wlbt: SCSC_HEX->|00 01 5c 18 dd 2a 2e 48 86 dd 60 03 5c 44 00 b0
+
+<6>[173988.731326] I[3:  kworker/u16:1:29094] wlbt: SCSC_HEX->|3a ff fe 80 00 00 00 00 00 00 5e 18 dd ff fe 2a
+
+<6>[173988.731335] I[3:  kworker/u16:1:29094] wlbt: SCSC_HEX->|2e 48 ff 02 00 00 00 00 00 00 00 00 00 00 00 00
+
+<6>[173988.731345] I[3:  kworker/u16:1:29094] wlbt: SCSC_HEX->|00 01 86 00 24 28 40 c0 03 84 00 00 00 00 00 00
+
+<6>[173988.731354] I[3:  kworker/u16:1:29094] wlbt: SCSC_HEX->|00 00 01 01 5c 18 dd 2a 2e 48 05 01 00 00 00 00
+
+<6>[173988.731363] I[3:  kworker/u16:1:29094] wlbt: SCSC_HEX->|05 d4 03 04 40 c0 00 00 2b 06 00 00 2b 06 00 00
+
+<4>[173988.731408]  [3:  kworker/u16:1:29094] ieee80211 phy0: wlbt: W: slsi_rx_debug: WF_FW_INFO: |cpu PHY|id 0x2C5D|arg 0x00660050|count 1|timestamp   96644671|
+
+<6>[173988.731454]  [4:  Binder:4085_2:12402] wake disabled for irq 216
+
+<6>[173988.731661]  [4:  Binder:4085_2:12402] exynos-devfreq 17000010.devfreq_mif: Resume frequency is 1352000
+
+<6>[173988.732578]  [4:  Binder:4085_2:12402] exynos-devfreq 17000020.devfreq_int: Resume frequency is 100000
+
+<6>[173988.732661]  [4:  Binder:4085_2:12402] exynos-devfreq 17000030.devfreq_intcam: Resume frequency is 650000
+
+<6>[173988.732674]  [4:  Binder:4085_2:12402] exynos-devfreq 17000040.devfreq_disp: Resume frequency is 167000
+
+<6>[173988.732692]  [4:  Binder:4085_2:12402] exynos-devfreq 17000050.devfreq_cam: Resume frequency is 640000
+
+<6>[173988.732722]  [4:  Binder:4085_2:12402] exynos-devfreq 17000060.devfreq_aud: Resume frequency is 394000
+
+<7>[173988.732893]  [4:  Binder:4085_2:12402] PM: early resume of devices complete after 1.677 msecs
+
+<6>[173988.733205]  [4:  Binder:4085_2:12402] exynos-tmu 10070000.BIG: Sensor number = 2
+
+<6>[173988.733287]  [4:  Binder:4085_2:12402] exynos-tmu 10070000.LITTLE: Sensor number = 1
+
+<6>[173988.733362]  [4:  Binder:4085_2:12402] exynos-tmu 10070000.G3D: Sensor number = 0
+
+<6>[173988.733433]  [4:  Binder:4085_2:12402] exynos-tmu 10070000.ISP: Sensor number = 1
+
+<6>[173988.733502]  [4:  Binder:4085_2:12402] exynos_tmu_resume: TMU resume complete
+
+<6>[173988.733541]  [4:  Binder:4085_2:12402] exynos-ufs 13520000.ufs: exynos_ufs_fmp_sec_cfg with id:0
+
+<6>[173988.733612]  [4:  Binder:4085_2:12402] exynos-ufs 13520000.ufs: exynos_ufs_smu_resume with id:0
+
+<6>[173988.734028]  [4:  Binder:4085_2:12402] s3c2410-wdt 10060000.watchdog_cl1: DISABLE_WDT reg val:  fe7fffff, MASK_WDT_RESET reg val: ff7fffff
+
+<6>[173988.734037]  [4:  Binder:4085_2:12402] s3c2410-wdt 10060000.watchdog_cl1: Automatic_wdt set false done, mask = 0
+
+<6>[173988.734050]  [4:  Binder:4085_2:12402] s3c2410-wdt 10060000.watchdog_cl1: Watchdog cluster 1 stop done, WTCON = 8000
+
+<6>[173988.734064]  [4:  Binder:4085_2:12402] s3c2410-wdt 10060000.watchdog_cl1: watchdog enabled, con: 0x00005c3c, dat: 0x0000b32b, cnt: 0x0000b32b
+
+<6>[173988.734323]  [4:  Binder:4085_2:12402] wlbt: platform_mif_module_resume: 
+
+<6>[173988.734342]  [4:  Binder:4085_2:12402] wlbt: platform_mif_resume: Clear WLBT_ACTIVE_CLR flag
+
+<6>[173988.734361]  [4:  Binder:4085_2:12402] wlbt: mxman_resume: 
+
+<6>[173988.734369]  [4:  Binder:4085_2:12402] wlbt: mxman_resume: MM_HOST_RESUME
+
+<6>[173988.734380]  [4:  Binder:4085_2:12402] wlbt: __mxlogger_generate_sync_record: Get FW time
+
+<6>[173988.734410]  [4:  Binder:4085_2:12402] wlbt: __mxlogger_generate_sync_record: Sample, 173989039838245, 96677818, 1762355515.279064
+
+<6>[173988.734418]  [4:  Binder:4085_2:12402] wlbt: __mxlogger_generate_sync_record: Sync delta 16385
+
+<6>[173988.734427]  [4:  Binder:4085_2:12402] wlbt: srvman_resume_services: 
+
+<6>[173988.734435]  [4:  Binder:4085_2:12402] ieee80211 phy.: wlbt: I: wlan_resume: Nofity registered functions
+
+<6>[173988.734442]  [4:  Binder:4085_2:12402] ieee80211 phy.: wlbt: I: sap_mlme_notifier: Notifier event received: 3
+
+<6>[173988.734451]  [4:  Binder:4085_2:12402] ieee80211 phy.: wlbt: I: sap_ma_notifier: Notifier event received: 3
+
+<6>[173988.734462]  [4:  Binder:4085_2:12402] ieee80211 phy0: wlbt: I: slsi_hip_service_notifier: Resume HIP4
+
+<6>[173988.734473]  [4:  Binder:4085_2:12402] wlbt: srvman_resume_services: OK
+
+<3>[173988.734494]  [4:  Binder:4085_2:12402] mif: modem_resume: time = 715.279148
+
+<3>[173988.734502]  [4:  Binder:4085_2:12402] mif: modem_resume: s337ap: pda_active:1
+
+<3>[173988.734507]  [4:  Binder:4085_2:12402] mif: modem_resume: s337ap
+
+<3>[173988.734725]  [4:  Binder:4085_2:12402] gif: gnss_resume: KEPLER: pd_active:1
+
+<6>[173988.734732]  [4:  Binder:4085_2:12402] gif: gnss_pmu_clear_interrupt: gnss_int = 2
+
+<6>[173988.734744]  [4:  Binder:4085_2:12402] wake disabled for irq 281
+
+<6>[173988.734752]  [4:  Binder:4085_2:12402] [sec_input] gpio_keys_gpio_report_event: 114 (0)
+
+<6>[173988.734778]  [4:  Binder:4085_2:12402] [sec_input] gpio_keys_gpio_report_event: 115 (0)
+
+<6>[173988.734793]  [4:  Binder:4085_2:12402] [sec_input] gpio_keys_gpio_report_event: 116 (0)
+
+<6>[173988.734875]  [4:  Binder:4085_2:12402] hall_resume start
+
+<6>[173988.734960]  [4:  Binder:4085_2:12402] [keys] hall_resume flip_status : 1 (open)
+
+<6>[173988.734975]  [4:  Binder:4085_2:12402] certify_hall_resume start
+
+<6>[173988.734982]  [4:  Binder:4085_2:12402] [keys] certify_hall_resume certify_status : 0 (detach)
+
+<6>[173988.735015]  [4:  Binder:4085_2:12402] etspi_pm_resume
+
+<6>[173988.735031]  [4:  Binder:4085_2:12402] [SX9360]: sx9360_resume
+
+<6>[173988.735094]  [4:  Binder:4085_2:12402] [SX9360_SUB]: sx9360_resume
+
+<6>[173988.735108]  [4:  Binder:4085_2:12402] wake disabled for irq 269
+
+<7>[173988.735131]  [4:  Binder:4085_2:12402] rt5665_pm_resume
+
+<6>[173988.735707]  [4:  Binder:4085_2:12402] [dwc3_resume]
+
+<6>[173988.735934] I[3:      swapper/3:    0] mif: LNK-RX(29): f8 eb 1d 00 19 00 88 00 07 06 03 39 1c ff 63 00 ...
+
+<6>[173988.737012]  [4:  Binder:4085_2:12402] s2m_rtc_read_hrtime: RTC_MSEC: 0x0B
+
+<6>[173988.737029]  [4:  Binder:4085_2:12402] s2mpu09-rtc s2mpu09-rtc: s2m_rtc_read_hrtime: 2025-11-05 15:14:42.110(0x08)PM
+
+<7>[173988.737040]  [4:  Binder:4085_2:12402] PM: Timekeeping suspended for 166.829 seconds
+
+<7>[173988.737311]  [4:  Binder:4085_2:12402] [@]fimc_is_sensor_resume
+
+<7>[173988.737320]  [4:  Binder:4085_2:12402] [@]fimc_is_sensor_resume
+
+<7>[173988.737328]  [4:  Binder:4085_2:12402] [@]fimc_is_sensor_resume
+
+<7>[173988.737336]  [4:  Binder:4085_2:12402] [@]fimc_is_sensor_resume
+
+<3>[173988.760995]  [3: kworker/u16:14:30347] exynos-ufs 13520000.ufs: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
+
+<6>[173988.761149]  [3: kworker/u16:14:30347] exynos-ufs 13520000.ufs: active_tx_lane(1), active_rx_lane(1)
+
+<6>[173988.761911]  [3: kworker/u16:14:30347] exynos-ufs 13520000.ufs: UFS link established
+
+<6>[173988.786236]  [3: kworker/u16:14:30347] exynos-ufs 13520000.ufs: UFS device initialized
+
+<6>[173988.795371]  [3: kworker/u16:14:30347] exynos-ufs 13520000.ufs: LT: 0x22 
+
+<6>[173988.800458]  [3: kworker/u16:14:30347] exynos-ufs 13520000.ufs: active_tx_lane(1), active_rx_lane(1)
+
+<6>[173988.800579]  [3: kworker/u16:14:30347] exynos-ufs 13520000.ufs: Power mode change(0): M(1)G(3)L(1)HS-series(2)
+
+<3>[173988.800596]  [3: kworker/u16:14:30347] exynos-ufs 13520000.ufs: ufshcd_print_pwr_info:[RX, TX]: gear=[3, 3], lane[1, 1], pwr[FAST MODE, FAST MODE], rate = 2
+
+<6>[173988.800609]  [3: kworker/u16:14:30347] exynos-ufs 13520000.ufs: HS mode configured
+
+<7>[173988.801303]  [4:  Binder:4085_2:12402] PM: resume of devices complete after 68.395 msecs
+
+<6>[173988.802747]  [4:  Binder:4085_2:12402] sec-battery battery: sec_battery_complete: Start
+
+<6>[173988.802782]  [4:  Binder:4085_2:12402] sec-battery battery: sec_battery_complete: End
+
+<6>[173988.802835]  [4:  Binder:4085_2:12402] contexthub_complete irq disabled
+
+<6>[173988.802847]  [4:  Binder:4085_2:12402] contexthub_alive_noirq start
+
+<6>[173988.802986]  [3: kworker/u16:14:30347] sm5713_fg_get_property: psp = 0xd
+
+<6>[173988.803857]  [4:  Binder:4085_2:12402] contexthub_alive_noirq end
+
+<6>[173988.803867]  [4:  Binder:4085_2:12402] [SSP]           ssp_resume( 616): 
+
+<7>[173988.804233]  [4:  Binder:4085_2:12402] PM: Finishing wakeup.
+
+<6>[173988.804242]  [4:  Binder:4085_2:12402] OOM killer enabled.
+
+<6>[173988.804249]  [3: kworker/u16:14:30347] Restarting tasks ... 
+
+<6>[173988.804530]  [3: kworker/u16:14:30347] sm5713_voffset_cancel: <0 0 100 10> volt_cal = 0x8000, volt_slope = 0x8000, mohm_volt_cal = 0x0
+
+<4>[173988.808232]  [4:  Binder:4085_2:12402] done.
+
+<6>[173988.808262]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> rcu_pm_notify call +
+
+<6>[173988.808276]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> rcu_pm_notify call -
+
+<6>[173988.808289]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> cpu_hotplug_pm_callback call +
+
+<6>[173988.808301]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> cpu_hotplug_pm_callback call -
+
+<6>[173988.808313]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> exynos_cpuhp_pm_notifier call +
+
+<6>[173988.808333]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> exynos_cpuhp_pm_notifier call -
+
+<6>[173988.808346]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> wakeup_reason_pm_event call +
+
+<6>[173988.808357]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> wakeup_reason_pm_event call -
+
+<6>[173988.808370]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> hungtask_pm_notify call +
+
+<6>[173988.808381]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> hungtask_pm_notify call -
+
+<6>[173988.808393]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> fw_pm_notify call +
+
+<6>[173988.808406]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> fw_pm_notify call -
+
+<6>[173988.808419]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> thermal_pm_notify call +
+
+<6>[173988.809612]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> thermal_pm_notify call -
+
+<6>[173988.809624]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> gpu_pm_notifier call +
+
+<6>[173988.809635]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> gpu_pm_notifier call -
+
+<6>[173988.809646]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> g2d_notifier_event call +
+
+<6>[173988.809658]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> g2d_notifier_event call -
+
+<6>[173988.809670]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> exynos_cpufreq_pm_notifier call +
+
+<6>[173988.809683]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> exynos_cpufreq_pm_notifier call -
+
+<6>[173988.809692]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> mmc_pm_notify call +
+
+<3>[173988.809730]  [4:    kworker/4:3:29113] mmc0: no detect irq, skipping mmc_rescan
+
+<6>[173988.809753]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> mmc_pm_notify call -
+
+<6>[173988.809768]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> abox_pm_notifier call +
+
+<6>[173988.809781]  [4:  Binder:4085_2:12402] samsung-abox 14a50000.abox: (5903)r suspend_state: 1
+
+<6>[173988.810004]  [4:  Binder:4085_2:12402] samsung-abox 14a50000.abox: abox_enable
+
+<6>[173988.810020]  [4:  Binder:4085_2:12402] samsung-abox-gic 14af1000.abox_gic: abox_gic_enable_irq
+
+<6>[173988.810038]  [4:  Binder:4085_2:12402] samsung-abox 14a50000.abox: abox_request_cpu_gear(ab0cdefa, 1)
+
+<6>[173988.810333]  [4:  Binder:4085_2:12402] samsung-abox 14a50000.abox: audif clock: 24576000
+
+<6>[173988.810346]  [4:  Binder:4085_2:12402] samsung-abox 14a50000.abox: abox_cfg_gpio(default)
+
+<6>[173988.810385]  [4:  Binder:4085_2:12402] samsung-abox-gic 14af1000.abox_gic: abox_gic_init_gic
+
+<6>[173988.810438]  [4:  Binder:4085_2:12402] samsung-abox 14a50000.abox: abox_download_firmware
+
+<6>[173988.815119]  [3: kworker/u16:14:30347] sm5713_cal_avg_vbat: batt_avgvoltage = 4056
+
+<6>[173988.815152]  [3: kworker/u16:14:30347] sm5713_fg_get_property: psp = 0x34
+
+<6>[173988.816997]  [3: kworker/u16:14:30347] sm5713-charger sm5713-charger: psy_chg_get_status: STATUS1(0x02), STATUS2(0x00), STATUS3(0x00)
+
+<6>[173988.817598]  [2: kworker/u16:10:29102] samsung-abox 14a50000.abox: pll clock: 1179648040
+
+<6>[173988.818054]  [3: kworker/u16:14:30347] sm5713_voffset_cancel: <0 0 100 10> volt_cal = 0x8000, volt_slope = 0x8000, mohm_volt_cal = 0x0
+
+<6>[173988.824953]  [2: kworker/u16:10:29102] samsung-abox 14a50000.abox: pm qos request aud: req=1180000kHz ret=1180000kHz
+
+<6>[173988.840005]  [4:  Binder:4085_2:12402] samsung-abox 14a50000.abox: rtdsp.bin is downloaded at area 1 offset 5251072
+
+<6>[173988.840070]  [4:  Binder:4085_2:12402] samsung-abox 14a50000.abox: AP_AUDIO_SLSI.bin is downloaded at area 1 offset 8323072
+
+<6>[173988.840089]  [4:  Binder:4085_2:12402] samsung-abox 14a50000.abox: APBargeIn_AUDIO_SLSI.bin is downloaded at area 1 offset 8306688
+
+<6>[173988.840104]  [4:  Binder:4085_2:12402] samsung-abox 14a50000.abox: rtdsp_param.bin is downloaded at area 1 offset 5775360
+
+<6>[173988.840117]  [4:  Binder:4085_2:12402] samsung-abox 14a50000.abox: APBiBF_AUDIO_SLSI.bin is downloaded at area 1 offset 8318976
+
+<6>[173988.840134]  [4:  Binder:4085_2:12402] abox_cpu_power(1)
+
+<6>[173988.840145]  [4:  Binder:4085_2:12402] abox_cpu_enable(1)
+
+<6>[173988.840181]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> abox_pm_notifier call -
+
+<6>[173988.840196]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> idletimer_resume call +
+
+<6>[173988.841568]  [4:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> idletimer_resume call -
+
+<6>[173988.841587]  [4:  Binder:4085_2:12402] PM: suspend exit 2025-11-05 15:14:42.215858847 UTC
+
+<6>[173988.841789]  [4:  Binder:4085_2:12402] !@SystemSuspend: write mem-
+
+<6>[173988.847010]  [3: kworker/u16:14:30347] sm5713_cal_avg_vbat: batt_avgvoltage = 4058
+
+<6>[173988.847585]  [3: kworker/u16:14:30347] sm5713_adabt_full_offset: curr_off=0, aux_stat=201, flag_charge_health=0, flag_chg_status=0, flag_full_charge=0
+
+<6>[173988.849201]  [3: kworker/u16:14:30347] sm5713_vbatocv_check: sm5713 FG iocv_error_count (0)
+
+<6>[173988.849229]  [3: kworker/u16:14:30347] sm5713_vbatocv_check: mode change to mix RS auto mode
+
+<6>[173988.850413]  [3: kworker/u16:14:30347] sm5713_cal_carc: <0 6 1 11 -1 1 6 1 9 1>, temp_fg = 120 ,p_curr_cal = 0x7f, n_curr_cal = 0x89, batt_temp = 224
+
+<6>[173988.851263]  [1: kworker/u16:14:30347] sm5713_cal_carc: <0 2 1 2 1 1 2 3 2 3>, p_curr_cal = 0x82, n_curr_cal = 0x8c, mix_factor=0x146 ,curr_cal = 0x8c82
+
+<6>[173988.851287]  [1: kworker/u16:14:30347] sm5713_get_soc: 
+
+<6>[173988.852032]  [1: kworker/u16:14:30347] sm5713_fg_check_reg_init_need: SM5713_REG_FG_OP_STATUS : 0x10 , return FALSE NO init need
+
+<6>[173988.852058]  [1: kworker/u16:14:30347] sm5713_get_soc: read = 0x51fc, soc = 819
+
+<6>[173988.852071]  [1: kworker/u16:14:30347] sm5713_get_soc: batt_soc = 819, soc = 819
+
+<6>[173988.854497] I[0:roid.honeyboard: 6382] samsung-abox 14a50000.abox: Calliope is ready to sing (version:rUC0)
+
+<6>[173988.854671] I[0:roid.honeyboard: 6382] samsung-abox 14a50000.abox: abox_request_cpu_gear(b00d, 3)
+
+<6>[173988.855046]  [0:    kworker/0:1: 9062] samsung-abox 14a50000.abox: abox_restore_data
+
+<6>[173988.855132]  [0:    kworker/0:1: 9062] samsung-abox 14a50000.abox: abox_request_cpu_gear(ab0cdefa, 12)
+
+<6>[173988.855171]  [0:    kworker/0:1: 9062] samsung-abox 14a50000.abox: abox_boot_done_work_func:release wake lock
+
+<6>[173988.855499]  [2:  kworker/u16:2:29096] samsung-abox 14a50000.abox: pm qos request aud: req=590000kHz ret=590000kHz
+
+<6>[173988.855767]  [3: kworker/u16:14:30347] sm5713_fg_test_read: 0xA0=0x1400, 0xAC=0x20d7, 0xAD=0x210b, 0xAE=0x21db, 0xAF=0x2400, 0x28=0x0290, 0x2F=0x0218, 0x01=0xc601, SM5713_ID=0x0001
+
+<6>[173988.858410]  [1: kworker/u16:14:30347] sm5713_fg_test_read: 0xB0=0x0000, 0xBC=0x570b, 0xBD=0x59e2, 0xBE=0x6400, 0xBF=0x641a, 0x85=0x81bc, 0x86=0x0002, 0x87=0x8031, 0x1F=0x0064, 0x94=0x0030
+
+<6>[173988.858704]  [1: kworker/u16:14:30347] sm5713_update_all_value: chg_h=0, chg_f=0, chg_s=0, is_chg=0, ta_exist=0, v=4060, v_avg=4058, i=-22, i_avg=-88, ocv=4060, fg_t=120, b_t=224, cycle=0, soc=819, state=0x13
+
+<6>[173988.858727]  [1: kworker/u16:14:30347] sm5713_update_all_value : temp = 0xfdc, t = 224 
+
+<6>[173988.858740]  [1: kworker/u16:14:30347] sm5713_fg_get_scaled_capacity: scaled capacity (82.8)
+
+<6>[173988.859638]  [1: kworker/u16:14:30347] sec-battery battery: sec_bat_get_value_by_adc:[2] Temp(225), Temp-ADC(2157)
+
+<6>[173988.860461]  [1: kworker/u16:14:30347] sec-battery battery: sec_bat_get_value_by_adc:[6] Temp(220), Temp-ADC(2138)
+
+<6>[173988.860497]  [1: kworker/u16:14:30347] sm5713_fg_get_property: psp = 0x32
+
+<6>[173988.860535]  [1: kworker/u16:14:30347] Skip monitor work(301, Vnow:4060(mV), SoC:82(%), Tbat:225(0.1'C))
+
+<6>[173988.860557]  [1: kworker/u16:14:30347] sec-battery battery: sec_bat_set_polling: Polling time 30/30 sec.
+
+<6>[173988.860658]  [1:    kworker/1:0:29085] sec_bat_get_property cable type = 1 sleep_mode = 0
+
+<6>[173988.865275]  [3:android.hardwar: 4171] sec_bat_get_property cable type = 1 sleep_mode = 0
+
+<6>[173988.866000]  [3:android.hardwar: 4171] sm5713_fg_get_property: psp = 0x2e
+
+<14>[173988.866401]  [3:android.hardwar: 4171] healthd: efs_buf: 0 7 12 6 6 401 0 818 2937 0 0 0 0 0 0 2 339 190 412 187 0 0 0 0 339 212 409 207 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 6 6 0 0 0 0 0 0 0 0 0 0 225 199 247 196 0 0 0 0 -300 1000 -300 1000 -300 1000 -300 1000 0 0 0 0 0 0 0 0 0 0
+
+<12>[173988.867754]  [3:android.hardwar: 4171] healthd: battery l=82 v=4060 t=22.5 h=2 st=3 c=0 fc=4000000 o=1 ca=-38 ct=0 ps=0 hv=0 sec=65536 sce=0 tx=0 chg=
+
+<4>[173988.909301]  [2:ADB-JDWP Connec: 6555] audit: audit_lost=19961001 audit_rate_limit=5 audit_backlog_limit=64
+
+<3>[173988.909316]  [2:ADB-JDWP Connec: 6555] audit: rate limit exceeded
+
+<6>[173988.941527]  [1:            iod: 4049] !@   8,0 r 4137346 231149672 w 532275 10778724 d 260483 56774824 f 52577 77170 iot 1824900 1362836 th 51200 51200 39560 pt 176 inp 0 0 173989.245
+
+<6>[173988.942380]  [4:  Binder:4085_2:12402] !@SystemSuspend: wakeup_count+
+
+<6>[173988.942422]  [4:  Binder:4085_2:12402] active wakeup source: 14a50000.abox
+
+<6>[173988.942433]  [4:  Binder:4085_2:12402] active wakeup source: mmc0_detect
+
+<6>[173988.942441]  [4:  Binder:4085_2:12402] active wakeup source: wlan_mlme
+
+<6>[173988.942452]  [4:  Binder:4085_2:12402] active wakeup source: umts_ipc0
+
+<6>[173989.175325] I[0:      swapper/0:    0] samsung-abox 14a50000.abox: abox_request_cpu_gear(b00d, 12)
+
+<6>[173989.176075]  [7:  kworker/u16:2:29096] samsung-abox 14a50000.abox: pm qos request aud: req=0kHz ret=394000kHz
+
+<6>[173989.176124]  [7:  kworker/u16:2:29096] samsung-abox 14a50000.abox: pll clock: 26000000
+
+<6>[173989.739264]  [3:  Binder:4085_2:12402] !@SystemSuspend: wakeup_count-
+
+<6>[173989.739527]  [3:  Binder:4085_2:12402] !@SystemSuspend: mSuspendCounter+
+
+<6>[173989.739801]  [3:  Binder:4085_2:12402] !@SystemSuspend: mSuspendCounter-
+
+<6>[173989.740137]  [3:  Binder:4085_2:12402] !@SystemSuspend: write mem+
+
+<6>[173989.740222]  [3:  Binder:4085_2:12402] PM: suspend entry 2025-11-05 15:14:43.114481269 UTC
+
+<7>[173989.740255]  [3:  Binder:4085_2:12402] PM: Preparing system for sleep (deep)
+
+<6>[173989.740303]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> rcu_pm_notify call +
+
+<6>[173989.740340]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> rcu_pm_notify call -
+
+<6>[173989.740378]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> cpu_hotplug_pm_callback call +
+
+<6>[173989.740412]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> cpu_hotplug_pm_callback call -
+
+<6>[173989.740452]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> exynos_cpuhp_pm_notifier call +
+
+<6>[173989.740488]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> exynos_cpuhp_pm_notifier call -
+
+<6>[173989.740526]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> wakeup_reason_pm_event call +
+
+<6>[173989.740564]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> wakeup_reason_pm_event call -
+
+<6>[173989.740602]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> hungtask_pm_notify call +
+
+<6>[173989.740638]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> hungtask_pm_notify call -
+
+<6>[173989.740676]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> fw_pm_notify call +
+
+<6>[173989.742041]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> fw_pm_notify call -
+
+<6>[173989.742085]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> thermal_pm_notify call +
+
+<6>[173989.742124]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> thermal_pm_notify call -
+
+<6>[173989.742158]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> gpu_pm_notifier call +
+
+<6>[173989.742190]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> gpu_pm_notifier call -
+
+<6>[173989.742228]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> g2d_notifier_event call +
+
+<6>[173989.742267]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> g2d_notifier_event call -
+
+<6>[173989.742305]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> exynos_cpufreq_pm_notifier call +
+
+<6>[173989.743665]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> exynos_cpufreq_pm_notifier call -
+
+<6>[173989.743686]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> mmc_pm_notify call +
+
+<6>[173989.743704]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> mmc_pm_notify call -
+
+<6>[173989.743720]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> abox_pm_notifier call +
+
+<6>[173989.743740]  [3:  Binder:4085_2:12402] samsung-abox 14a50000.abox: abox_clear_cpu_gear_requests
+
+<6>[173989.743814]  [3:    kworker/3:0:29114] samsung-abox 14a50000.abox: abox_poweroff
+
+<6>[173989.743831]  [3:    kworker/3:0:29114] samsung-abox 14a50000.abox: abox_disable
+
+<6>[173989.745288]  [3:    kworker/3:0:29114] samsung-abox 14a50000.abox: abox_cfg_gpio(idle)
+
+<6>[173989.745308]  [3:    kworker/3:0:29114] samsung-abox-gic 14af1000.abox_gic: abox_gic_disable_irq
+
+<6>[173989.745558]  [3:  Binder:4085_2:12402] samsung-abox 14a50000.abox: (5887)s suspend_state: 1
+
+<6>[173989.745579]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> abox_pm_notifier call -
+
+<6>[173989.745596]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> idletimer_resume call +
+
+<6>[173989.745611]  [3:  Binder:4085_2:12402] debug-snapshot: pm_chain_head -> idletimer_resume call -
+
+<6>[173989.745621]  [3:  Binder:4085_2:12402] PM: PM: Syncing filesystems ... done.
+
+<6>[173989.764283]  [3:  Binder:4085_2:12402] Freezing user space processes ... 
+
+<6>[173989.764307]  [3:  Binder:4085_2:12402] s3c2410-wdt 10060000.watchdog_cl1: s3c2410wdt_emergency_multistage_wdt_stop
+
+<4>[173989.764696]  [1:       tzdaemon: 4054] TZDEV> ERR tz_uiwsock_recv(183): Failed to read data ret=-512, filp=0000000000000000
+
+<4>[173989.764787]  [0:       tzdaemon: 4053] TZDEV> ERR tz_uiwsock_recv(183): Failed to read data ret=-512, filp=0000000000000000
+
+<4>[173989.767016]  [2:tui_service_lis:10076] TZDEV> ERR tz_uiwsock_accept(129): Failed to accept, error -512
+
+<4>[173989.770695]  [3:  Binder:4085_2:12402] (elapsed 0.006 seconds) 
+
+<6>[173989.770733]  [3:  Binder:4085_2:12402] s3c2410-wdt 10060000.watchdog_cl1: s3c2410wdt_emergency_multistage_wdt_start: count=0x0000b32b, wtcon=00005c3c
+
+<4>[173989.770746]  [3:  Binder:4085_2:12402] done.
+
+<6>[173989.770759]  [3:  Binder:4085_2:12402] OOM killer disabled.
+
+<6>[173989.770768]  [3:  Binder:4085_2:12402] Freezing remaining freezable tasks ... 
+
+<6>[173989.770785]  [3:  Binder:4085_2:12402] s3c2410-wdt 10060000.watchdog_cl1: s3c2410wdt_emergency_multistage_wdt_stop
+
+<4>[173989.775123]  [3:  Binder:4085_2:12402] (elapsed 0.004 seconds) 
+
+<6>[173989.775161]  [3:  Binder:4085_2:12402] s3c2410-wdt 10060000.watchdog_cl1: s3c2410wdt_emergency_multistage_wdt_start: count=0x0000b32b, wtcon=00005c3c
+
+<4>[173989.775171]  [3:  Binder:4085_2:12402] done.
+
+<7>[173989.775187]  [3:  Binder:4085_2:12402] PM: Suspending system (deep)
+
+<4>[173989.775198]  [3:  Binder:4085_2:12402] Suspending console(s) (use no_console_suspend to debug)
+
+<6>[173989.775534]  [3:  Binder:4085_2:12402] contexthub_prepare
+
+<6>[173989.775546]  [3:  Binder:4085_2:12402] [SSP]          ssp_suspend( 598): 
+
+<6>[173989.775676]  [3:  Binder:4085_2:12402] sec-battery battery: sec_battery_prepare: Start
+
+<6>[173989.775698]  [3:  Binder:4085_2:12402] sec-battery battery: sec_bat_set_polling: Polling time 3600/3600 sec.
+
+<6>[173989.775713]  [3:  Binder:4085_2:12402] sec-battery battery: sec_battery_prepare: End
+
+<7>[173989.777692]  [3:  Binder:4085_2:12402] [@]fimc_is_sensor_suspend
+
+<7>[173989.777728]  [3:  Binder:4085_2:12402] [@]fimc_is_sensor_suspend
+
+<7>[173989.777754]  [3:  Binder:4085_2:12402] [@]fimc_is_sensor_suspend
+
+<7>[173989.777778]  [3:  Binder:4085_2:12402] [@]fimc_is_sensor_suspend
+
+<5>[173989.778467]  [2:  kworker/u16:2:29096] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+
+<6>[173989.780046]  [3:  Binder:4085_2:12402] s2m_rtc_read_hrtime: RTC_MSEC: 0x0F
+
+<6>[173989.780075]  [3:  Binder:4085_2:12402] s2mpu09-rtc s2mpu09-rtc: s2m_rtc_read_hrtime: 2025-11-05 15:14:43.150(0x08)PM
+
+<6>[173989.780119]  [3:  Binder:4085_2:12402] [dwc3_suspend]
+
+<6>[173989.781936]  [3:  Binder:4085_2:12402] s2mpu09-rtc s2mpu09-rtc: s2m_rtc_read_time: 2025-11-05 15:14:43(0x08)PM
+
+<6>[173989.783267]  [3:  Binder:4085_2:12402] s2mpu09-rtc s2mpu09-rtc: s2m_rtc_read_time: 2025-11-05 15:14:43(0x08)PM
+
+<6>[173989.784682]  [3:  Binder:4085_2:12402] s2mpu09-rtc s2mpu09-rtc: s2m_rtc_read_time: 2025-11-05 15:14:43(0x08)PM
+
+<6>[173989.784701]  [3:  Binder:4085_2:12402] s2mpu09-rtc s2mpu09-rtc: s2m_rtc_set_alarm: 2025-11-05 15:26:49(0x08)PM
+
+<7>[173989.787800]  [3:  Binder:4085_2:12402] rt5665_pm_suspend
+
+<6>[173989.787888]  [3:  Binder:4085_2:12402] wake enabled for irq 269
+
+<6>[173989.787922]  [3:  Binder:4085_2:12402] [SX9360_SUB]: sx9360_suspend
+
+<6>[173989.788106]  [3:  Binder:4085_2:12402] [SX9360]: sx9360_suspend
+
+<6>[173989.788162]  [3:  Binder:4085_2:12402] etspi_pm_suspend
+
+<6>[173989.788234]  [3:  Binder:4085_2:12402] certify_hall_suspend start
+
+<6>[173989.788248]  [3:  Binder:4085_2:12402] [keys] certify_hall_suspend certify_status : 0 (detach)
+
+<6>[173989.788263]  [3:  Binder:4085_2:12402] hall_suspend start
+
+<6>[173989.788275]  [3:  Binder:4085_2:12402] [keys] hall_suspend flip_status : 1 (open)
+
+<6>[173989.788307]  [3:  Binder:4085_2:12402] wake enabled for irq 281
+
+<3>[173989.788321]  [3:  Binder:4085_2:12402] gif: gnss_suspend: KEPLER: pd_active:0
+
+<3>[173989.789140]  [3:  Binder:4085_2:12402] mif: modem_suspend: time = 883.163403
+
+<3>[173989.789159]  [3:  Binder:4085_2:12402] mif: modem_suspend: s337ap: pda_active:0
+
+<3>[173989.789170]  [3:  Binder:4085_2:12402] mif: modem_suspend: s337ap
+
+<6>[173989.789199]  [3:  Binder:4085_2:12402] wlbt: platform_mif_module_suspend: 
+
+<6>[173989.789230]  [3:  Binder:4085_2:12402] wlbt: mxman_suspend: 
+
+<6>[173989.789247]  [3:  Binder:4085_2:12402] wlbt: srvman_suspend_services: 
+
+<6>[173989.789265]  [3:  Binder:4085_2:12402] ieee80211 phy.: wlbt: I: wlan_suspend: Nofity registered functions
+
+<6>[173989.789278]  [3:  Binder:4085_2:12402] ieee80211 phy.: wlbt: I: sap_mlme_notifier: Notifier event received: 2
+
+<6>[173989.789290]  [3:  Binder:4085_2:12402] ieee80211 phy.: wlbt: I: sap_ma_notifier: Notifier event received: 2
+
+<6>[173989.789306]  [3:  Binder:4085_2:12402] ieee80211 phy0: wlbt: I: slsi_hip_service_notifier: Suspend HIP4
+
+<6>[173989.789326]  [3:  Binder:4085_2:12402] wlbt: srvman_suspend_services: OK
+
+<6>[173989.789342]  [3:  Binder:4085_2:12402] wlbt: mxman_suspend: MM_HOST_SUSPEND
+
+<6>[173989.789358]  [3:  Binder:4085_2:12402] wlbt: __mxlogger_generate_sync_record: Get FW time
+
+<6>[173989.792116]  [3:  Binder:4085_2:12402] wlbt: __mxlogger_generate_sync_record: Sample, 173990097539937, 97735524, 1762355683.166387
+
+<6>[173989.792137]  [3:  Binder:4085_2:12402] wlbt: __mxlogger_generate_sync_record: Sync delta 2733424
+
+<6>[173989.792361]  [3:  Binder:4085_2:12402] s3c2410-wdt 10060000.watchdog_cl1: Watchdog cluster 1 keepalive!, wtcnt = b32b
+
+<6>[173989.797144]  [3:  Binder:4085_2:12402] exynos_tmu_suspend: TMU suspend complete
+
+<7>[173989.797951]  [3:  Binder:4085_2:12402] PM: suspend of devices complete after 21.163 msecs
+
+<3>[173989.798832]  [3:  Binder:4085_2:12402] exynos-devfreq 17000060.devfreq_aud: power domain pd-dispaud is offed
+
+<3>[173989.798851]  [3:  Binder:4085_2:12402] exynos-devfreq 17000060.devfreq_aud: failed get freq
+
+<6>[173989.798864]  [3:  Binder:4085_2:12402] exynos-devfreq 17000060.devfreq_aud: Suspend_frequency is 0
+
+<6>[173989.798899]  [3:  Binder:4085_2:12402] exynos-devfreq 17000050.devfreq_cam: Suspend_frequency is 640000
+
+<6>[173989.798925]  [3:  Binder:4085_2:12402] exynos-devfreq 17000040.devfreq_disp: Suspend_frequency is 167000
+
+<6>[173989.798954]  [3:  Binder:4085_2:12402] exynos-devfreq 17000030.devfreq_intcam: Suspend_frequency is 650000
+
+<6>[173989.799073]  [3:  Binder:4085_2:12402] exynos-devfreq 17000020.devfreq_int: Suspend_frequency is 100000
+
+<6>[173989.799213]  [3:  Binder:4085_2:12402] exynos-devfreq 17000010.devfreq_mif: Suspend_frequency is 1352000
+
+<6>[173989.800163]  [3:  Binder:4085_2:12402] wake enabled for irq 216
+
+<7>[173989.800921]  [3:  Binder:4085_2:12402] PM: late suspend of devices complete after 2.945 msecs
+
+<6>[173989.803155]  [3:  Binder:4085_2:12402] contexthub_suspend_noirq
+
+<3>[173989.803282]  [3:  Binder:4085_2:12402] s3c-i2c 13890000.i2c: Device s3c24xx_i2c_suspend_noirq
+
+<3>[173989.803298]  [3:  Binder:4085_2:12402] s3c-i2c 13870000.i2c: Device s3c24xx_i2c_suspend_noirq
+
+<3>[173989.803314]  [3:  Binder:4085_2:12402] s3c-i2c 13860000.i2c: Device s3c24xx_i2c_suspend_noirq
+
+<3>[173989.803329]  [3:  Binder:4085_2:12402] s3c-i2c 13840000.i2c: Device s3c24xx_i2c_suspend_noirq
+
+<3>[173989.803344]  [3:  Binder:4085_2:12402] s3c-i2c 13830000.i2c: Device s3c24xx_i2c_suspend_noirq
+
+<7>[173989.804223]  [3:  Binder:4085_2:12402] PM: noirq suspend of devices complete after 2.892 msecs
+
+<6>[173989.804237]  [3:  Binder:4085_2:12402] Disabling non-boot CPUs ...
+
+<4>[173989.875713]  [3:    migration/3:   33] IRQ 175: no longer affine to CPU3
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] s3c2410-wdt 10050000.watchdog_cl0: Watchdog cluster 0 keepalive!, wtcnt = fff5
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] Watchdog: s3c2410wdt_keepalive RTC 2025-11-05 15:14:43 UTC
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] CP_STAT (0x38) = 0x00000001
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] GNSS_STAT (0x48) = 0x00000100
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] WLBT_STAT (0x58) = 0x00000001
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] EXYNOS-PM: exynos_pm_syscore_suspend: Enter Suspend scenario. suspend_mode_idx = 8)
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] EXYNOS-PM:: prev mif_count 1864023
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] EXYNOS-PM:: post mif_count 1865078
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] EXYNOS-PM:: MIF down. cur_count: 1055, acc_count: 1865078
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] EXYNOS-PM:: MIF_UP history: 
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] 	EXYNOS-PM: mifuser: 0x400000, time: 15:19:53, latency: 1859[usec]
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] 	EXYNOS-PM: mifuser: 0x40000, time: 15:19:53, latency: 1861[usec]
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] 	EXYNOS-PM: mifuser: 0x400000, time: 15:19:54, latency: 1860[usec]
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] 	EXYNOS-PM: mifuser: 0x40000, time: 15:19:54, latency: 1859[usec]
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] 	EXYNOS-PM: mifuser: 0x400000, time: 15:19:54, latency: 1859[usec]
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] 	EXYNOS-PM: mifuser: 0x40000, time: 15:19:52, latency: 1860[usec]
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] ---------- wakeup ----------
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] WAKEUP_STAT:
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] 0x80020000
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] 0x00000000
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] EINT_PEND: 
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] 0x00 
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] 0x00 
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] 0xa0 
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] Resume caused by wakeup source: INT_MBOX_WLBT2AP
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] s3c2410-wdt 10050000.watchdog_cl0: DISABLE_WDT reg val:  fe7fffff, MASK_WDT_RESET reg val: ffffffff
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] s3c2410-wdt 10050000.watchdog_cl0: Automatic_wdt set false done, mask = 0
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] s3c2410-wdt 10050000.watchdog_cl0: Watchdog cluster 0 stop done, WTCON = 8000
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] s3c2410-wdt 10050000.watchdog_cl0: DISABLE_WDT reg val:  fe7fffff, MASK_WDT_RESET reg val: ff7fffff
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] s3c2410-wdt 10050000.watchdog_cl0: Mask_wdt_reset set false done, mask = 0
+
+<6>[173989.971284]  [0:  Binder:4085_2:12402] s3c2410-wdt 10050000.watchdog_cl0: watchdog enabled, con: 0x00005c39, dat: 0x0000fff5, cnt: 0x0000fff5
+
+<6>[173989.971371]  [0:  Binder:4085_2:12402] Enabling non-boot CPUs ...
+
+<6>[173989.973040]  [1:      swapper/1:    0] CPU1: Booted secondary processor [410fd034]
+
+<6>[173989.973843]  [0:  Binder:4085_2:12402] CPU1 is up
+
+<6>[173989.975632]  [2:      swapper/2:    0] CPU2: Booted secondary processor [410fd034]
+
+<6>[173989.976450]  [0:  Binder:4085_2:12402] CPU2 is up
+
+<6>[173989.977495]  [3:      swapper/3:    0] CPU3: Booted secondary processor [410fd034]
+
+<6>[173989.978351]  [0:  Binder:4085_2:12402] CPU3 is up
+
+<4>[173989.979515]  [4:      swapper/4:    0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_AA64MMFR0_EL1. Boot CPU: 0x00000000001122, CPU4: 0x00000000101122

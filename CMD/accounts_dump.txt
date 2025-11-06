@@ -1,0 +1,28 @@
+User UserInfo{0:Chủ sở hữu:c13}:
+  
+  AccountId, Action_Type, timestamp, UID, TableName, Key
+  Accounts History
+  -1,action_called_account_remove,2025-10-18 03:51:40,10162,accounts,0
+  -1,action_called_account_remove,2025-10-22 03:29:10,10162,accounts,1
+  -1,action_called_account_remove,2025-10-24 14:57:54,10162,accounts,2
+  -1,action_called_account_remove,2025-11-01 23:10:38,10162,accounts,3
+  
+  Active Sessions: 0
+  
+  RegisteredServicesCache: 15 services
+    ServiceInfo: AuthenticatorDescription {type=com.microsoft.appmanager}, ComponentInfo{com.microsoft.appmanager/com.microsoft.appmanager.oem.account.AccountAuthenticatorService}, uid 10151
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.gm.pop3}, ComponentInfo{com.google.android.gm/com.android.email.service.Pop3AuthenticatorService}, uid 10184
+    ServiceInfo: AuthenticatorDescription {type=com.microsoft.msa.ltw}, ComponentInfo{com.microsoft.appmanager/com.microsoft.identity.broker.accountmanager.AccountManagerServiceForPersonalAccounts}, uid 10151
+    ServiceInfo: AuthenticatorDescription {type=com.google}, ComponentInfo{com.google.android.gms/com.google.android.gms.auth.account.authenticator.GoogleAccountAuthenticatorService}, uid 10094
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.apps.tachyon}, ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.contacts.sync.DuoAccountService}, uid 10162
+    ServiceInfo: AuthenticatorDescription {type=com.microsoft.ltwpassthroughbackup}, ComponentInfo{com.microsoft.appmanager/com.microsoft.identity.broker.activebrokerselection.backupipc.service.AccountManagerIpcServiceForRequestsTargetingSpecificBrokerApp}, uid 10151
+    ServiceInfo: AuthenticatorDescription {type=com.samsung.android.mobileservice}, ComponentInfo{com.samsung.android.mobileservice/com.samsung.android.mobileservice.social.calendar.presentation.service.background.account.AuthenticatorService}, uid 10118
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.gm.exchange}, ComponentInfo{com.google.android.gm/com.android.email.service.EasAuthenticatorService}, uid 10184
+    ServiceInfo: AuthenticatorDescription {type=com.zing.zalo}, ComponentInfo{com.zing.zalo/com.zing.zalo.service.AuthenticationService}, uid 10261
+    ServiceInfo: AuthenticatorDescription {type=com.osp.app.signin}, ComponentInfo{com.osp.app.signin/com.samsung.android.samsungaccount.authentication.service.OspAuthenticationService}, uid 10117
+    ServiceInfo: AuthenticatorDescription {type=com.samsung.android.coreapps}, ComponentInfo{com.samsung.android.mobileservice/com.samsung.android.mobileservice.registration.auth.legacy.presentation.coreapps.AuthenticationService}, uid 10118
+    ServiceInfo: AuthenticatorDescription {type=com.facebook.auth.login}, ComponentInfo{com.facebook.katana/com.facebook.katana.platform.FacebookAuthenticationService}, uid 10194
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.gm.legacyimap}, ComponentInfo{com.google.android.gm/com.android.email.service.LegacyImapAuthenticatorService}, uid 10184
+    ServiceInfo: AuthenticatorDescription {type=com.microsoft.workaccount.ltw}, ComponentInfo{com.microsoft.appmanager/com.microsoft.identity.broker.accountmanager.AccountManagerServiceForWorkAccounts}, uid 10151
+    ServiceInfo: AuthenticatorDescription {type=com.microsoft.skydrive}, ComponentInfo{com.microsoft.skydrive/com.microsoft.authorization.AuthenticationService}, uid 10105
+  

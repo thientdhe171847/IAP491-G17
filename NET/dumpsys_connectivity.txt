@@ -1,0 +1,1475 @@
+NetworkProviders for: WifiNetworkFactory TelephonyNetworkFactory[1] TelephonyNetworkFactory[0] Ethernet PhoneSwitcherNetworkRequstListener UntrustedWifiNetworkFactory
+
+Active default network: 602
+
+Current Networks:
+  NetworkAgentInfo{ ni{[type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: , failover: false, available: true, roaming: false]}  network{602}  nethandle{2588976009229}  lp{{InterfaceName: wlan0 LinkAddresses: [ fe80::a009:f6ff:fefb:cb9f/64,192.168.1.234/24,2405:4802:1d78:6b00:a009:f6ff:fefb:cb9f/64,2405:4802:1d78:6b00:440d:a832:eb77:cfb3/64,fd00:db80::a009:f6ff:fefb:cb9f/64,fd00:db80::440d:a832:eb77:cfb3/64,2405:4802:1d78:6b00:e542:e497:64ac:637b/64,fd00:db80::e542:e497:64ac:637b/64 ] DnsAddresses: [ /fd00:db80::1,/192.168.1.1 ] Domains: lan MTU: 0 ServerAddress: /192.168.1.1 TcpBufferSizes: 524288,1048576,4194304,524288,1048576,4194304 Routes: [ fe80::/64 -> :: wlan0 mtu 0,::/0 -> fe80::5e18:ddff:fe2a:2e48 wlan0 mtu 0,2405:4802:1d78:6b00::/60 -> fe80::5e18:ddff:fe2a:2e48 wlan0 mtu 0,fd00:db80::/48 -> fe80::5e18:ddff:fe2a:2e48 wlan0 mtu 0,2405:4802:1d78:6b00::/64 -> :: wlan0 mtu 0,fd00:db80::/64 -> :: wlan0 mtu 0,192.168.1.0/24 -> 0.0.0.0 wlan0 mtu 0,0.0.0.0/0 -> 192.168.1.1 wlan0 mtu 0 ]}}  nc{[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=261146Kbps LinkDnBandwidth>=5648Kbps SignalStrength: -53 OwnerUid: 1000 SSID: "Dung Pham" RequestorUid: -1 RequestorPackageName: null]}  Score{60}  everValidated{true}  lastValidated{true}  created{true} lingering{false} explicitlySelected{false} acceptUnvalidated{false} everCaptivePortalDetected{false} lastCaptivePortalDetected{false} partialConnectivity{false} acceptPartialConnectivity{false} clat{mBaseIface: null, mIface: null, mState: IDLE} }
+    Requests: REQUEST:3 LISTEN:55 BACKGROUND_REQUEST:0 total:58
+      NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ LISTEN id=4, [ Capabilities: FOREGROUND AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ LISTEN id=5, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ TRACK_DEFAULT id=6, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ LISTEN id=7, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ LISTEN id=8, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ LISTEN id=11, [ Transports: WIFI Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ LISTEN id=12, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ LISTEN id=13, [ Transports: WIFI Capabilities: INTERNET&TRUSTED&NOT_VPN Uid: 1001 AdministratorUids: [] RequestorUid: 1001 RequestorPackageName: com.android.phone] ]
+      NetworkRequest [ LISTEN id=14, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ TRACK_DEFAULT id=15, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ TRACK_DEFAULT id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ LISTEN id=17, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ LISTEN id=18, [ Transports: WIFI Capabilities: INTERNET&TRUSTED&NOT_VPN Uid: 1001 AdministratorUids: [] RequestorUid: 1001 RequestorPackageName: com.android.phone] ]
+      NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1073 AdministratorUids: [] RequestorUid: 1073 RequestorPackageName: com.google.android.networkstack] ]
+      NetworkRequest [ LISTEN id=20, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1073 AdministratorUids: [] RequestorUid: 1073 RequestorPackageName: com.google.android.networkstack] ]
+      NetworkRequest [ LISTEN id=21, [ Transports: WIFI Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: com.sec.imsservice] ]
+      NetworkRequest [ LISTEN id=22, [ Transports: WIFI Capabilities: NOT_VPN AdministratorUids: [] RequestorUid: 10061 RequestorPackageName: com.android.systemui] ]
+      NetworkRequest [ TRACK_DEFAULT id=23, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10061 AdministratorUids: [] RequestorUid: 10061 RequestorPackageName: com.android.systemui] ]
+      NetworkRequest [ TRACK_DEFAULT id=24, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10061 AdministratorUids: [] RequestorUid: 10061 RequestorPackageName: com.android.systemui] ]
+      NetworkRequest [ REQUEST id=25, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ LISTEN id=26, [ AdministratorUids: [] RequestorUid: 10061 RequestorPackageName: com.android.systemui] ]
+      NetworkRequest [ LISTEN id=27, [ Transports: WIFI Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: com.sec.imsservice] ]
+      NetworkRequest [ LISTEN id=28, [ Transports: WIFI Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: com.sec.imsservice] ]
+      NetworkRequest [ TRACK_DEFAULT id=29, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: com.sec.imsservice] ]
+      NetworkRequest [ LISTEN id=33, [ Transports: CELLULAR|WIFI|ETHERNET Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10225 AdministratorUids: [] RequestorUid: 10225 RequestorPackageName: com.samsung.android.honeyboard] ]
+      NetworkRequest [ LISTEN id=35, [ Transports: WIFI Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: com.sec.imsservice] ]
+      NetworkRequest [ TRACK_DEFAULT id=36, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10223 AdministratorUids: [] RequestorUid: 10223 RequestorPackageName: com.samsung.android.app.spage] ]
+      NetworkRequest [ LISTEN id=44, [ Transports: CELLULAR|WIFI|BLUETOOTH Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ LISTEN id=46, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 5013 AdministratorUids: [] RequestorUid: 5013 RequestorPackageName: com.sec.location.nsflp2] ]
+      NetworkRequest [ REQUEST id=814, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+      NetworkRequest [ LISTEN id=966, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&FOREGROUND Uid: 10259 AdministratorUids: [] RequestorUid: 10259 RequestorPackageName: com.topjohnwu.magisk] ]
+      NetworkRequest [ TRACK_DEFAULT id=1665, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+      NetworkRequest [ LISTEN id=1666, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+      NetworkRequest [ LISTEN id=1730, [ Capabilities: INTERNET&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+      NetworkRequest [ TRACK_DEFAULT id=1731, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+      NetworkRequest [ TRACK_DEFAULT id=1732, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+      NetworkRequest [ LISTEN id=1733, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+      NetworkRequest [ LISTEN id=1734, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+      NetworkRequest [ LISTEN id=1735, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+      NetworkRequest [ TRACK_DEFAULT id=1736, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+      NetworkRequest [ LISTEN id=1737, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+      NetworkRequest [ TRACK_DEFAULT id=1751, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10228 AdministratorUids: [] RequestorUid: 10228 RequestorPackageName: com.android.chrome] ]
+      NetworkRequest [ LISTEN id=1752, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10228 AdministratorUids: [] RequestorUid: 10228 RequestorPackageName: com.android.chrome] ]
+      NetworkRequest [ TRACK_DEFAULT id=1756, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10228 AdministratorUids: [] RequestorUid: 10228 RequestorPackageName: com.android.chrome] ]
+      NetworkRequest [ LISTEN id=1757, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10228 AdministratorUids: [] RequestorUid: 10228 RequestorPackageName: com.android.chrome] ]
+      NetworkRequest [ LISTEN id=1825, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+      NetworkRequest [ TRACK_DEFAULT id=1834, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+      NetworkRequest [ LISTEN id=1835, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+      NetworkRequest [ TRACK_DEFAULT id=1836, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+      NetworkRequest [ LISTEN id=1837, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+      NetworkRequest [ TRACK_DEFAULT id=1838, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+      NetworkRequest [ TRACK_DEFAULT id=1839, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+      NetworkRequest [ LISTEN id=1840, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+      NetworkRequest [ TRACK_DEFAULT id=1841, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+      NetworkRequest [ TRACK_DEFAULT id=1842, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+      NetworkRequest [ TRACK_DEFAULT id=1843, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+      NetworkRequest [ LISTEN id=1844, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+    Lingered:
+
+Restrict background: false
+
+Status for known UIDs:
+  UID=10057 rules=64 (REJECT_ALL)
+  UID=10059 rules=64 (REJECT_ALL)
+  UID=10060 rules=64 (REJECT_ALL)
+  UID=10067 rules=64 (REJECT_ALL)
+  UID=10070 rules=64 (REJECT_ALL)
+  UID=10073 rules=32 (ALLOW_ALL)
+  UID=10083 rules=64 (REJECT_ALL)
+  UID=10088 rules=64 (REJECT_ALL)
+  UID=10092 rules=64 (REJECT_ALL)
+  UID=10094 rules=1 (ALLOW_METERED)
+  UID=10096 rules=64 (REJECT_ALL)
+  UID=10097 rules=64 (REJECT_ALL)
+  UID=10099 rules=64 (REJECT_ALL)
+  UID=10100 rules=64 (REJECT_ALL)
+  UID=10105 rules=64 (REJECT_ALL)
+  UID=10107 rules=64 (REJECT_ALL)
+  UID=10108 rules=64 (REJECT_ALL)
+  UID=10111 rules=64 (REJECT_ALL)
+  UID=10113 rules=64 (REJECT_ALL)
+  UID=10114 rules=64 (REJECT_ALL)
+  UID=10121 rules=64 (REJECT_ALL)
+  UID=10129 rules=64 (REJECT_ALL)
+  UID=10134 rules=64 (REJECT_ALL)
+  UID=10137 rules=64 (REJECT_ALL)
+  UID=10139 rules=64 (REJECT_ALL)
+  UID=10144 rules=64 (REJECT_ALL)
+  UID=10145 rules=64 (REJECT_ALL)
+  UID=10148 rules=64 (REJECT_ALL)
+  UID=10158 rules=64 (REJECT_ALL)
+  UID=10164 rules=64 (REJECT_ALL)
+  UID=10172 rules=64 (REJECT_ALL)
+  UID=10178 rules=64 (REJECT_ALL)
+  UID=10181 rules=64 (REJECT_ALL)
+  UID=10183 rules=64 (REJECT_ALL)
+  UID=10185 rules=64 (REJECT_ALL)
+  UID=10189 rules=64 (REJECT_ALL)
+  UID=10190 rules=64 (REJECT_ALL)
+  UID=10193 rules=64 (REJECT_ALL)
+  UID=10194 rules=64 (REJECT_ALL)
+  UID=10197 rules=64 (REJECT_ALL)
+  UID=10201 rules=64 (REJECT_ALL)
+  UID=10202 rules=64 (REJECT_ALL)
+  UID=10209 rules=64 (REJECT_ALL)
+  UID=10210 rules=64 (REJECT_ALL)
+  UID=10211 rules=64 (REJECT_ALL)
+  UID=10212 rules=64 (REJECT_ALL)
+  UID=10216 rules=64 (REJECT_ALL)
+  UID=10217 rules=64 (REJECT_ALL)
+  UID=10220 rules=64 (REJECT_ALL)
+  UID=10222 rules=64 (REJECT_ALL)
+  UID=10223 rules=32 (ALLOW_ALL)
+  UID=10224 rules=64 (REJECT_ALL)
+  UID=10225 rules=64 (REJECT_ALL)
+  UID=10228 rules=64 (REJECT_ALL)
+  UID=10233 rules=64 (REJECT_ALL)
+  UID=10234 rules=64 (REJECT_ALL)
+  UID=10236 rules=64 (REJECT_ALL)
+  UID=10241 rules=64 (REJECT_ALL)
+  UID=10242 rules=64 (REJECT_ALL)
+  UID=10243 rules=64 (REJECT_ALL)
+  UID=10245 rules=64 (REJECT_ALL)
+  UID=10246 rules=64 (REJECT_ALL)
+  UID=10248 rules=64 (REJECT_ALL)
+  UID=10251 rules=64 (REJECT_ALL)
+  UID=10257 rules=64 (REJECT_ALL)
+  UID=10258 rules=32 (ALLOW_ALL)
+  UID=10259 rules=64 (REJECT_ALL)
+  UID=10260 rules=64 (REJECT_ALL)
+  UID=10261 rules=64 (REJECT_ALL)
+  UID=10262 rules=64 (REJECT_ALL)
+  UID=10263 rules=64 (REJECT_ALL)
+  UID=10264 rules=64 (REJECT_ALL)
+  UID=10266 rules=64 (REJECT_ALL)
+  UID=10267 rules=64 (REJECT_ALL)
+  UID=10268 rules=64 (REJECT_ALL)
+  UID=10269 rules=64 (REJECT_ALL)
+  UID=10271 rules=64 (REJECT_ALL)
+  
+Network Requests:
+  uid/pid:1000/4569 NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1000/4569 NetworkRequest [ LISTEN id=4, [ Capabilities: FOREGROUND AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1000/4569 NetworkRequest [ LISTEN id=5, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1000/4569 NetworkRequest [ TRACK_DEFAULT id=6, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1000/4569 NetworkRequest [ LISTEN id=7, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1000/4569 NetworkRequest [ LISTEN id=8, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1000/4569 NetworkRequest [ LISTEN id=9, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1000/4569 NetworkRequest [ LISTEN id=10, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1000/4569 NetworkRequest [ LISTEN id=11, [ Transports: WIFI Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1000/4569 NetworkRequest [ LISTEN id=12, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1001/4891 NetworkRequest [ LISTEN id=13, [ Transports: WIFI Capabilities: INTERNET&TRUSTED&NOT_VPN Uid: 1001 AdministratorUids: [] RequestorUid: 1001 RequestorPackageName: com.android.phone] ]
+  uid/pid:1000/4569 NetworkRequest [ LISTEN id=14, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1000/4569 NetworkRequest [ TRACK_DEFAULT id=15, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1000/4569 NetworkRequest [ TRACK_DEFAULT id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1000/4569 NetworkRequest [ LISTEN id=17, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:1001/4891 NetworkRequest [ LISTEN id=18, [ Transports: WIFI Capabilities: INTERNET&TRUSTED&NOT_VPN Uid: 1001 AdministratorUids: [] RequestorUid: 1001 RequestorPackageName: com.android.phone] ]
+  uid/pid:1073/5192 NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1073 AdministratorUids: [] RequestorUid: 1073 RequestorPackageName: com.google.android.networkstack] ]
+  uid/pid:1073/5192 NetworkRequest [ LISTEN id=20, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1073 AdministratorUids: [] RequestorUid: 1073 RequestorPackageName: com.google.android.networkstack] ]
+  uid/pid:1000/5297 NetworkRequest [ LISTEN id=21, [ Transports: WIFI Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: com.sec.imsservice] ]
+  uid/pid:10061/4934 NetworkRequest [ LISTEN id=22, [ Transports: WIFI Capabilities: NOT_VPN AdministratorUids: [] RequestorUid: 10061 RequestorPackageName: com.android.systemui] ]
+  uid/pid:10061/4934 NetworkRequest [ TRACK_DEFAULT id=23, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10061 AdministratorUids: [] RequestorUid: 10061 RequestorPackageName: com.android.systemui] ]
+  uid/pid:10061/4934 NetworkRequest [ TRACK_DEFAULT id=24, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10061 AdministratorUids: [] RequestorUid: 10061 RequestorPackageName: com.android.systemui] ]
+  uid/pid:1000/4569 NetworkRequest [ REQUEST id=25, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:10061/4934 NetworkRequest [ LISTEN id=26, [ AdministratorUids: [] RequestorUid: 10061 RequestorPackageName: com.android.systemui] ]
+  uid/pid:1000/5297 NetworkRequest [ LISTEN id=27, [ Transports: WIFI Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: com.sec.imsservice] ]
+  uid/pid:1000/5297 NetworkRequest [ LISTEN id=28, [ Transports: WIFI Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: com.sec.imsservice] ]
+  uid/pid:1000/5297 NetworkRequest [ TRACK_DEFAULT id=29, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: com.sec.imsservice] ]
+  uid/pid:10225/6382 NetworkRequest [ LISTEN id=33, [ Transports: CELLULAR|WIFI|ETHERNET Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10225 AdministratorUids: [] RequestorUid: 10225 RequestorPackageName: com.samsung.android.honeyboard] ]
+  uid/pid:1000/5297 NetworkRequest [ LISTEN id=34, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Specifier: <TelephonyNetworkSpecifier [mSubId = 1]> Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: com.sec.imsservice] ]
+  uid/pid:1000/5297 NetworkRequest [ LISTEN id=35, [ Transports: WIFI Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: com.sec.imsservice] ]
+  uid/pid:10223/7007 NetworkRequest [ TRACK_DEFAULT id=36, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10223 AdministratorUids: [] RequestorUid: 10223 RequestorPackageName: com.samsung.android.app.spage] ]
+  uid/pid:1000/4569 NetworkRequest [ LISTEN id=44, [ Transports: CELLULAR|WIFI|BLUETOOTH Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:5013/5937 NetworkRequest [ LISTEN id=45, [ Transports: CELLULAR Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 5013 AdministratorUids: [] RequestorUid: 5013 RequestorPackageName: com.sec.location.nsflp2] ]
+  uid/pid:5013/5937 NetworkRequest [ LISTEN id=46, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 5013 AdministratorUids: [] RequestorUid: 5013 RequestorPackageName: com.sec.location.nsflp2] ]
+  uid/pid:5013/5937 NetworkRequest [ LISTEN id=47, [ Transports: BLUETOOTH Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 5013 AdministratorUids: [] RequestorUid: 5013 RequestorPackageName: com.sec.location.nsflp2] ]
+  uid/pid:1000/4569 NetworkRequest [ REQUEST id=814, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+  uid/pid:10259/22961 NetworkRequest [ LISTEN id=966, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&FOREGROUND Uid: 10259 AdministratorUids: [] RequestorUid: 10259 RequestorPackageName: com.topjohnwu.magisk] ]
+  uid/pid:10094/19081 NetworkRequest [ TRACK_DEFAULT id=1665, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  uid/pid:10094/19081 NetworkRequest [ LISTEN id=1666, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  uid/pid:10094/28578 NetworkRequest [ LISTEN id=1730, [ Capabilities: INTERNET&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  uid/pid:10094/28578 NetworkRequest [ TRACK_DEFAULT id=1731, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  uid/pid:10094/28578 NetworkRequest [ TRACK_DEFAULT id=1732, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  uid/pid:10094/28578 NetworkRequest [ LISTEN id=1733, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  uid/pid:10094/28578 NetworkRequest [ LISTEN id=1734, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  uid/pid:10094/28578 NetworkRequest [ LISTEN id=1735, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  uid/pid:10094/28578 NetworkRequest [ TRACK_DEFAULT id=1736, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  uid/pid:10094/28578 NetworkRequest [ LISTEN id=1737, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  uid/pid:10228/31329 NetworkRequest [ TRACK_DEFAULT id=1751, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10228 AdministratorUids: [] RequestorUid: 10228 RequestorPackageName: com.android.chrome] ]
+  uid/pid:10228/31329 NetworkRequest [ LISTEN id=1752, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10228 AdministratorUids: [] RequestorUid: 10228 RequestorPackageName: com.android.chrome] ]
+  uid/pid:10228/31329 NetworkRequest [ TRACK_DEFAULT id=1756, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10228 AdministratorUids: [] RequestorUid: 10228 RequestorPackageName: com.android.chrome] ]
+  uid/pid:10228/31329 NetworkRequest [ LISTEN id=1757, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10228 AdministratorUids: [] RequestorUid: 10228 RequestorPackageName: com.android.chrome] ]
+  uid/pid:10094/28578 NetworkRequest [ LISTEN id=1825, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  uid/pid:10155/9636 NetworkRequest [ TRACK_DEFAULT id=1834, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  uid/pid:10155/9636 NetworkRequest [ LISTEN id=1835, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  uid/pid:10109/13721 NetworkRequest [ TRACK_DEFAULT id=1836, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  uid/pid:10109/13721 NetworkRequest [ LISTEN id=1837, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  uid/pid:10109/13828 NetworkRequest [ TRACK_DEFAULT id=1838, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  uid/pid:10109/13828 NetworkRequest [ TRACK_DEFAULT id=1839, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  uid/pid:10109/13828 NetworkRequest [ LISTEN id=1840, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  uid/pid:10109/13828 NetworkRequest [ TRACK_DEFAULT id=1841, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  uid/pid:10155/9019 NetworkRequest [ TRACK_DEFAULT id=1842, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  uid/pid:10155/9019 NetworkRequest [ TRACK_DEFAULT id=1843, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  uid/pid:10155/9019 NetworkRequest [ LISTEN id=1844, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+
+mLegacyTypeTracker:
+  Supported types: 0 1 2 3 4 5 7 9 10 11 12 13 14 15 17 23 24 27 28 30 31 32
+  Current state:
+    1 [602 WIFI]
+
+
+Supported Socket keepalives: [1, 3, 0, 0, 0, 0, 0, 0]
+Reserved Privileged keepalives: 2
+Allowed Unprivileged keepalives per uid: 2
+Socket keepalives:
+
+Bad Wi-Fi avoidance: unrestricted
+
+MultipathPolicyTracker:
+
+mNetworkRequestInfoLogs (most recent first):
+  2025-11-05T22:43:19.869 - REGISTER uid/pid:10155/9019 NetworkRequest [ LISTEN id=1844, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T22:43:19.863 - REGISTER uid/pid:10155/9019 NetworkRequest [ TRACK_DEFAULT id=1843, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T22:43:19.558 - REGISTER uid/pid:10155/9019 NetworkRequest [ TRACK_DEFAULT id=1842, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T22:41:39.337 - REGISTER uid/pid:10109/13828 NetworkRequest [ TRACK_DEFAULT id=1841, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T22:41:29.740 - REGISTER uid/pid:10109/13828 NetworkRequest [ LISTEN id=1840, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T22:41:29.732 - REGISTER uid/pid:10109/13828 NetworkRequest [ TRACK_DEFAULT id=1839, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T22:41:28.864 - REGISTER uid/pid:10109/13828 NetworkRequest [ TRACK_DEFAULT id=1838, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T22:41:27.734 - REGISTER uid/pid:10109/13721 NetworkRequest [ LISTEN id=1837, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T22:41:27.716 - REGISTER uid/pid:10109/13721 NetworkRequest [ TRACK_DEFAULT id=1836, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T22:41:26.629 - RELEASE uid/pid:10094/11309 NetworkRequest [ TRACK_DEFAULT id=1827, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  2025-11-05T22:41:26.628 - RELEASE uid/pid:10094/11309 NetworkRequest [ LISTEN id=1828, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  2025-11-05T22:40:59.981 - RELEASE uid/pid:10109/7501 NetworkRequest [ LISTEN id=1809, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T22:40:59.980 - RELEASE uid/pid:10109/7501 NetworkRequest [ TRACK_DEFAULT id=1808, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T22:40:59.923 - RELEASE uid/pid:10109/7475 NetworkRequest [ TRACK_DEFAULT id=1811, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T22:40:59.921 - RELEASE uid/pid:10109/7475 NetworkRequest [ TRACK_DEFAULT id=1815, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T22:40:59.921 - RELEASE uid/pid:10109/7475 NetworkRequest [ LISTEN id=1812, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T22:40:59.920 - RELEASE uid/pid:10109/7475 NetworkRequest [ TRACK_DEFAULT id=1810, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T22:40:59.732 - RELEASE uid/pid:10105/11224 NetworkRequest [ TRACK_DEFAULT id=1829, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10105 AdministratorUids: [] RequestorUid: 10105 RequestorPackageName: com.microsoft.skydrive] ]
+  2025-11-05T22:40:54.605 - RELEASE uid/pid:10155/12430 NetworkRequest [ TRACK_DEFAULT id=1833, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T22:40:52.338 - REGISTER uid/pid:10155/9636 NetworkRequest [ LISTEN id=1835, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T22:40:52.330 - REGISTER uid/pid:10155/9636 NetworkRequest [ TRACK_DEFAULT id=1834, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T22:40:49.819 - REGISTER uid/pid:10155/12430 NetworkRequest [ TRACK_DEFAULT id=1833, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T22:40:36.014 - RELEASE uid/pid:10118/9875 NetworkRequest [ TRACK_DEFAULT id=1832, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10118 AdministratorUids: [] RequestorUid: 10118 RequestorPackageName: com.samsung.android.mobileservice] ]
+  2025-11-05T22:40:35.817 - REGISTER uid/pid:10118/9875 NetworkRequest [ TRACK_DEFAULT id=1832, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10118 AdministratorUids: [] RequestorUid: 10118 RequestorPackageName: com.samsung.android.mobileservice] ]
+  2025-11-05T22:40:22.445 - RELEASE uid/pid:10151/11355 NetworkRequest [ LISTEN id=1830, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T22:40:17.523 - RELEASE uid/pid:10194/10536 NetworkRequest [ TRACK_DEFAULT id=1831, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10194 AdministratorUids: [] RequestorUid: 10194 RequestorPackageName: com.facebook.katana] ]
+  2025-11-05T22:40:17.206 - RELEASE uid/pid:10162/10160 NetworkRequest [ LISTEN id=1824, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+  2025-11-05T22:40:17.205 - RELEASE uid/pid:10162/10160 NetworkRequest [ TRACK_DEFAULT id=1823, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+  2025-11-05T22:40:11.087 - REGISTER uid/pid:10194/10536 NetworkRequest [ TRACK_DEFAULT id=1831, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10194 AdministratorUids: [] RequestorUid: 10194 RequestorPackageName: com.facebook.katana] ]
+  2025-11-05T22:40:10.209 - REGISTER uid/pid:10151/11355 NetworkRequest [ LISTEN id=1830, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T22:40:09.664 - RELEASE uid/pid:10155/4502 NetworkRequest [ TRACK_DEFAULT id=1821, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T22:40:09.657 - RELEASE uid/pid:10155/4502 NetworkRequest [ TRACK_DEFAULT id=1819, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T22:40:09.657 - RELEASE uid/pid:10155/4502 NetworkRequest [ LISTEN id=1822, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T22:40:09.656 - RELEASE uid/pid:10155/4502 NetworkRequest [ TRACK_DEFAULT id=1820, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T22:40:08.056 - REGISTER uid/pid:10105/11224 NetworkRequest [ TRACK_DEFAULT id=1829, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10105 AdministratorUids: [] RequestorUid: 10105 RequestorPackageName: com.microsoft.skydrive] ]
+  2025-11-05T22:40:07.829 - REGISTER uid/pid:10094/11309 NetworkRequest [ LISTEN id=1828, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  2025-11-05T22:40:07.808 - REGISTER uid/pid:10094/11309 NetworkRequest [ TRACK_DEFAULT id=1827, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  2025-11-05T22:40:02.866 - RELEASE uid/pid:10162/10160 NetworkRequest [ TRACK_DEFAULT id=1826, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+  2025-11-05T22:40:01.177 - REGISTER uid/pid:10162/10160 NetworkRequest [ TRACK_DEFAULT id=1826, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+  2025-11-05T22:40:00.841 - REGISTER uid/pid:10094/28578 NetworkRequest [ LISTEN id=1825, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  2025-11-05T22:39:59.253 - RELEASE uid/pid:10094/8107 NetworkRequest [ TRACK_DEFAULT id=1813, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  2025-11-05T22:39:59.253 - RELEASE uid/pid:10094/8107 NetworkRequest [ LISTEN id=1814, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  2025-11-05T22:39:58.834 - RELEASE uid/pid:10194/7041 NetworkRequest [ TRACK_DEFAULT id=1816, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10194 AdministratorUids: [] RequestorUid: 10194 RequestorPackageName: com.facebook.katana] ]
+  2025-11-05T22:39:58.833 - RELEASE uid/pid:10194/7041 NetworkRequest [ TRACK_DEFAULT id=1817, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10194 AdministratorUids: [] RequestorUid: 10194 RequestorPackageName: com.facebook.katana] ]
+  2025-11-05T22:39:58.467 - REGISTER uid/pid:10162/10160 NetworkRequest [ LISTEN id=1824, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+  2025-11-05T22:39:58.445 - REGISTER uid/pid:10162/10160 NetworkRequest [ TRACK_DEFAULT id=1823, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+  2025-11-05T18:01:35.017 - RELEASE uid/pid:10251/7546 NetworkRequest [ LISTEN id=1807, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10251 AdministratorUids: [] RequestorUid: 10251 RequestorPackageName: com.google.android.setupwizard] ]
+  2025-11-05T17:51:06.251 - RELEASE uid/pid:10105/6128 NetworkRequest [ TRACK_DEFAULT id=1799, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10105 AdministratorUids: [] RequestorUid: 10105 RequestorPackageName: com.microsoft.skydrive] ]
+  2025-11-05T17:32:52.279 - REGISTER uid/pid:10155/4502 NetworkRequest [ LISTEN id=1822, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T17:32:52.259 - REGISTER uid/pid:10155/4502 NetworkRequest [ TRACK_DEFAULT id=1821, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T17:32:51.065 - REGISTER uid/pid:10155/4502 NetworkRequest [ TRACK_DEFAULT id=1820, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T17:32:51.021 - REGISTER uid/pid:10155/4502 NetworkRequest [ TRACK_DEFAULT id=1819, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T17:32:44.950 - RELEASE uid/pid:10151/6991 NetworkRequest [ LISTEN id=1803, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T17:32:44.949 - RELEASE uid/pid:10151/6991 NetworkRequest [ TRACK_DEFAULT id=1805, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T17:08:51.462 - RELEASE uid/pid:10251/7546 NetworkRequest [ LISTEN id=1806, [ Transports: WIFI Capabilities: NOT_VPN Uid: 10251 AdministratorUids: [] RequestorUid: 10251 RequestorPackageName: com.google.android.setupwizard] ]
+  2025-11-05T17:07:08.300 - RELEASE uid/pid:5023/7861 NetworkRequest [ TRACK_DEFAULT id=1818, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 5023 AdministratorUids: [] RequestorUid: 5023 RequestorPackageName: com.samsung.android.networkdiagnostic] ]
+  2025-11-05T17:07:08.138 - RELEASE uid/pid:10162/6182 NetworkRequest [ LISTEN id=1801, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+  2025-11-05T17:07:08.123 - RELEASE uid/pid:10162/6182 NetworkRequest [ TRACK_DEFAULT id=1800, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+  2025-11-05T17:07:08.120 - RELEASE uid/pid:10162/6182 NetworkRequest [ TRACK_DEFAULT id=1802, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+  2025-11-05T17:07:07.748 - REGISTER uid/pid:5023/7861 NetworkRequest [ TRACK_DEFAULT id=1818, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 5023 AdministratorUids: [] RequestorUid: 5023 RequestorPackageName: com.samsung.android.networkdiagnostic] ]
+  2025-11-05T17:06:55.146 - RELEASE uid/pid:10155/1092 NetworkRequest [ TRACK_DEFAULT id=1789, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T17:06:55.145 - RELEASE uid/pid:10155/1092 NetworkRequest [ TRACK_DEFAULT id=1790, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T17:06:55.144 - RELEASE uid/pid:10155/1092 NetworkRequest [ TRACK_DEFAULT id=1792, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T17:06:55.144 - RELEASE uid/pid:10155/1092 NetworkRequest [ LISTEN id=1793, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T17:06:52.184 - REGISTER uid/pid:10194/7041 NetworkRequest [ TRACK_DEFAULT id=1817, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10194 AdministratorUids: [] RequestorUid: 10194 RequestorPackageName: com.facebook.katana] ]
+  2025-11-05T17:06:51.980 - REGISTER uid/pid:10194/7041 NetworkRequest [ TRACK_DEFAULT id=1816, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10194 AdministratorUids: [] RequestorUid: 10194 RequestorPackageName: com.facebook.katana] ]
+  2025-11-05T17:06:51.813 - REGISTER uid/pid:10109/7475 NetworkRequest [ TRACK_DEFAULT id=1815, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T17:06:51.401 - REGISTER uid/pid:10094/8107 NetworkRequest [ LISTEN id=1814, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  2025-11-05T17:06:51.390 - REGISTER uid/pid:10094/8107 NetworkRequest [ TRACK_DEFAULT id=1813, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  2025-11-05T17:06:44.622 - REGISTER uid/pid:10109/7475 NetworkRequest [ LISTEN id=1812, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T17:06:44.599 - REGISTER uid/pid:10109/7475 NetworkRequest [ TRACK_DEFAULT id=1811, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T17:06:44.263 - REGISTER uid/pid:10109/7475 NetworkRequest [ TRACK_DEFAULT id=1810, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T17:06:43.599 - RELEASE uid/pid:10155/3714 NetworkRequest [ LISTEN id=1795, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T17:06:43.598 - RELEASE uid/pid:10155/3714 NetworkRequest [ TRACK_DEFAULT id=1794, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T17:06:43.597 - RELEASE uid/pid:10155/3714 NetworkRequest [ LISTEN id=1791, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_SUSPENDED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T17:06:43.596 - RELEASE uid/pid:10155/3714 NetworkRequest [ TRACK_DEFAULT id=1796, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T17:06:43.146 - REGISTER uid/pid:10109/7501 NetworkRequest [ LISTEN id=1809, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T17:06:43.137 - REGISTER uid/pid:10109/7501 NetworkRequest [ TRACK_DEFAULT id=1808, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T17:06:42.600 - REGISTER uid/pid:10251/7546 NetworkRequest [ LISTEN id=1807, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10251 AdministratorUids: [] RequestorUid: 10251 RequestorPackageName: com.google.android.setupwizard] ]
+  2025-11-05T17:06:42.587 - REGISTER uid/pid:10251/7546 NetworkRequest [ LISTEN id=1806, [ Transports: WIFI Capabilities: NOT_VPN Uid: 10251 AdministratorUids: [] RequestorUid: 10251 RequestorPackageName: com.google.android.setupwizard] ]
+  2025-11-05T17:06:42.055 - REGISTER uid/pid:10151/6991 NetworkRequest [ TRACK_DEFAULT id=1805, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T17:06:41.439 - RELEASE uid/pid:10151/6991 NetworkRequest [ TRACK_DEFAULT id=1804, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T17:06:41.228 - REGISTER uid/pid:10151/6991 NetworkRequest [ TRACK_DEFAULT id=1804, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T17:06:41.158 - RELEASE uid/pid:10109/32311 NetworkRequest [ TRACK_DEFAULT id=1758, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T17:06:41.158 - RELEASE uid/pid:10109/32311 NetworkRequest [ TRACK_DEFAULT id=1772, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T17:06:41.158 - RELEASE uid/pid:10109/32311 NetworkRequest [ LISTEN id=1760, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T17:06:41.157 - RELEASE uid/pid:10109/32311 NetworkRequest [ TRACK_DEFAULT id=1759, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T17:06:41.046 - REGISTER uid/pid:10151/6991 NetworkRequest [ LISTEN id=1803, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T17:06:40.998 - REGISTER uid/pid:10162/6182 NetworkRequest [ TRACK_DEFAULT id=1802, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+  2025-11-05T17:06:40.739 - RELEASE uid/pid:10109/3999 NetworkRequest [ LISTEN id=1798, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T17:06:40.737 - RELEASE uid/pid:10109/3999 NetworkRequest [ TRACK_DEFAULT id=1797, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T17:06:36.290 - REGISTER uid/pid:10162/6182 NetworkRequest [ LISTEN id=1801, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+  2025-11-05T17:06:36.285 - REGISTER uid/pid:10162/6182 NetworkRequest [ TRACK_DEFAULT id=1800, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+  2025-11-05T17:06:36.008 - REGISTER uid/pid:10105/6128 NetworkRequest [ TRACK_DEFAULT id=1799, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10105 AdministratorUids: [] RequestorUid: 10105 RequestorPackageName: com.microsoft.skydrive] ]
+  2025-11-05T17:06:35.825 - RELEASE uid/pid:10251/1966 NetworkRequest [ LISTEN id=1780, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10251 AdministratorUids: [] RequestorUid: 10251 RequestorPackageName: com.google.android.setupwizard] ]
+  2025-11-05T15:58:12.221 - RELEASE uid/pid:10194/31544 NetworkRequest [ TRACK_DEFAULT id=1762, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10194 AdministratorUids: [] RequestorUid: 10194 RequestorPackageName: com.facebook.katana] ]
+  2025-11-05T15:58:12.219 - RELEASE uid/pid:10194/31544 NetworkRequest [ TRACK_DEFAULT id=1765, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10194 AdministratorUids: [] RequestorUid: 10194 RequestorPackageName: com.facebook.katana] ]
+  2025-11-05T14:17:12.889 - RELEASE uid/pid:10151/1947 NetworkRequest [ LISTEN id=1781, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T13:34:53.908 - REGISTER uid/pid:10109/3999 NetworkRequest [ LISTEN id=1798, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T13:34:53.895 - REGISTER uid/pid:10109/3999 NetworkRequest [ TRACK_DEFAULT id=1797, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T13:24:27.996 - RELEASE uid/pid:10109/3480 NetworkRequest [ TRACK_DEFAULT id=1787, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T13:24:27.995 - RELEASE uid/pid:10109/3480 NetworkRequest [ LISTEN id=1788, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T12:11:40.335 - RELEASE uid/pid:10105/2496 NetworkRequest [ TRACK_DEFAULT id=1783, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10105 AdministratorUids: [] RequestorUid: 10105 RequestorPackageName: com.microsoft.skydrive] ]
+  2025-11-05T12:11:40.041 - REGISTER uid/pid:10155/3714 NetworkRequest [ TRACK_DEFAULT id=1796, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T12:11:38.220 - REGISTER uid/pid:10155/3714 NetworkRequest [ LISTEN id=1795, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T12:11:38.212 - REGISTER uid/pid:10155/3714 NetworkRequest [ TRACK_DEFAULT id=1794, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T12:11:37.187 - REGISTER uid/pid:10155/1092 NetworkRequest [ LISTEN id=1793, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T12:11:37.178 - REGISTER uid/pid:10155/1092 NetworkRequest [ TRACK_DEFAULT id=1792, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T12:11:36.672 - REGISTER uid/pid:10155/3714 NetworkRequest [ LISTEN id=1791, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_SUSPENDED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T12:11:35.805 - REGISTER uid/pid:10155/1092 NetworkRequest [ TRACK_DEFAULT id=1790, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T12:11:35.724 - REGISTER uid/pid:10155/1092 NetworkRequest [ TRACK_DEFAULT id=1789, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T11:56:41.746 - RELEASE uid/pid:10242/439 NetworkRequest [ TRACK_DEFAULT id=1768, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T11:56:41.744 - RELEASE uid/pid:10242/439 NetworkRequest [ TRACK_DEFAULT id=1766, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T11:56:41.744 - RELEASE uid/pid:10242/439 NetworkRequest [ LISTEN id=1767, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T11:56:41.742 - RELEASE uid/pid:10242/439 NetworkRequest [ TRACK_DEFAULT id=1770, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T11:56:41.736 - RELEASE uid/pid:10242/439 NetworkRequest [ TRACK_DEFAULT id=1769, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T11:56:41.734 - RELEASE uid/pid:10242/439 NetworkRequest [ TRACK_DEFAULT id=1771, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T11:56:41.376 - REGISTER uid/pid:10109/3480 NetworkRequest [ LISTEN id=1788, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T11:56:41.364 - REGISTER uid/pid:10109/3480 NetworkRequest [ TRACK_DEFAULT id=1787, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T11:54:49.391 - RELEASE uid/pid:10109/1276 NetworkRequest [ LISTEN id=1778, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T11:54:49.390 - RELEASE uid/pid:10109/1276 NetworkRequest [ TRACK_DEFAULT id=1777, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T11:09:30.054 - RELEASE uid/pid:10251/1966 NetworkRequest [ LISTEN id=1779, [ Transports: WIFI Capabilities: NOT_VPN Uid: 10251 AdministratorUids: [] RequestorUid: 10251 RequestorPackageName: com.google.android.setupwizard] ]
+  2025-11-05T11:09:29.751 - RELEASE uid/pid:5023/32595 NetworkRequest [ TRACK_DEFAULT id=1786, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 5023 AdministratorUids: [] RequestorUid: 5023 RequestorPackageName: com.samsung.android.networkdiagnostic] ]
+  2025-11-05T11:09:29.729 - REGISTER uid/pid:5023/32595 NetworkRequest [ TRACK_DEFAULT id=1786, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 5023 AdministratorUids: [] RequestorUid: 5023 RequestorPackageName: com.samsung.android.networkdiagnostic] ]
+  2025-11-05T11:09:25.524 - RELEASE uid/pid:5023/32595 NetworkRequest [ TRACK_DEFAULT id=1785, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 5023 AdministratorUids: [] RequestorUid: 5023 RequestorPackageName: com.samsung.android.networkdiagnostic] ]
+  2025-11-05T11:09:03.818 - RELEASE uid/pid:10155/29253 NetworkRequest [ TRACK_DEFAULT id=1774, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T11:09:03.814 - RELEASE uid/pid:10155/29253 NetworkRequest [ LISTEN id=1776, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T11:09:03.813 - RELEASE uid/pid:10155/29253 NetworkRequest [ TRACK_DEFAULT id=1775, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T11:09:03.810 - RELEASE uid/pid:10155/29253 NetworkRequest [ TRACK_DEFAULT id=1773, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T11:08:56.862 - REGISTER uid/pid:5023/32595 NetworkRequest [ TRACK_DEFAULT id=1785, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 5023 AdministratorUids: [] RequestorUid: 5023 RequestorPackageName: com.samsung.android.networkdiagnostic] ]
+  2025-11-05T11:08:56.414 - RELEASE uid/pid:10151/1947 NetworkRequest [ TRACK_DEFAULT id=1782, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T11:08:54.946 - RELEASE uid/pid:5023/32595 NetworkRequest [ TRACK_DEFAULT id=1784, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 5023 AdministratorUids: [] RequestorUid: 5023 RequestorPackageName: com.samsung.android.networkdiagnostic] ]
+  2025-11-05T11:08:49.017 - REGISTER uid/pid:5023/32595 NetworkRequest [ TRACK_DEFAULT id=1784, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 5023 AdministratorUids: [] RequestorUid: 5023 RequestorPackageName: com.samsung.android.networkdiagnostic] ]
+  2025-11-05T11:08:48.673 - REGISTER uid/pid:10105/2496 NetworkRequest [ TRACK_DEFAULT id=1783, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10105 AdministratorUids: [] RequestorUid: 10105 RequestorPackageName: com.microsoft.skydrive] ]
+  2025-11-05T11:08:45.971 - REGISTER uid/pid:10151/1947 NetworkRequest [ TRACK_DEFAULT id=1782, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T11:08:45.792 - REGISTER uid/pid:10151/1947 NetworkRequest [ LISTEN id=1781, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T11:08:45.104 - REGISTER uid/pid:10251/1966 NetworkRequest [ LISTEN id=1780, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10251 AdministratorUids: [] RequestorUid: 10251 RequestorPackageName: com.google.android.setupwizard] ]
+  2025-11-05T11:08:45.101 - REGISTER uid/pid:10251/1966 NetworkRequest [ LISTEN id=1779, [ Transports: WIFI Capabilities: NOT_VPN Uid: 10251 AdministratorUids: [] RequestorUid: 10251 RequestorPackageName: com.google.android.setupwizard] ]
+  2025-11-05T06:11:36.932 - REGISTER uid/pid:10109/1276 NetworkRequest [ LISTEN id=1778, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T06:11:36.913 - REGISTER uid/pid:10109/1276 NetworkRequest [ TRACK_DEFAULT id=1777, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T06:08:59.748 - RELEASE uid/pid:10109/31767 NetworkRequest [ LISTEN id=1754, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T06:08:59.745 - RELEASE uid/pid:10109/31767 NetworkRequest [ TRACK_DEFAULT id=1753, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T05:35:33.662 - REGISTER uid/pid:10155/29253 NetworkRequest [ LISTEN id=1776, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T05:35:33.646 - REGISTER uid/pid:10155/29253 NetworkRequest [ TRACK_DEFAULT id=1775, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T05:29:22.075 - REGISTER uid/pid:10155/29253 NetworkRequest [ TRACK_DEFAULT id=1774, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T05:29:22.035 - REGISTER uid/pid:10155/29253 NetworkRequest [ TRACK_DEFAULT id=1773, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T05:29:16.078 - RELEASE uid/pid:10094/27216 NetworkRequest [ LISTEN id=1715, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  2025-11-05T05:29:16.077 - RELEASE uid/pid:10094/27216 NetworkRequest [ TRACK_DEFAULT id=1714, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10094 AdministratorUids: [] RequestorUid: 10094 RequestorPackageName: com.google.android.gms] ]
+  2025-11-05T05:29:15.312 - RELEASE uid/pid:10155/30510 NetworkRequest [ LISTEN id=1764, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T05:29:15.310 - RELEASE uid/pid:10155/30510 NetworkRequest [ TRACK_DEFAULT id=1763, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T05:16:08.918 - RELEASE uid/pid:10155/26725 NetworkRequest [ LISTEN id=1741, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T05:16:08.917 - RELEASE uid/pid:10155/26725 NetworkRequest [ TRACK_DEFAULT id=1740, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T05:16:08.916 - RELEASE uid/pid:10155/26725 NetworkRequest [ TRACK_DEFAULT id=1738, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T05:16:08.915 - RELEASE uid/pid:10155/26725 NetworkRequest [ TRACK_DEFAULT id=1739, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T05:12:22.624 - REGISTER uid/pid:10109/32311 NetworkRequest [ TRACK_DEFAULT id=1772, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T05:12:22.181 - REGISTER uid/pid:10242/439 NetworkRequest [ TRACK_DEFAULT id=1771, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:12:21.694 - REGISTER uid/pid:10242/439 NetworkRequest [ TRACK_DEFAULT id=1770, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:12:20.844 - RELEASE uid/pid:10245/31139 NetworkRequest [ TRACK_DEFAULT id=1755, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10245 AdministratorUids: [] RequestorUid: 10245 RequestorPackageName: com.google.android.apps.maps] ]
+  2025-11-05T05:12:20.353 - REGISTER uid/pid:10242/439 NetworkRequest [ TRACK_DEFAULT id=1769, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:12:19.070 - REGISTER uid/pid:10242/439 NetworkRequest [ TRACK_DEFAULT id=1768, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:12:18.759 - REGISTER uid/pid:10242/439 NetworkRequest [ LISTEN id=1767, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:12:18.701 - REGISTER uid/pid:10242/439 NetworkRequest [ TRACK_DEFAULT id=1766, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:12:17.592 - REGISTER uid/pid:10194/31544 NetworkRequest [ TRACK_DEFAULT id=1765, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10194 AdministratorUids: [] RequestorUid: 10194 RequestorPackageName: com.facebook.katana] ]
+  2025-11-05T05:12:16.902 - REGISTER uid/pid:10155/30510 NetworkRequest [ LISTEN id=1764, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T05:12:16.875 - REGISTER uid/pid:10155/30510 NetworkRequest [ TRACK_DEFAULT id=1763, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10155 AdministratorUids: [] RequestorUid: 10155 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+  2025-11-05T05:12:16.785 - REGISTER uid/pid:10194/31544 NetworkRequest [ TRACK_DEFAULT id=1762, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10194 AdministratorUids: [] RequestorUid: 10194 RequestorPackageName: com.facebook.katana] ]
+  2025-11-05T05:12:16.246 - RELEASE uid/pid:10151/31520 NetworkRequest [ LISTEN id=1749, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T05:12:15.779 - RELEASE uid/pid:10242/30769 NetworkRequest [ TRACK_DEFAULT id=1745, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:12:15.778 - RELEASE uid/pid:10242/30769 NetworkRequest [ TRACK_DEFAULT id=1748, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:12:15.778 - RELEASE uid/pid:10242/30769 NetworkRequest [ LISTEN id=1743, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:12:15.777 - RELEASE uid/pid:10242/30769 NetworkRequest [ TRACK_DEFAULT id=1742, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:12:15.776 - RELEASE uid/pid:10242/30769 NetworkRequest [ TRACK_DEFAULT id=1744, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:12:15.775 - RELEASE uid/pid:10242/30769 NetworkRequest [ TRACK_DEFAULT id=1746, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:12:13.888 - RELEASE uid/pid:5023/32595 NetworkRequest [ TRACK_DEFAULT id=1761, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 5023 AdministratorUids: [] RequestorUid: 5023 RequestorPackageName: com.samsung.android.networkdiagnostic] ]
+  2025-11-05T05:12:13.809 - REGISTER uid/pid:5023/32595 NetworkRequest [ TRACK_DEFAULT id=1761, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 5023 AdministratorUids: [] RequestorUid: 5023 RequestorPackageName: com.samsung.android.networkdiagnostic] ]
+  2025-11-05T05:12:13.104 - REGISTER uid/pid:10109/32311 NetworkRequest [ LISTEN id=1760, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T05:12:13.091 - REGISTER uid/pid:10109/32311 NetworkRequest [ TRACK_DEFAULT id=1759, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T05:12:10.661 - REGISTER uid/pid:10109/32311 NetworkRequest [ TRACK_DEFAULT id=1758, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T05:12:08.034 - REGISTER uid/pid:10228/31329 NetworkRequest [ LISTEN id=1757, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10228 AdministratorUids: [] RequestorUid: 10228 RequestorPackageName: com.android.chrome] ]
+  2025-11-05T05:12:08.005 - REGISTER uid/pid:10228/31329 NetworkRequest [ TRACK_DEFAULT id=1756, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10228 AdministratorUids: [] RequestorUid: 10228 RequestorPackageName: com.android.chrome] ]
+  2025-11-05T05:12:07.148 - REGISTER uid/pid:10245/31139 NetworkRequest [ TRACK_DEFAULT id=1755, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10245 AdministratorUids: [] RequestorUid: 10245 RequestorPackageName: com.google.android.apps.maps] ]
+  2025-11-05T05:12:05.854 - REGISTER uid/pid:10109/31767 NetworkRequest [ LISTEN id=1754, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T05:12:05.725 - REGISTER uid/pid:10109/31767 NetworkRequest [ TRACK_DEFAULT id=1753, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T05:12:01.983 - REGISTER uid/pid:10228/31329 NetworkRequest [ LISTEN id=1752, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10228 AdministratorUids: [] RequestorUid: 10228 RequestorPackageName: com.android.chrome] ]
+  2025-11-05T05:12:01.970 - REGISTER uid/pid:10228/31329 NetworkRequest [ TRACK_DEFAULT id=1751, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10228 AdministratorUids: [] RequestorUid: 10228 RequestorPackageName: com.android.chrome] ]
+  2025-11-05T05:12:01.854 - RELEASE uid/pid:10151/31520 NetworkRequest [ TRACK_DEFAULT id=1750, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T05:12:00.617 - REGISTER uid/pid:10151/31520 NetworkRequest [ TRACK_DEFAULT id=1750, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T05:12:00.552 - REGISTER uid/pid:10151/31520 NetworkRequest [ LISTEN id=1749, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10151 AdministratorUids: [] RequestorUid: 10151 RequestorPackageName: com.microsoft.appmanager] ]
+  2025-11-05T05:11:58.211 - REGISTER uid/pid:10242/30769 NetworkRequest [ TRACK_DEFAULT id=1748, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:11:57.549 - RELEASE uid/pid:10118/31170 NetworkRequest [ TRACK_DEFAULT id=1747, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10118 AdministratorUids: [] RequestorUid: 10118 RequestorPackageName: com.samsung.android.mobileservice] ]
+  2025-11-05T05:11:57.253 - REGISTER uid/pid:10118/31170 NetworkRequest [ TRACK_DEFAULT id=1747, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10118 AdministratorUids: [] RequestorUid: 10118 RequestorPackageName: com.samsung.android.mobileservice] ]
+  2025-11-05T05:11:56.684 - REGISTER uid/pid:10242/30769 NetworkRequest [ TRACK_DEFAULT id=1746, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:11:54.605 - REGISTER uid/pid:10242/30769 NetworkRequest [ TRACK_DEFAULT id=1745, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:11:53.938 - REGISTER uid/pid:10242/30769 NetworkRequest [ TRACK_DEFAULT id=1744, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:11:53.429 - REGISTER uid/pid:10242/30769 NetworkRequest [ LISTEN id=1743, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T05:11:53.366 - REGISTER uid/pid:10242/30769 NetworkRequest [ TRACK_DEFAULT id=1742, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10242 AdministratorUids: [] RequestorUid: 10242 RequestorPackageName: com.google.android.youtube] ]
+  2025-11-05T03:00:31.900 - RELEASE uid/pid:10109/28273 NetworkRequest [ LISTEN id=1729, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T03:00:31.899 - RELEASE uid/pid:10109/28273 NetworkRequest [ TRACK_DEFAULT id=1728, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T03:00:31.897 - RELEASE uid/pid:10109/28273 NetworkRequest [ TRACK_DEFAULT id=1727, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10109 AdministratorUids: [] RequestorUid: 10109 RequestorPackageName: com.android.vending] ]
+  2025-11-05T01:29:12.457 - RELEASE uid/pid:10162/27733 NetworkRequest [ LISTEN id=1722, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10162 AdministratorUids: [] RequestorUid: 10162 RequestorPackageName: com.google.android.apps.tachyon] ]
+
+mNetworkInfoBlockingLogs (most recent first):
+  2025-11-05T22:40:13.373 - BLOCKED 10105(1829) on netId 602
+  2025-11-05T22:40:11.432 - UNBLOCKED 10105(1829) on netId 602
+  2025-11-05T22:40:10.410 - UNBLOCKED 10162(1824) on netId 602
+  2025-11-05T22:40:10.409 - UNBLOCKED 10162(1823) on netId 602
+  2025-11-05T22:40:07.811 - BLOCKED 10105
+  2025-11-05T22:40:02.807 - BLOCKED 10162(1826) on netId 602
+  2025-11-05T22:40:02.806 - BLOCKED 10162(1824) on netId 602
+  2025-11-05T22:40:02.806 - BLOCKED 10162(1823) on netId 602
+  2025-11-05T22:40:01.993 - UNBLOCKED 10109
+  2025-11-05T22:39:58.508 - UNBLOCKED 10162
+  2025-11-05T22:39:56.764 - UNBLOCKED 10194(1817) on netId 602
+  2025-11-05T22:39:56.762 - UNBLOCKED 10194(1816) on netId 602
+  2025-11-05T22:39:55.076 - BLOCKED 10194
+  2025-11-05T22:39:53.778 - UNBLOCKED 10109(1815) on netId 602
+  2025-11-05T22:39:53.778 - UNBLOCKED 10109(1812) on netId 602
+  2025-11-05T22:39:53.777 - UNBLOCKED 10109(1811) on netId 602
+  2025-11-05T22:39:53.775 - UNBLOCKED 10109(1810) on netId 602
+  2025-11-05T22:39:53.775 - UNBLOCKED 10109(1809) on netId 602
+  2025-11-05T22:39:53.774 - UNBLOCKED 10109(1808) on netId 602
+  2025-11-05T17:51:07.014 - BLOCKED 10109
+  2025-11-05T17:07:07.640 - BLOCKED 10109(1815) on netId 602
+  2025-11-05T17:07:07.640 - BLOCKED 10109(1812) on netId 602
+  2025-11-05T17:07:07.639 - BLOCKED 10109(1811) on netId 602
+  2025-11-05T17:07:07.638 - BLOCKED 10109(1810) on netId 602
+  2025-11-05T17:07:07.637 - BLOCKED 10109(1809) on netId 602
+  2025-11-05T17:07:07.628 - BLOCKED 10109(1808) on netId 602
+  2025-11-05T17:06:42.664 - BLOCKED 10251
+  2025-11-05T17:06:40.965 - UNBLOCKED 10194
+  2025-11-05T17:06:40.810 - BLOCKED 10162
+  2025-11-05T17:06:40.551 - BLOCKED 10162(1801) on netId 602
+  2025-11-05T17:06:40.550 - BLOCKED 10162(1800) on netId 602
+  2025-11-05T17:06:40.226 - BLOCKED 10105(1799) on netId 602
+  2025-11-05T17:06:38.796 - UNBLOCKED 10109
+  2025-11-05T17:06:35.965 - UNBLOCKED 10105
+  2025-11-05T17:06:32.285 - UNBLOCKED 10109(1798) on netId 602
+  2025-11-05T17:06:32.284 - UNBLOCKED 10109(1797) on netId 602
+  2025-11-05T17:06:32.282 - UNBLOCKED 10109(1772) on netId 602
+  2025-11-05T17:06:32.281 - UNBLOCKED 10109(1760) on netId 602
+  2025-11-05T17:06:32.263 - UNBLOCKED 10109(1759) on netId 602
+  2025-11-05T17:06:32.255 - UNBLOCKED 10109(1758) on netId 602
+  2025-11-05T15:56:44.739 - BLOCKED 10246
+  2025-11-05T11:22:32.655 - BLOCKED 10109
+  2025-11-05T11:09:11.725 - BLOCKED 10109(1778) on netId 602
+  2025-11-05T11:09:11.717 - BLOCKED 10109(1777) on netId 602
+  2025-11-05T11:09:11.716 - BLOCKED 10109(1772) on netId 602
+  2025-11-05T11:09:11.715 - BLOCKED 10109(1760) on netId 602
+  2025-11-05T11:09:11.715 - BLOCKED 10109(1759) on netId 602
+  2025-11-05T11:09:11.714 - BLOCKED 10109(1758) on netId 602
+  2025-11-05T11:09:11.707 - BLOCKED 10194
+  2025-11-05T11:08:58.831 - BLOCKED 10194(1765) on netId 602
+  2025-11-05T11:08:58.830 - BLOCKED 10194(1762) on netId 602
+  2025-11-05T11:08:55.908 - BLOCKED 10251(1780) on netId 602
+  2025-11-05T11:08:55.908 - BLOCKED 10251(1779) on netId 602
+  2025-11-05T11:08:55.852 - UNBLOCKED 10251(1780) on netId 602
+  2025-11-05T11:08:55.851 - UNBLOCKED 10251(1779) on netId 602
+  2025-11-05T11:08:55.798 - BLOCKED 10251(1780) on netId 602
+  2025-11-05T11:08:55.798 - BLOCKED 10251(1779) on netId 602
+  2025-11-05T11:08:49.012 - BLOCKED 10242(1771) on netId 602
+  2025-11-05T11:08:49.012 - BLOCKED 10242(1770) on netId 602
+  2025-11-05T11:08:49.011 - BLOCKED 10242(1769) on netId 602
+  2025-11-05T11:08:49.010 - BLOCKED 10242(1768) on netId 602
+  2025-11-05T11:08:49.010 - BLOCKED 10242(1767) on netId 602
+  2025-11-05T11:08:49.009 - BLOCKED 10242(1766) on netId 602
+  2025-11-05T11:08:47.858 - UNBLOCKED 10194
+  2025-11-05T11:08:47.494 - UNBLOCKED 10109
+  2025-11-05T11:08:45.988 - UNBLOCKED 10246
+  2025-11-05T11:08:45.339 - UNBLOCKED 10251(1780) on netId 602
+  2025-11-05T11:08:45.338 - UNBLOCKED 10251(1779) on netId 602
+  2025-11-05T11:08:44.376 - UNBLOCKED 10194(1765) on netId 602
+  2025-11-05T11:08:44.375 - UNBLOCKED 10194(1762) on netId 602
+  2025-11-05T11:08:44.373 - UNBLOCKED 10242(1771) on netId 602
+  2025-11-05T11:08:44.371 - UNBLOCKED 10242(1770) on netId 602
+  2025-11-05T11:08:44.370 - UNBLOCKED 10242(1769) on netId 602
+  2025-11-05T11:08:44.368 - UNBLOCKED 10242(1768) on netId 602
+  2025-11-05T11:08:44.367 - UNBLOCKED 10242(1767) on netId 602
+  2025-11-05T11:08:44.366 - UNBLOCKED 10242(1766) on netId 602
+  2025-11-05T11:08:41.420 - UNBLOCKED 10109(1778) on netId 602
+  2025-11-05T11:08:41.419 - UNBLOCKED 10109(1777) on netId 602
+  2025-11-05T11:08:41.415 - UNBLOCKED 10109(1772) on netId 602
+  2025-11-05T11:08:41.414 - UNBLOCKED 10109(1760) on netId 602
+  2025-11-05T11:08:41.413 - UNBLOCKED 10109(1759) on netId 602
+  2025-11-05T11:08:41.412 - UNBLOCKED 10109(1758) on netId 602
+  2025-11-05T06:11:36.715 - BLOCKED 10109
+  2025-11-05T05:12:37.232 - BLOCKED 10194
+  2025-11-05T05:12:26.215 - BLOCKED 10109(1772) on netId 602
+  2025-11-05T05:12:26.215 - BLOCKED 10109(1760) on netId 602
+  2025-11-05T05:12:26.214 - BLOCKED 10109(1759) on netId 602
+  2025-11-05T05:12:26.214 - BLOCKED 10109(1758) on netId 602
+  2025-11-05T05:12:26.214 - BLOCKED 10109(1754) on netId 602
+  2025-11-05T05:12:26.213 - BLOCKED 10109(1753) on netId 602
+  2025-11-05T05:12:26.026 - BLOCKED 10242
+  2025-11-05T05:12:25.789 - BLOCKED 10242(1771) on netId 602
+  2025-11-05T05:12:25.788 - BLOCKED 10242(1770) on netId 602
+  2025-11-05T05:12:25.787 - BLOCKED 10242(1769) on netId 602
+  2025-11-05T05:12:25.786 - BLOCKED 10242(1768) on netId 602
+  2025-11-05T05:12:25.785 - BLOCKED 10242(1767) on netId 602
+  2025-11-05T05:12:25.785 - BLOCKED 10242(1766) on netId 602
+  2025-11-05T05:12:18.954 - BLOCKED 10194(1765) on netId 602
+  2025-11-05T05:12:18.953 - BLOCKED 10194(1762) on netId 602
+  2025-11-05T05:12:09.834 - BLOCKED 10245
+  2025-11-05T05:12:02.892 - BLOCKED 10228(1752) on netId 602
+  2025-11-05T05:12:02.892 - BLOCKED 10228(1751) on netId 602
+  2025-11-05T05:12:00.370 - UNBLOCKED 10194
+  2025-11-05T05:11:56.554 - UNBLOCKED 10242(1745) on netId 602
+  2025-11-05T05:11:56.553 - UNBLOCKED 10242(1744) on netId 602
+  2025-11-05T05:11:56.552 - UNBLOCKED 10242(1743) on netId 602
+  2025-11-05T05:11:56.551 - UNBLOCKED 10242(1742) on netId 602
+  2025-11-05T05:11:56.549 - BLOCKED 10242(1745) on netId 602
+  2025-11-05T05:11:56.548 - BLOCKED 10242(1744) on netId 602
+  2025-11-05T05:11:56.547 - BLOCKED 10242(1743) on netId 602
+  2025-11-05T05:11:56.546 - BLOCKED 10242(1742) on netId 602
+  2025-11-05T05:11:53.988 - UNBLOCKED 10242
+  2025-11-05T05:11:53.853 - BLOCKED 10209
+  2025-11-04T23:19:09.759 - BLOCKED 10109(1729) on netId 602
+  2025-11-04T23:19:09.758 - BLOCKED 10109(1728) on netId 602
+  2025-11-04T23:19:09.755 - BLOCKED 10109(1727) on netId 602
+  2025-11-04T23:19:09.755 - BLOCKED 10109(1706) on netId 602
+  2025-11-04T23:19:09.754 - BLOCKED 10109(1705) on netId 602
+  2025-11-04T23:19:09.591 - BLOCKED 10162(1722) on netId 602
+  2025-11-04T23:19:09.590 - BLOCKED 10162(1721) on netId 602
+  2025-11-04T23:19:09.567 - BLOCKED 10259(966) on netId 602
+  2025-11-04T23:09:14.348 - UNBLOCKED 10109
+  2025-11-04T23:09:12.787 - BLOCKED 10242
+  2025-11-04T23:09:12.222 - BLOCKED 10245(1716) on netId 602
+  2025-11-04T23:09:12.044 - BLOCKED 10242(1719) on netId 602
+  2025-11-04T23:09:12.043 - BLOCKED 10242(1718) on netId 602
+  2025-11-04T23:09:12.042 - BLOCKED 10242(1717) on netId 602
+  2025-11-04T23:09:11.134 - UNBLOCKED 10242
+  2025-11-04T23:09:09.357 - UNBLOCKED 10259(966) on netId 602
+  2025-11-04T23:09:06.361 - UNBLOCKED 10109(1708) on netId 602
+  2025-11-04T23:09:06.360 - UNBLOCKED 10109(1706) on netId 602
+  2025-11-04T23:09:06.360 - UNBLOCKED 10109(1705) on netId 602
+  2025-11-04T23:09:06.358 - UNBLOCKED 10109(1704) on netId 602
+  2025-11-04T23:09:06.357 - UNBLOCKED 10109(1703) on netId 602
+  2025-11-04T23:09:06.356 - UNBLOCKED 10109(1702) on netId 602
+  2025-11-04T18:23:19.236 - BLOCKED 10109
+  2025-11-04T17:20:26.194 - BLOCKED 10251(1701) on netId 602
+  2025-11-04T17:20:26.194 - BLOCKED 10251(1700) on netId 602
+  2025-11-04T17:20:26.194 - BLOCKED 10162(1699) on netId 602
+  2025-11-04T17:20:26.193 - BLOCKED 10162(1698) on netId 602
+  2025-11-04T17:20:26.192 - BLOCKED 10109(1708) on netId 602
+  2025-11-04T17:20:26.192 - BLOCKED 10109(1706) on netId 602
+  2025-11-04T17:20:26.191 - BLOCKED 10109(1705) on netId 602
+  2025-11-04T17:20:26.191 - BLOCKED 10109(1704) on netId 602
+  2025-11-04T17:20:26.191 - BLOCKED 10109(1703) on netId 602
+  2025-11-04T17:20:26.190 - BLOCKED 10109(1702) on netId 602
+  2025-11-04T17:20:21.300 - BLOCKED 10246
+  2025-11-04T17:20:10.387 - UNBLOCKED 10162
+  2025-11-04T17:20:09.795 - BLOCKED 10105(1693) on netId 602
+  2025-11-04T17:20:09.624 - UNBLOCKED 10162(1699) on netId 602
+  2025-11-04T17:20:09.623 - UNBLOCKED 10162(1698) on netId 602
+  2025-11-04T17:20:06.874 - BLOCKED 10162
+  2025-11-04T17:20:01.450 - UNBLOCKED 10109
+  2025-11-04T17:19:58.946 - UNBLOCKED 10246
+  2025-11-04T17:19:55.099 - UNBLOCKED 10105(1693) on netId 602
+  2025-11-04T17:19:54.700 - BLOCKED 10105
+  2025-11-04T17:19:51.303 - UNBLOCKED 10109(1692) on netId 602
+  2025-11-04T17:19:51.302 - UNBLOCKED 10109(1691) on netId 602
+  2025-11-04T17:19:51.302 - UNBLOCKED 10109(1688) on netId 602
+  2025-11-04T17:19:51.301 - UNBLOCKED 10109(1685) on netId 602
+  2025-11-04T17:19:51.300 - UNBLOCKED 10109(1684) on netId 602
+  2025-11-04T17:19:51.299 - UNBLOCKED 10109(1683) on netId 602
+  2025-11-04T11:31:40.187 - BLOCKED 10109
+  2025-11-04T11:31:40.105 - BLOCKED 10251(1668) on netId 602
+  2025-11-04T11:31:40.104 - BLOCKED 10109(1688) on netId 602
+  2025-11-04T11:31:40.103 - BLOCKED 10109(1685) on netId 602
+  2025-11-04T11:31:40.103 - BLOCKED 10109(1684) on netId 602
+  2025-11-04T11:31:32.715 - BLOCKED 10109(1683) on netId 602
+  2025-11-04T11:31:32.714 - BLOCKED 10109(1676) on netId 602
+  2025-11-04T11:31:32.713 - BLOCKED 10109(1675) on netId 602
+  2025-11-04T11:31:20.620 - BLOCKED 10105(1686) on netId 602
+  2025-11-04T11:31:11.658 - BLOCKED 10162(1662) on netId 602
+  2025-11-04T11:31:11.657 - BLOCKED 10162(1661) on netId 602
+  2025-11-04T11:31:11.146 - BLOCKED 10259(966) on netId 602
+  2025-11-04T11:31:05.920 - UNBLOCKED 10109
+  2025-11-04T11:31:05.328 - UNBLOCKED 10162(1662) on netId 602
+  2025-11-04T11:31:05.327 - UNBLOCKED 10162(1661) on netId 602
+  2025-11-04T11:31:02.357 - UNBLOCKED 10259(966) on netId 602
+  2025-11-04T11:31:02.355 - UNBLOCKED 10251(1668) on netId 602
+  2025-11-04T05:45:48.611 - BLOCKED 10259(966) on netId 602
+  2025-11-04T05:45:48.608 - BLOCKED 10251(1668) on netId 602
+  2025-11-04T05:45:48.607 - BLOCKED 10251(1667) on netId 602
+  2025-11-04T05:45:24.938 - BLOCKED 10162(1664) on netId 602
+  2025-11-04T05:45:24.937 - BLOCKED 10162(1662) on netId 602
+  2025-11-04T05:45:24.937 - BLOCKED 10162(1661) on netId 602
+  2025-11-04T05:45:24.627 - UNBLOCKED 10162(1662) on netId 602
+  2025-11-04T05:45:24.626 - UNBLOCKED 10162(1661) on netId 602
+  2025-11-04T05:45:23.577 - BLOCKED 10162(1662) on netId 602
+  2025-11-04T05:45:23.576 - BLOCKED 10162(1661) on netId 602
+  2025-11-04T05:45:18.269 - UNBLOCKED 10259(966) on netId 602
+  2025-11-04T02:53:38.734 - BLOCKED 10109
+  2025-11-04T01:52:40.659 - BLOCKED 10259(966) on netId 602
+  2025-11-04T01:52:40.656 - BLOCKED 10251(1648) on netId 602
+  2025-11-04T01:52:40.655 - BLOCKED 10251(1647) on netId 602
+  2025-11-04T01:52:40.653 - BLOCKED 10105(1650) on netId 602
+  2025-11-04T01:52:40.651 - BLOCKED 10109(1652) on netId 602
+  2025-11-04T01:52:40.650 - BLOCKED 10109(1651) on netId 602
+  2025-11-04T01:52:40.649 - BLOCKED 10109(1649) on netId 602
+  2025-11-04T01:52:40.647 - BLOCKED 10109(1621) on netId 602
+  2025-11-04T01:52:40.644 - BLOCKED 10109(1620) on netId 602
+  2025-11-04T01:52:33.012 - BLOCKED 10246
+  2025-11-04T01:52:29.298 - BLOCKED 10194
+  2025-11-04T01:52:23.083 - BLOCKED 10162(1646) on netId 602
+  2025-11-04T01:52:23.083 - BLOCKED 10162(1643) on netId 602
+  2025-11-04T01:52:23.082 - BLOCKED 10162(1642) on netId 602
+  2025-11-04T01:52:21.896 - UNBLOCKED 10105
+  2025-11-04T01:52:21.339 - UNBLOCKED 10162(1643) on netId 602
+  2025-11-04T01:52:21.338 - UNBLOCKED 10162(1642) on netId 602
+  2025-11-04T01:52:21.322 - BLOCKED 10162(1643) on netId 602
+  2025-11-04T01:52:21.321 - BLOCKED 10162(1642) on netId 602
+  2025-11-04T01:52:21.271 - UNBLOCKED 10162(1643) on netId 602
+  2025-11-04T01:52:21.271 - UNBLOCKED 10162(1642) on netId 602
+  2025-11-04T01:52:21.266 - BLOCKED 10162(1643) on netId 602
+  2025-11-04T01:52:21.265 - BLOCKED 10162(1642) on netId 602
+  2025-11-04T01:52:20.185 - BLOCKED 10242
+  2025-11-04T01:52:19.458 - UNBLOCKED 10194
+  2025-11-04T01:52:19.274 - UNBLOCKED 10162(1643) on netId 602
+  2025-11-04T01:52:19.274 - UNBLOCKED 10162(1642) on netId 602
+  2025-11-04T01:52:19.272 - BLOCKED 10162(1643) on netId 602
+  2025-11-04T01:52:19.272 - BLOCKED 10162(1642) on netId 602
+  2025-11-04T01:52:14.088 - BLOCKED 10228(1005) on netId 602
+  2025-11-04T01:52:14.088 - BLOCKED 10228(1004) on netId 602
+  2025-11-04T01:52:14.087 - BLOCKED 10228(998) on netId 602
+  2025-11-04T01:52:14.086 - BLOCKED 10228(997) on netId 602
+  2025-11-04T01:52:13.313 - UNBLOCKED 10194(1634) on netId 602
+  2025-11-04T01:52:13.312 - UNBLOCKED 10194(1633) on netId 602
+  2025-11-04T01:52:13.307 - UNBLOCKED 10228(1005) on netId 602
+  2025-11-04T01:52:13.307 - UNBLOCKED 10228(1004) on netId 602
+  2025-11-04T01:52:13.306 - UNBLOCKED 10228(998) on netId 602
+  2025-11-04T01:52:13.306 - UNBLOCKED 10228(997) on netId 602
+  2025-11-04T01:52:10.299 - UNBLOCKED 10259(966) on netId 602
+  2025-11-04T01:52:10.297 - UNBLOCKED 10251(1506) on netId 602
+  2025-11-04T01:52:10.296 - UNBLOCKED 10105(1636) on netId 602
+  2025-11-04T01:52:10.296 - UNBLOCKED 10109(1621) on netId 602
+  2025-11-04T01:52:10.295 - UNBLOCKED 10109(1620) on netId 602
+  2025-11-04T00:03:30.166 - BLOCKED 10105
+  2025-11-03T23:53:07.034 - BLOCKED 10259(966) on netId 602
+  2025-11-03T23:53:07.032 - BLOCKED 10251(1506) on netId 602
+  2025-11-03T23:53:07.029 - BLOCKED 10109(1625) on netId 602
+  2025-11-03T23:53:07.026 - BLOCKED 10109(1624) on netId 602
+  2025-11-03T23:53:07.014 - BLOCKED 10109(1623) on netId 602
+  2025-11-03T23:53:07.011 - BLOCKED 10109(1622) on netId 602
+  2025-11-03T23:53:07.010 - BLOCKED 10109(1621) on netId 602
+  2025-11-03T23:53:07.008 - BLOCKED 10109(1620) on netId 602
+  2025-11-03T23:52:41.408 - BLOCKED 10194(1634) on netId 602
+  2025-11-03T23:52:41.407 - BLOCKED 10194(1633) on netId 602
+  2025-11-03T23:52:40.951 - BLOCKED 10242(1631) on netId 602
+  2025-11-03T23:52:40.951 - BLOCKED 10242(1629) on netId 602
+  2025-11-03T23:52:40.948 - BLOCKED 10242(1628) on netId 602
+  2025-11-03T23:52:40.948 - BLOCKED 10242(1627) on netId 602
+  2025-11-03T23:52:40.947 - BLOCKED 10242(1626) on netId 602
+  2025-11-03T23:52:39.750 - UNBLOCKED 10194(1634) on netId 602
+  2025-11-03T23:52:39.749 - UNBLOCKED 10194(1633) on netId 602
+  2025-11-03T23:52:39.748 - UNBLOCKED 10242(1631) on netId 602
+  2025-11-03T23:52:39.747 - UNBLOCKED 10242(1629) on netId 602
+  2025-11-03T23:52:39.746 - UNBLOCKED 10242(1628) on netId 602
+  2025-11-03T23:52:39.745 - UNBLOCKED 10242(1627) on netId 602
+  2025-11-03T23:52:39.744 - UNBLOCKED 10242(1626) on netId 602
+  2025-11-03T23:52:36.800 - UNBLOCKED 10259(966) on netId 602
+  2025-11-03T23:52:36.799 - UNBLOCKED 10251(1506) on netId 602
+  2025-11-03T23:52:36.798 - UNBLOCKED 10109(1625) on netId 602
+  2025-11-03T23:52:36.798 - UNBLOCKED 10109(1624) on netId 602
+  2025-11-03T23:52:36.798 - UNBLOCKED 10109(1623) on netId 602
+  2025-11-03T23:52:36.797 - UNBLOCKED 10109(1622) on netId 602
+  2025-11-03T23:52:36.790 - UNBLOCKED 10109(1621) on netId 602
+  2025-11-03T23:52:36.790 - UNBLOCKED 10109(1620) on netId 602
+  2025-11-03T22:40:51.293 - BLOCKED 10259(966) on netId 602
+  2025-11-03T22:40:51.280 - BLOCKED 10251(1506) on netId 602
+  2025-11-03T22:40:51.279 - BLOCKED 10109(1625) on netId 602
+  2025-11-03T22:40:51.279 - BLOCKED 10109(1624) on netId 602
+  2025-11-03T22:40:51.278 - BLOCKED 10109(1623) on netId 602
+  2025-11-03T22:40:51.278 - BLOCKED 10109(1622) on netId 602
+  2025-11-03T22:40:51.277 - BLOCKED 10109(1621) on netId 602
+  2025-11-03T22:40:51.277 - BLOCKED 10109(1620) on netId 602
+  2025-11-03T22:38:11.173 - BLOCKED 10194
+  2025-11-03T22:38:07.310 - BLOCKED 10194(1633) on netId 602
+  2025-11-03T22:38:05.829 - BLOCKED 10242(1631) on netId 602
+  2025-11-03T22:38:05.829 - BLOCKED 10242(1629) on netId 602
+  2025-11-03T22:38:05.828 - BLOCKED 10242(1628) on netId 602
+  2025-11-03T22:38:05.827 - BLOCKED 10242(1627) on netId 602
+  2025-11-03T22:38:05.826 - BLOCKED 10242(1626) on netId 602
+  2025-11-03T22:38:05.488 - UNBLOCKED 10242
+  2025-11-03T22:38:04.259 - UNBLOCKED 10242(1631) on netId 602
+  2025-11-03T22:38:04.259 - UNBLOCKED 10242(1629) on netId 602
+  2025-11-03T22:38:04.258 - UNBLOCKED 10242(1628) on netId 602
+  2025-11-03T22:38:04.257 - UNBLOCKED 10242(1627) on netId 602
+  2025-11-03T22:38:04.256 - UNBLOCKED 10242(1626) on netId 602
+  2025-11-03T22:38:01.260 - UNBLOCKED 10259(966) on netId 602
+  2025-11-03T22:38:01.259 - UNBLOCKED 10251(1506) on netId 602
+  2025-11-03T22:38:01.259 - UNBLOCKED 10109(1625) on netId 602
+  2025-11-03T22:38:01.259 - UNBLOCKED 10109(1624) on netId 602
+  2025-11-03T22:38:01.258 - UNBLOCKED 10109(1623) on netId 602
+  2025-11-03T22:38:01.256 - UNBLOCKED 10109(1622) on netId 602
+  2025-11-03T22:38:01.255 - UNBLOCKED 10109(1621) on netId 602
+  2025-11-03T22:38:01.255 - UNBLOCKED 10109(1620) on netId 602
+  2025-11-03T22:12:11.508 - BLOCKED 10259(966) on netId 602
+  2025-11-03T22:12:11.506 - BLOCKED 10251(1506) on netId 602
+  2025-11-03T22:12:11.504 - BLOCKED 10109(1625) on netId 602
+  2025-11-03T22:12:11.500 - BLOCKED 10109(1624) on netId 602
+  2025-11-03T22:12:11.499 - BLOCKED 10109(1623) on netId 602
+  2025-11-03T22:12:11.499 - BLOCKED 10109(1622) on netId 602
+  2025-11-03T22:12:11.498 - BLOCKED 10109(1621) on netId 602
+  2025-11-03T22:12:11.498 - BLOCKED 10109(1620) on netId 602
+  2025-11-03T22:12:09.620 - BLOCKED 10242
+  2025-11-03T22:12:09.563 - BLOCKED 10242(1632) on netId 602
+  2025-11-03T22:12:09.563 - BLOCKED 10242(1631) on netId 602
+  2025-11-03T22:12:09.562 - BLOCKED 10242(1629) on netId 602
+  2025-11-03T22:12:09.562 - BLOCKED 10242(1628) on netId 602
+  2025-11-03T22:12:09.560 - BLOCKED 10242(1627) on netId 602
+  2025-11-03T22:12:09.559 - BLOCKED 10242(1626) on netId 602
+  2025-11-03T22:12:09.322 - UNBLOCKED 10242(1631) on netId 602
+  2025-11-03T22:12:09.320 - UNBLOCKED 10242(1629) on netId 602
+  2025-11-03T22:12:09.319 - UNBLOCKED 10242(1628) on netId 602
+  2025-11-03T22:12:09.318 - UNBLOCKED 10242(1627) on netId 602
+  2025-11-03T22:12:09.317 - UNBLOCKED 10242(1626) on netId 602
+  2025-11-03T22:12:06.358 - UNBLOCKED 10259(966) on netId 602
+  2025-11-03T22:12:06.356 - UNBLOCKED 10251(1506) on netId 602
+  2025-11-03T22:12:06.354 - UNBLOCKED 10109(1625) on netId 602
+  2025-11-03T22:12:06.353 - UNBLOCKED 10109(1624) on netId 602
+  2025-11-03T22:12:06.353 - UNBLOCKED 10109(1623) on netId 602
+  2025-11-03T22:12:06.349 - UNBLOCKED 10109(1622) on netId 602
+  2025-11-03T22:12:06.344 - UNBLOCKED 10109(1621) on netId 602
+  2025-11-03T22:12:06.343 - UNBLOCKED 10109(1620) on netId 602
+  2025-11-03T22:00:00.199 - BLOCKED 10259(966) on netId 602
+  2025-11-03T22:00:00.197 - BLOCKED 10251(1506) on netId 602
+  2025-11-03T22:00:00.196 - BLOCKED 10109(1625) on netId 602
+  2025-11-03T22:00:00.196 - BLOCKED 10109(1624) on netId 602
+  2025-11-03T22:00:00.196 - BLOCKED 10109(1623) on netId 602
+  2025-11-03T22:00:00.195 - BLOCKED 10109(1622) on netId 602
+  2025-11-03T22:00:00.195 - BLOCKED 10109(1621) on netId 602
+  2025-11-03T22:00:00.195 - BLOCKED 10109(1620) on netId 602
+  2025-11-03T22:00:00.193 - BLOCKED 10242(1631) on netId 602
+  2025-11-03T22:00:00.189 - BLOCKED 10242(1629) on netId 602
+  2025-11-03T22:00:00.189 - BLOCKED 10242(1628) on netId 602
+  2025-11-03T22:00:00.187 - BLOCKED 10242(1627) on netId 602
+  2025-11-03T22:00:00.186 - BLOCKED 10242(1626) on netId 602
+  2025-11-03T21:58:20.209 - UNBLOCKED 10242(1631) on netId 602
+  2025-11-03T21:58:20.208 - UNBLOCKED 10242(1629) on netId 602
+  2025-11-03T21:58:20.207 - UNBLOCKED 10242(1628) on netId 602
+  2025-11-03T21:58:20.206 - UNBLOCKED 10242(1627) on netId 602
+  2025-11-03T21:58:20.205 - UNBLOCKED 10242(1626) on netId 602
+  2025-11-03T21:58:17.241 - UNBLOCKED 10259(966) on netId 602
+  2025-11-03T21:58:17.237 - UNBLOCKED 10251(1506) on netId 602
+  2025-11-03T21:58:17.234 - UNBLOCKED 10109(1625) on netId 602
+  2025-11-03T21:58:17.233 - UNBLOCKED 10109(1624) on netId 602
+  2025-11-03T21:58:17.228 - UNBLOCKED 10109(1623) on netId 602
+  2025-11-03T21:58:17.227 - UNBLOCKED 10109(1622) on netId 602
+  2025-11-03T21:58:17.223 - UNBLOCKED 10109(1621) on netId 602
+  2025-11-03T21:58:17.222 - UNBLOCKED 10109(1620) on netId 602
+  2025-11-03T21:49:51.339 - BLOCKED 10259(966) on netId 602
+  2025-11-03T21:49:51.335 - BLOCKED 10251(1506) on netId 602
+  2025-11-03T21:49:51.331 - BLOCKED 10109(1625) on netId 602
+  2025-11-03T21:49:51.330 - BLOCKED 10109(1624) on netId 602
+  2025-11-03T21:49:51.328 - BLOCKED 10109(1623) on netId 602
+  2025-11-03T21:49:51.327 - BLOCKED 10109(1622) on netId 602
+  2025-11-03T21:49:51.326 - BLOCKED 10109(1621) on netId 602
+  2025-11-03T21:49:51.324 - BLOCKED 10109(1620) on netId 602
+  2025-11-03T21:48:19.891 - UNBLOCKED 10259(966) on netId 602
+  2025-11-03T21:48:19.889 - UNBLOCKED 10251(1506) on netId 602
+  2025-11-03T21:48:16.498 - BLOCKED 10259(966) on netId 602
+  2025-11-03T21:48:16.497 - BLOCKED 10251(1506) on netId 602
+  2025-11-03T21:48:16.496 - BLOCKED 10242(1631) on netId 602
+  2025-11-03T21:48:16.496 - BLOCKED 10242(1629) on netId 602
+  2025-11-03T21:48:16.496 - BLOCKED 10242(1628) on netId 602
+  2025-11-03T21:48:16.495 - BLOCKED 10242(1627) on netId 602
+  2025-11-03T21:48:16.495 - BLOCKED 10242(1626) on netId 602
+  2025-11-03T21:48:16.493 - BLOCKED 10228(1005) on netId 602
+  2025-11-03T21:48:16.492 - BLOCKED 10228(1004) on netId 602
+  2025-11-03T21:48:16.491 - BLOCKED 10228(998) on netId 602
+  2025-11-03T21:48:16.490 - BLOCKED 10228(997) on netId 602
+  2025-11-03T21:48:16.489 - BLOCKED 10225(33) on netId 602
+  2025-11-03T21:48:16.485 - BLOCKED 10194(1614) on netId 602
+  2025-11-03T21:48:16.485 - BLOCKED 10194(1613) on netId 602
+  2025-11-03T15:11:31.046 - UNBLOCKED 10259(966) on netId 602
+  2025-11-03T15:11:31.045 - UNBLOCKED 10251(1336) on netId 602
+  2025-11-03T15:11:31.043 - UNBLOCKED 10242(1449) on netId 602
+  2025-11-03T15:11:31.042 - UNBLOCKED 10242(1448) on netId 602
+  2025-11-03T15:11:31.041 - UNBLOCKED 10242(1447) on netId 602
+  2025-11-03T15:11:31.040 - UNBLOCKED 10242(1446) on netId 602
+  2025-11-03T15:11:31.039 - UNBLOCKED 10242(1445) on netId 602
+  2025-11-03T15:11:31.036 - UNBLOCKED 10228(1005) on netId 602
+  2025-11-03T15:11:31.035 - UNBLOCKED 10228(1004) on netId 602
+  2025-11-03T15:11:31.035 - UNBLOCKED 10228(998) on netId 602
+  2025-11-03T15:11:31.034 - UNBLOCKED 10228(997) on netId 602
+  2025-11-03T15:11:31.032 - UNBLOCKED 10225(33) on netId 602
+  2025-11-03T15:11:31.026 - UNBLOCKED 10194(1438) on netId 602
+  2025-11-03T15:11:31.026 - UNBLOCKED 10194(1437) on netId 602
+  2025-11-03T15:11:17.908 - BLOCKED 10259(966) on netId 602
+  2025-11-03T15:11:17.908 - BLOCKED 10251(1336) on netId 602
+  2025-11-03T15:11:17.907 - BLOCKED 10242(1449) on netId 602
+  2025-11-03T15:11:17.906 - BLOCKED 10242(1448) on netId 602
+  2025-11-03T15:11:17.906 - BLOCKED 10242(1447) on netId 602
+  2025-11-03T15:11:17.906 - BLOCKED 10242(1446) on netId 602
+  2025-11-03T15:11:17.905 - BLOCKED 10242(1445) on netId 602
+  2025-11-03T15:11:17.903 - BLOCKED 10228(1005) on netId 602
+  2025-11-03T15:11:17.903 - BLOCKED 10228(1004) on netId 602
+  2025-11-03T15:11:17.903 - BLOCKED 10228(998) on netId 602
+  2025-11-03T15:11:17.902 - BLOCKED 10228(997) on netId 602
+  2025-11-03T15:11:17.901 - BLOCKED 10225(33) on netId 602
+  2025-11-03T15:11:17.897 - BLOCKED 10194(1438) on netId 602
+  2025-11-03T15:11:17.896 - BLOCKED 10194(1437) on netId 602
+  2025-11-03T14:43:40.927 - UNBLOCKED 10259(966) on netId 602
+  2025-11-03T14:43:40.926 - UNBLOCKED 10251(1336) on netId 602
+  2025-11-03T14:43:40.926 - UNBLOCKED 10242(1431) on netId 602
+  2025-11-03T14:43:40.925 - UNBLOCKED 10242(1430) on netId 602
+  2025-11-03T14:43:40.925 - UNBLOCKED 10242(1429) on netId 602
+  2025-11-03T14:43:40.925 - UNBLOCKED 10242(1428) on netId 602
+  2025-11-03T14:43:40.925 - UNBLOCKED 10242(1427) on netId 602
+  2025-11-03T14:43:40.924 - UNBLOCKED 10228(1005) on netId 602
+  2025-11-03T14:43:40.923 - UNBLOCKED 10228(1004) on netId 602
+  2025-11-03T14:43:40.923 - UNBLOCKED 10228(998) on netId 602
+  2025-11-03T14:43:40.923 - UNBLOCKED 10228(997) on netId 602
+  2025-11-03T14:43:40.917 - UNBLOCKED 10225(33) on netId 602
+  2025-11-03T14:43:21.427 - BLOCKED 10259(966) on netId 602
+  2025-11-03T14:43:21.427 - BLOCKED 10251(1336) on netId 602
+  2025-11-03T14:43:21.426 - BLOCKED 10242(1431) on netId 602
+  2025-11-03T14:43:21.426 - BLOCKED 10242(1430) on netId 602
+  2025-11-03T14:43:21.426 - BLOCKED 10242(1429) on netId 602
+  2025-11-03T14:43:21.425 - BLOCKED 10242(1428) on netId 602
+  2025-11-03T14:43:21.425 - BLOCKED 10242(1427) on netId 602
+  2025-11-03T14:43:21.424 - BLOCKED 10228(1005) on netId 602
+  2025-11-03T14:43:21.424 - BLOCKED 10228(1004) on netId 602
+  2025-11-03T14:43:21.424 - BLOCKED 10228(998) on netId 602
+  2025-11-03T14:43:21.424 - BLOCKED 10228(997) on netId 602
+  2025-11-03T14:43:21.424 - BLOCKED 10225(33) on netId 602
+  2025-11-03T12:41:00.652 - UNBLOCKED 10246
+  2025-11-03T02:34:42.754 - UNBLOCKED 10194
+  2025-11-03T02:34:18.832 - UNBLOCKED 10259(966) on netId 602
+  2025-11-03T02:34:18.830 - UNBLOCKED 10251(1156) on netId 602
+  2025-11-03T02:34:18.826 - UNBLOCKED 10228(1005) on netId 602
+  2025-11-03T02:34:18.825 - UNBLOCKED 10228(1004) on netId 602
+  2025-11-03T02:34:18.824 - UNBLOCKED 10228(998) on netId 602
+  2025-11-03T02:34:18.822 - UNBLOCKED 10228(997) on netId 602
+  2025-11-03T02:34:18.816 - UNBLOCKED 10225(33) on netId 602
+  2025-11-03T02:34:18.813 - UNBLOCKED 10194(1161) on netId 602
+  2025-11-03T02:34:18.812 - UNBLOCKED 10194(1160) on netId 602
+  2025-11-03T02:33:56.449 - BLOCKED 10194
+  2025-11-03T02:33:48.924 - BLOCKED 10259(966) on netId 602
+  2025-11-03T02:33:48.923 - BLOCKED 10251(1156) on netId 602
+  2025-11-03T02:33:48.923 - BLOCKED 10251(1155) on netId 602
+  2025-11-03T02:33:48.923 - BLOCKED 10245(1148) on netId 602
+  2025-11-03T02:33:48.922 - BLOCKED 10242(1154) on netId 602
+  2025-11-03T02:33:48.922 - BLOCKED 10242(1152) on netId 602
+  2025-11-03T02:33:48.922 - BLOCKED 10242(1151) on netId 602
+  2025-11-03T02:33:48.922 - BLOCKED 10242(1150) on netId 602
+  2025-11-03T02:33:48.921 - BLOCKED 10242(1149) on netId 602
+  2025-11-03T02:33:48.921 - BLOCKED 10228(1005) on netId 602
+  2025-11-03T02:33:48.921 - BLOCKED 10228(1004) on netId 602
+  2025-11-03T02:33:48.920 - BLOCKED 10228(998) on netId 602
+  2025-11-03T02:33:48.920 - BLOCKED 10228(997) on netId 602
+  2025-11-03T02:33:48.920 - BLOCKED 10225(33) on netId 602
+  2025-11-03T02:33:48.918 - BLOCKED 10194(1161) on netId 602
+  2025-11-03T02:33:48.916 - BLOCKED 10194(1160) on netId 602
+  2025-11-03T02:33:48.906 - BLOCKED 10105(1157) on netId 602
+  2025-11-03T02:33:36.056 - UNBLOCKED 10105
+  2025-11-03T02:33:35.936 - UNBLOCKED 10251
+  2025-11-03T02:33:34.263 - UNBLOCKED 10194
+  2025-11-03T02:33:33.364 - UNBLOCKED 10242
+  2025-11-03T02:33:28.738 - UNBLOCKED 10259(966) on netId 602
+  2025-11-03T02:33:28.732 - UNBLOCKED 10228(1005) on netId 602
+  2025-11-03T02:33:28.732 - UNBLOCKED 10228(1004) on netId 602
+  2025-11-03T02:33:28.731 - UNBLOCKED 10228(998) on netId 602
+  2025-11-03T02:33:28.731 - UNBLOCKED 10228(997) on netId 602
+  2025-11-03T02:33:28.730 - UNBLOCKED 10225(33) on netId 602
+  2025-11-03T02:16:12.246 - BLOCKED 10105
+  2025-11-03T02:16:11.233 - BLOCKED 10251
+  2025-11-03T02:16:09.191 - UNBLOCKED 10109
+  2025-11-03T02:16:05.611 - UNBLOCKED 10109(1100) on netId 602
+  2025-11-03T02:16:05.611 - UNBLOCKED 10109(1099) on netId 602
+  2025-11-03T02:16:05.611 - UNBLOCKED 10109(1098) on netId 602
+  2025-11-03T02:16:05.610 - UNBLOCKED 10109(1057) on netId 602
+  2025-11-03T02:16:05.610 - UNBLOCKED 10109(1056) on netId 602
+  2025-11-03T01:11:59.966 - BLOCKED 10109
+  2025-11-03T00:40:26.843 - BLOCKED 10109(1100) on netId 602
+  2025-11-03T00:40:26.842 - BLOCKED 10109(1099) on netId 602
+  2025-11-03T00:40:26.835 - BLOCKED 10109(1098) on netId 602
+  2025-11-03T00:40:26.835 - BLOCKED 10109(1057) on netId 602
+  2025-11-03T00:40:26.833 - BLOCKED 10109(1056) on netId 602
+  2025-11-03T00:40:23.199 - BLOCKED 10246
+  2025-11-03T00:40:20.584 - BLOCKED 10194
+  2025-11-03T00:40:17.354 - BLOCKED 10194(1105) on netId 602
+  2025-11-03T00:40:13.348 - BLOCKED 10251(1095) on netId 602
+  2025-11-03T00:40:13.347 - BLOCKED 10251(1094) on netId 602
+  2025-11-03T00:40:13.287 - UNBLOCKED 10251(1095) on netId 602
+  2025-11-03T00:40:13.286 - UNBLOCKED 10251(1094) on netId 602
+  2025-11-03T00:40:13.265 - BLOCKED 10251(1095) on netId 602
+  2025-11-03T00:40:13.264 - BLOCKED 10251(1094) on netId 602
+  2025-11-03T00:40:12.226 - BLOCKED 10105(1104) on netId 602
+  2025-11-03T00:40:11.865 - BLOCKED 10162(1103) on netId 602
+  2025-11-03T00:40:11.864 - BLOCKED 10162(1097) on netId 602
+  2025-11-03T00:40:11.864 - BLOCKED 10162(1096) on netId 602
+  2025-11-03T00:40:11.651 - UNBLOCKED 10105
+  2025-11-03T00:40:10.654 - UNBLOCKED 10162(1103) on netId 602
+  2025-11-03T00:40:10.654 - UNBLOCKED 10162(1097) on netId 602
+  2025-11-03T00:40:10.653 - UNBLOCKED 10162(1096) on netId 602
+  2025-11-03T00:40:10.642 - BLOCKED 10162(1103) on netId 602
+  2025-11-03T00:40:10.642 - BLOCKED 10162(1097) on netId 602
+  2025-11-03T00:40:10.642 - BLOCKED 10162(1096) on netId 602
+  2025-11-03T00:40:07.456 - UNBLOCKED 10194
+  2025-11-03T00:40:06.101 - UNBLOCKED 10162
+  2025-11-03T00:40:03.374 - UNBLOCKED 10251(1095) on netId 602
+  2025-11-03T00:40:03.373 - UNBLOCKED 10251(1094) on netId 602
+  2025-11-03T00:39:59.631 - BLOCKED 10228(1005) on netId 602
+  2025-11-03T00:39:59.630 - BLOCKED 10228(1004) on netId 602
+  2025-11-03T00:39:59.629 - BLOCKED 10228(998) on netId 602
+  2025-11-03T00:39:59.628 - BLOCKED 10228(997) on netId 602
+  2025-11-03T00:39:59.445 - UNBLOCKED 10105(1088) on netId 602
+  2025-11-03T00:39:59.423 - UNBLOCKED 10194(1083) on netId 602
+  2025-11-03T00:39:59.422 - UNBLOCKED 10194(1076) on netId 602
+  2025-11-03T00:39:59.412 - UNBLOCKED 10228(1005) on netId 602
+  2025-11-03T00:39:59.411 - UNBLOCKED 10228(1004) on netId 602
+  2025-11-03T00:39:59.410 - UNBLOCKED 10228(998) on netId 602
+  2025-11-03T00:39:59.409 - UNBLOCKED 10228(997) on netId 602
+  2025-11-03T00:39:56.391 - UNBLOCKED 10109(1057) on netId 602
+  2025-11-03T00:39:56.389 - UNBLOCKED 10109(1056) on netId 602
+  2025-11-03T00:00:17.771 - BLOCKED 10105
+  2025-11-02T18:46:41.070 - BLOCKED 10259(966) on netId 602
+  2025-11-02T18:46:41.067 - BLOCKED 10109(1057) on netId 602
+  2025-11-02T18:46:41.064 - BLOCKED 10109(1056) on netId 602
+  2025-11-02T18:37:47.444 - BLOCKED 10194(1083) on netId 602
+  2025-11-02T18:37:47.443 - BLOCKED 10194(1076) on netId 602
+  2025-11-02T18:37:46.857 - UNBLOCKED 10194(1083) on netId 602
+  2025-11-02T18:37:46.856 - UNBLOCKED 10194(1076) on netId 602
+  2025-11-02T18:36:59.351 - BLOCKED 10194
+  2025-11-02T18:36:56.267 - BLOCKED 10242
+  2025-11-02T18:36:56.260 - BLOCKED 10242(1080) on netId 602
+  2025-11-02T18:36:56.260 - BLOCKED 10242(1078) on netId 602
+  2025-11-02T18:36:56.253 - BLOCKED 10242(1077) on netId 602
+  2025-11-02T18:36:56.253 - BLOCKED 10242(1075) on netId 602
+  2025-11-02T18:36:56.252 - BLOCKED 10242(1074) on netId 602
+  2025-11-02T18:36:54.816 - BLOCKED 10105(1065) on netId 602
+  2025-11-02T18:36:54.362 - BLOCKED 10162
+  2025-11-02T18:36:53.829 - UNBLOCKED 10242
+  2025-11-02T18:36:53.433 - BLOCKED 10162(1073) on netId 602
+  2025-11-02T18:36:53.433 - BLOCKED 10162(1072) on netId 602
+  2025-11-02T18:36:53.138 - BLOCKED 10184(1071) on netId 602
+  2025-11-02T18:36:52.529 - UNBLOCKED 10162(1073) on netId 602
+  2025-11-02T18:36:52.528 - UNBLOCKED 10162(1072) on netId 602
+  2025-11-02T18:36:52.522 - BLOCKED 10162(1073) on netId 602
+  2025-11-02T18:36:52.521 - BLOCKED 10162(1072) on netId 602
+  2025-11-02T18:36:52.330 - UNBLOCKED 10194
+  2025-11-02T18:36:50.946 - UNBLOCKED 10184
+  2025-11-02T18:36:44.366 - BLOCKED 10245(1064) on netId 602
+  2025-11-02T18:36:44.365 - BLOCKED 10245(1063) on netId 602
+  2025-11-02T18:36:43.606 - UNBLOCKED 10105
+  2025-11-02T18:36:43.140 - UNBLOCKED 10245
+  2025-11-02T18:36:42.975 - UNBLOCKED 10245(1063) on netId 602
+  2025-11-02T18:36:42.973 - UNBLOCKED 10259(966) on netId 602
+  2025-11-02T18:36:39.978 - UNBLOCKED 10109(1057) on netId 602
+  2025-11-02T18:36:39.978 - UNBLOCKED 10109(1056) on netId 602
+  2025-11-02T18:36:39.977 - UNBLOCKED 10109(1035) on netId 602
+  2025-11-02T18:36:39.976 - UNBLOCKED 10109(1034) on netId 602
+  2025-11-02T18:36:39.976 - UNBLOCKED 10109(1033) on netId 602
+  2025-11-02T18:36:39.975 - UNBLOCKED 10109(1032) on netId 602
+  2025-11-02T14:38:28.978 - BLOCKED 10109(1057) on netId 602
+  2025-11-02T14:38:28.978 - BLOCKED 10109(1056) on netId 602
+  2025-11-02T14:38:28.977 - BLOCKED 10109(1035) on netId 602
+  2025-11-02T14:38:28.977 - BLOCKED 10109(1034) on netId 602
+  2025-11-02T14:38:28.977 - BLOCKED 10109(1033) on netId 602
+  2025-11-02T14:38:28.976 - BLOCKED 10109(1032) on netId 602
+  2025-11-02T14:38:04.200 - BLOCKED 10105
+  2025-11-02T14:37:58.688 - UNBLOCKED 10109(1035) on netId 602
+  2025-11-02T14:37:58.687 - UNBLOCKED 10109(1034) on netId 602
+  2025-11-02T14:37:58.686 - UNBLOCKED 10109(1033) on netId 602
+  2025-11-02T14:37:58.685 - UNBLOCKED 10109(1032) on netId 602
+  2025-11-02T14:37:58.680 - UNBLOCKED 10109(1000) on netId 602
+  2025-11-02T14:37:58.678 - UNBLOCKED 10109(999) on netId 602
+  2025-11-02T12:41:16.576 - BLOCKED 10109(1035) on netId 602
+  2025-11-02T12:41:16.574 - BLOCKED 10109(1034) on netId 602
+  2025-11-02T12:41:16.572 - BLOCKED 10109(1033) on netId 602
+  2025-11-02T12:41:16.567 - BLOCKED 10109(1032) on netId 602
+  2025-11-02T12:41:16.564 - BLOCKED 10109(1000) on netId 602
+  2025-11-02T12:41:16.558 - BLOCKED 10109(999) on netId 602
+  2025-11-02T12:40:51.835 - BLOCKED 10242
+  2025-11-02T12:40:51.722 - BLOCKED 10242(1051) on netId 602
+  2025-11-02T12:40:51.721 - BLOCKED 10242(1050) on netId 602
+  2025-11-02T12:40:51.720 - BLOCKED 10242(1049) on netId 602
+  2025-11-02T12:40:51.720 - BLOCKED 10242(1048) on netId 602
+  2025-11-02T12:40:51.719 - BLOCKED 10242(1047) on netId 602
+  2025-11-02T12:40:46.336 - UNBLOCKED 10109(1035) on netId 602
+  2025-11-02T12:40:46.335 - UNBLOCKED 10109(1034) on netId 602
+  2025-11-02T12:40:46.335 - UNBLOCKED 10109(1033) on netId 602
+  2025-11-02T12:40:46.327 - UNBLOCKED 10109(1032) on netId 602
+  2025-11-02T12:40:46.327 - UNBLOCKED 10109(1000) on netId 602
+  2025-11-02T12:40:46.326 - UNBLOCKED 10109(999) on netId 602
+  2025-11-02T11:45:17.983 - BLOCKED 10194
+  2025-11-02T11:45:10.561 - BLOCKED 10109(1035) on netId 602
+  2025-11-02T11:45:10.560 - BLOCKED 10109(1034) on netId 602
+  2025-11-02T11:45:10.559 - BLOCKED 10109(1033) on netId 602
+  2025-11-02T11:45:10.558 - BLOCKED 10109(1032) on netId 602
+  2025-11-02T11:45:10.557 - BLOCKED 10109(1000) on netId 602
+  2025-11-02T11:45:10.555 - BLOCKED 10109(999) on netId 602
+  2025-11-02T11:45:05.386 - UNBLOCKED 10109(1035) on netId 602
+  2025-11-02T11:45:05.385 - UNBLOCKED 10109(1034) on netId 602
+  2025-11-02T11:45:05.384 - UNBLOCKED 10109(1033) on netId 602
+  2025-11-02T11:45:05.383 - UNBLOCKED 10109(1032) on netId 602
+  2025-11-02T11:45:05.383 - UNBLOCKED 10109(1000) on netId 602
+  2025-11-02T11:45:05.381 - UNBLOCKED 10109(999) on netId 602
+  2025-11-02T11:28:49.623 - BLOCKED 10109(1035) on netId 602
+  2025-11-02T11:28:49.622 - BLOCKED 10109(1034) on netId 602
+  2025-11-02T11:28:49.612 - BLOCKED 10109(1033) on netId 602
+  2025-11-02T11:28:49.611 - BLOCKED 10109(1032) on netId 602
+  2025-11-02T11:28:49.597 - BLOCKED 10109(1000) on netId 602
+  2025-11-02T11:28:49.596 - BLOCKED 10109(999) on netId 602
+  2025-11-02T11:28:46.321 - BLOCKED 10259(966) on netId 602
+  2025-11-02T11:28:42.252 - UNBLOCKED 10259(966) on netId 602
+  2025-11-02T11:28:42.249 - UNBLOCKED 10109(1035) on netId 602
+  2025-11-02T11:28:42.247 - UNBLOCKED 10109(1034) on netId 602
+  2025-11-02T11:28:42.247 - UNBLOCKED 10109(1033) on netId 602
+  2025-11-02T11:28:42.246 - UNBLOCKED 10109(1032) on netId 602
+  2025-11-02T11:28:42.242 - UNBLOCKED 10109(1000) on netId 602
+  2025-11-02T11:28:42.240 - UNBLOCKED 10109(999) on netId 602
+  2025-11-02T11:05:08.510 - BLOCKED 10259(966) on netId 602
+  2025-11-02T11:05:08.505 - BLOCKED 10109(1035) on netId 602
+  2025-11-02T11:05:08.504 - BLOCKED 10109(1034) on netId 602
+  2025-11-02T11:05:08.503 - BLOCKED 10109(1033) on netId 602
+  2025-11-02T11:05:08.502 - BLOCKED 10109(1032) on netId 602
+  2025-11-02T11:05:08.499 - BLOCKED 10109(1000) on netId 602
+  2025-11-02T11:05:08.486 - BLOCKED 10109(999) on netId 602
+  2025-11-02T11:05:03.282 - UNBLOCKED 10259(966) on netId 602
+  2025-11-02T11:05:03.278 - UNBLOCKED 10109(1035) on netId 602
+  2025-11-02T11:05:03.277 - UNBLOCKED 10109(1034) on netId 602
+  2025-11-02T11:05:03.277 - UNBLOCKED 10109(1033) on netId 602
+  2025-11-02T11:05:03.276 - UNBLOCKED 10109(1032) on netId 602
+  2025-11-02T11:05:03.275 - UNBLOCKED 10109(1000) on netId 602
+  2025-11-02T11:05:03.275 - UNBLOCKED 10109(999) on netId 602
+  2025-11-02T10:50:20.918 - BLOCKED 10259(966) on netId 602
+  2025-11-02T10:50:20.915 - BLOCKED 10109(1035) on netId 602
+  2025-11-02T10:50:20.914 - BLOCKED 10109(1034) on netId 602
+  2025-11-02T10:50:20.913 - BLOCKED 10109(1033) on netId 602
+  2025-11-02T10:50:20.911 - BLOCKED 10109(1032) on netId 602
+  2025-11-02T10:50:20.910 - BLOCKED 10109(1000) on netId 602
+  2025-11-02T10:50:20.909 - BLOCKED 10109(999) on netId 602
+  2025-11-02T10:50:11.384 - UNBLOCKED 10259(966) on netId 602
+  2025-11-02T10:50:11.379 - UNBLOCKED 10109(1035) on netId 602
+  2025-11-02T10:50:11.378 - UNBLOCKED 10109(1034) on netId 602
+  2025-11-02T10:50:11.377 - UNBLOCKED 10109(1033) on netId 602
+  2025-11-02T10:50:11.375 - UNBLOCKED 10109(1032) on netId 602
+  2025-11-02T10:50:11.374 - UNBLOCKED 10109(1000) on netId 602
+  2025-11-02T10:50:11.371 - UNBLOCKED 10109(999) on netId 602
+  2025-11-02T10:41:42.359 - BLOCKED 10259(966) on netId 602
+  2025-11-02T10:41:42.349 - BLOCKED 10109(1035) on netId 602
+  2025-11-02T10:41:42.349 - BLOCKED 10109(1034) on netId 602
+  2025-11-02T10:41:42.348 - BLOCKED 10109(1033) on netId 602
+  2025-11-02T10:41:42.348 - BLOCKED 10109(1032) on netId 602
+  2025-11-02T10:41:42.348 - BLOCKED 10109(1000) on netId 602
+  2025-11-02T10:41:42.347 - BLOCKED 10109(999) on netId 602
+  2025-11-02T10:40:11.149 - BLOCKED 10251(1023) on netId 602
+  2025-11-02T10:40:11.149 - BLOCKED 10242(1029) on netId 602
+  2025-11-02T10:40:11.148 - BLOCKED 10242(1028) on netId 602
+  2025-11-02T10:40:11.148 - BLOCKED 10242(1027) on netId 602
+  2025-11-02T10:40:11.148 - BLOCKED 10242(1026) on netId 602
+  2025-11-02T10:40:11.147 - BLOCKED 10242(1025) on netId 602
+  2025-11-02T10:40:11.144 - BLOCKED 10228(1005) on netId 602
+  2025-11-02T10:40:11.143 - BLOCKED 10228(1004) on netId 602
+  2025-11-02T10:40:11.143 - BLOCKED 10228(998) on netId 602
+  2025-11-02T10:40:11.142 - BLOCKED 10228(997) on netId 602
+  2025-11-02T10:40:11.141 - BLOCKED 10225(33) on netId 602
+  2025-11-02T10:40:11.137 - BLOCKED 10194(1030) on netId 602
+  2025-11-02T10:40:11.136 - BLOCKED 10194(1024) on netId 602
+  2025-11-02T10:40:11.126 - BLOCKED 10105(1017) on netId 602
+  2025-11-02T10:23:56.935 - UNBLOCKED 10109
+  2025-11-02T10:23:48.909 - UNBLOCKED 10246
+  2025-11-02T10:23:34.468 - UNBLOCKED 10242
+  2025-11-02T10:23:33.966 - UNBLOCKED 10259(966) on netId 602
+  2025-11-02T10:23:33.965 - UNBLOCKED 10242(996) on netId 602
+  2025-11-02T10:23:33.965 - UNBLOCKED 10242(995) on netId 602
+  2025-11-02T10:23:33.965 - UNBLOCKED 10242(994) on netId 602
+  2025-11-02T10:23:33.965 - UNBLOCKED 10242(993) on netId 602
+  2025-11-02T10:23:33.964 - UNBLOCKED 10242(992) on netId 602
+  2025-11-02T10:23:33.964 - UNBLOCKED 10242(991) on netId 602
+  2025-11-02T10:23:33.963 - UNBLOCKED 10228(1005) on netId 602
+  2025-11-02T10:23:33.963 - UNBLOCKED 10228(1004) on netId 602
+  2025-11-02T10:23:33.963 - UNBLOCKED 10228(998) on netId 602
+  2025-11-02T10:23:33.963 - UNBLOCKED 10228(997) on netId 602
+  2025-11-02T10:23:33.950 - UNBLOCKED 10225(33) on netId 602
+  2025-11-02T10:23:33.350 - UNBLOCKED 10109(1006) on netId 602
+  2025-11-02T10:23:33.349 - UNBLOCKED 10109(1003) on netId 602
+  2025-11-02T10:23:33.349 - UNBLOCKED 10109(1002) on netId 602
+  2025-11-02T10:23:33.348 - UNBLOCKED 10109(1001) on netId 602
+  2025-11-02T10:23:33.341 - UNBLOCKED 10109(1000) on netId 602
+  2025-11-02T10:23:33.341 - UNBLOCKED 10109(999) on netId 602
+  2025-11-02T09:03:11.277 - BLOCKED 10109
+  2025-11-02T08:53:27.188 - BLOCKED 10109(1006) on netId 602
+  2025-11-02T08:53:27.169 - BLOCKED 10109(1003) on netId 602
+  2025-11-02T08:53:27.168 - BLOCKED 10109(1002) on netId 602
+  2025-11-02T08:53:27.167 - BLOCKED 10109(1001) on netId 602
+  2025-11-02T08:53:27.150 - BLOCKED 10109(1000) on netId 602
+  2025-11-02T08:53:27.143 - BLOCKED 10109(999) on netId 602
+  2025-11-02T08:52:59.995 - UNBLOCKED 10109
+  2025-11-02T08:52:56.857 - UNBLOCKED 10109(1006) on netId 602
+  2025-11-02T08:52:56.857 - UNBLOCKED 10109(1003) on netId 602
+  2025-11-02T08:52:56.857 - UNBLOCKED 10109(1002) on netId 602
+  2025-11-02T08:52:56.857 - UNBLOCKED 10109(1001) on netId 602
+  2025-11-02T08:52:56.856 - UNBLOCKED 10109(1000) on netId 602
+  2025-11-02T08:52:56.856 - UNBLOCKED 10109(999) on netId 602
+  2025-11-02T06:29:24.286 - BLOCKED 10109
+  2025-11-02T04:57:54.636 - BLOCKED 10109(1006) on netId 602
+  2025-11-02T04:57:54.633 - BLOCKED 10109(1003) on netId 602
+  2025-11-02T04:57:54.631 - BLOCKED 10109(1002) on netId 602
+  2025-11-02T04:57:54.630 - BLOCKED 10109(1001) on netId 602
+  2025-11-02T04:57:54.628 - BLOCKED 10109(1000) on netId 602
+  2025-11-02T04:57:54.627 - BLOCKED 10109(999) on netId 602
+  2025-11-02T04:57:29.287 - BLOCKED 10242
+  2025-11-02T04:57:29.149 - BLOCKED 10242(994) on netId 602
+  2025-11-02T04:57:29.148 - BLOCKED 10242(993) on netId 602
+  2025-11-02T04:57:29.148 - BLOCKED 10242(992) on netId 602
+  2025-11-02T04:57:29.147 - BLOCKED 10242(991) on netId 602
+  2025-11-02T02:19:05.845 - BLOCKED 10109(989) on netId 602
+  2025-11-02T02:19:05.844 - BLOCKED 10109(988) on netId 602
+  2025-11-02T02:19:05.841 - BLOCKED 10109(987) on netId 602
+  2025-11-02T02:19:05.840 - BLOCKED 10109(986) on netId 602
+  2025-11-02T02:19:05.839 - BLOCKED 10109(985) on netId 602
+  2025-11-02T02:19:05.838 - BLOCKED 10109(984) on netId 602
+  2025-11-02T02:19:00.668 - UNBLOCKED 10109(989) on netId 602
+  2025-11-02T02:19:00.667 - UNBLOCKED 10109(988) on netId 602
+  2025-11-02T02:19:00.666 - UNBLOCKED 10109(987) on netId 602
+  2025-11-02T02:19:00.666 - UNBLOCKED 10109(986) on netId 602
+  2025-11-02T02:19:00.661 - UNBLOCKED 10109(985) on netId 602
+  2025-11-02T02:19:00.659 - UNBLOCKED 10109(984) on netId 602
+  2025-11-02T02:04:00.534 - BLOCKED 10109(989) on netId 602
+  2025-11-02T02:04:00.532 - BLOCKED 10109(988) on netId 602
+  2025-11-02T02:04:00.531 - BLOCKED 10109(987) on netId 602
+  2025-11-02T02:04:00.529 - BLOCKED 10109(986) on netId 602
+  2025-11-02T02:04:00.524 - BLOCKED 10109(985) on netId 602
+  2025-11-02T02:04:00.523 - BLOCKED 10109(984) on netId 602
+  2025-11-02T02:03:58.829 - BLOCKED 10259(966) on netId 602
+  2025-11-02T02:03:55.371 - UNBLOCKED 10259(966) on netId 602
+  2025-11-02T02:03:55.366 - UNBLOCKED 10109(989) on netId 602
+  2025-11-02T02:03:55.366 - UNBLOCKED 10109(988) on netId 602
+  2025-11-02T02:03:55.366 - UNBLOCKED 10109(987) on netId 602
+  2025-11-02T02:03:55.366 - UNBLOCKED 10109(986) on netId 602
+  2025-11-02T02:03:55.365 - UNBLOCKED 10109(985) on netId 602
+  2025-11-02T02:03:55.365 - UNBLOCKED 10109(984) on netId 602
+  2025-11-02T01:48:37.073 - BLOCKED 10259(966) on netId 602
+  2025-11-02T01:48:37.066 - BLOCKED 10109(989) on netId 602
+  2025-11-02T01:48:37.065 - BLOCKED 10109(988) on netId 602
+  2025-11-02T01:48:37.064 - BLOCKED 10109(987) on netId 602
+  2025-11-02T01:48:37.063 - BLOCKED 10109(986) on netId 602
+  2025-11-02T01:48:37.062 - BLOCKED 10109(985) on netId 602
+  2025-11-02T01:48:37.058 - BLOCKED 10109(984) on netId 602
+  2025-11-02T01:48:31.917 - UNBLOCKED 10259(966) on netId 602
+  2025-11-02T01:48:31.910 - UNBLOCKED 10109(989) on netId 602
+  2025-11-02T01:48:31.909 - UNBLOCKED 10109(988) on netId 602
+  2025-11-02T01:48:31.906 - UNBLOCKED 10109(987) on netId 602
+  2025-11-02T01:48:31.904 - UNBLOCKED 10109(986) on netId 602
+  2025-11-02T01:48:31.903 - UNBLOCKED 10109(985) on netId 602
+  2025-11-02T01:48:31.899 - UNBLOCKED 10109(984) on netId 602
+  2025-11-02T01:33:31.854 - BLOCKED 10259(966) on netId 602
+  2025-11-02T01:33:31.837 - BLOCKED 10109(989) on netId 602
+  2025-11-02T01:33:31.836 - BLOCKED 10109(988) on netId 602
+  2025-11-02T01:33:31.835 - BLOCKED 10109(987) on netId 602
+  2025-11-02T01:33:31.832 - BLOCKED 10109(986) on netId 602
+  2025-11-02T01:33:31.832 - BLOCKED 10109(985) on netId 602
+  2025-11-02T01:33:31.831 - BLOCKED 10109(984) on netId 602
+  2025-11-02T01:33:26.704 - UNBLOCKED 10259(966) on netId 602
+  2025-11-02T01:33:26.698 - UNBLOCKED 10109(989) on netId 602
+  2025-11-02T01:33:26.695 - UNBLOCKED 10109(988) on netId 602
+  2025-11-02T01:33:26.692 - UNBLOCKED 10109(987) on netId 602
+  2025-11-02T01:33:26.691 - UNBLOCKED 10109(986) on netId 602
+  2025-11-02T01:33:26.689 - UNBLOCKED 10109(985) on netId 602
+  2025-11-02T01:33:26.688 - UNBLOCKED 10109(984) on netId 602
+  2025-11-02T01:23:26.572 - BLOCKED 10259(966) on netId 602
+  2025-11-02T01:23:26.563 - BLOCKED 10109(989) on netId 602
+  2025-11-02T01:23:26.563 - BLOCKED 10109(988) on netId 602
+  2025-11-02T01:23:26.562 - BLOCKED 10109(987) on netId 602
+  2025-11-02T01:23:26.562 - BLOCKED 10109(986) on netId 602
+  2025-11-02T01:23:26.562 - BLOCKED 10109(985) on netId 602
+  2025-11-02T01:23:26.561 - BLOCKED 10109(984) on netId 602
+  2025-11-02T01:23:21.419 - UNBLOCKED 10259(966) on netId 602
+  2025-11-02T01:23:21.415 - UNBLOCKED 10109(989) on netId 602
+  2025-11-02T01:23:21.414 - UNBLOCKED 10109(988) on netId 602
+  2025-11-02T01:23:21.413 - UNBLOCKED 10109(987) on netId 602
+  2025-11-02T01:23:21.412 - UNBLOCKED 10109(986) on netId 602
+  2025-11-02T01:23:21.410 - UNBLOCKED 10109(985) on netId 602
+  2025-11-02T01:23:21.406 - UNBLOCKED 10109(984) on netId 602
+  2025-11-02T01:14:52.271 - BLOCKED 10259(966) on netId 602
+  2025-11-02T01:14:52.270 - BLOCKED 10109(989) on netId 602
+  2025-11-02T01:14:52.269 - BLOCKED 10109(988) on netId 602
+  2025-11-02T01:14:52.269 - BLOCKED 10109(987) on netId 602
+  2025-11-02T01:14:52.268 - BLOCKED 10109(986) on netId 602
+  2025-11-02T01:14:52.267 - BLOCKED 10109(985) on netId 602
+  2025-11-02T01:14:52.263 - BLOCKED 10109(984) on netId 602
+  2025-11-02T01:13:21.176 - BLOCKED 10251(968) on netId 602
+  2025-11-02T01:13:21.175 - BLOCKED 10242(975) on netId 602
+  2025-11-02T01:13:21.175 - BLOCKED 10242(973) on netId 602
+  2025-11-02T01:13:21.174 - BLOCKED 10242(972) on netId 602
+  2025-11-02T01:13:21.174 - BLOCKED 10242(971) on netId 602
+  2025-11-02T01:13:21.173 - BLOCKED 10242(970) on netId 602
+  2025-11-02T01:13:21.172 - BLOCKED 10228(850) on netId 602
+  2025-11-02T01:13:21.171 - BLOCKED 10228(849) on netId 602
+  2025-11-02T01:13:21.170 - BLOCKED 10228(848) on netId 602
+  2025-11-02T01:13:21.168 - BLOCKED 10228(847) on netId 602
+  2025-11-02T01:13:21.158 - BLOCKED 10225(33) on netId 602
+  2025-11-02T01:13:21.154 - BLOCKED 10194(982) on netId 602
+  2025-11-02T01:13:21.152 - BLOCKED 10194(981) on netId 602
+  2025-11-02T00:44:34.534 - UNBLOCKED 10251(968) on netId 602
+  2025-11-02T00:44:34.531 - UNBLOCKED 10228(850) on netId 602
+  2025-11-02T00:44:34.531 - UNBLOCKED 10228(849) on netId 602
+  2025-11-02T00:44:34.530 - UNBLOCKED 10228(848) on netId 602
+  2025-11-02T00:44:34.530 - UNBLOCKED 10228(847) on netId 602
+  2025-11-02T00:44:34.529 - UNBLOCKED 10225(33) on netId 602
+  2025-11-02T00:44:27.415 - UNBLOCKED 10105
+  2025-11-02T00:44:13.933 - BLOCKED 10251(968) on netId 602
+  2025-11-02T00:44:13.930 - BLOCKED 10228(850) on netId 602
+  2025-11-02T00:44:13.930 - BLOCKED 10228(849) on netId 602
+  2025-11-02T00:44:13.929 - BLOCKED 10228(848) on netId 602
+  2025-11-02T00:44:13.929 - BLOCKED 10228(847) on netId 602
+  2025-11-02T00:44:13.928 - BLOCKED 10225(33) on netId 602
+  2025-11-02T00:35:09.666 - UNBLOCKED 10251(968) on netId 602
+  2025-11-02T00:35:09.665 - UNBLOCKED 10228(850) on netId 602
+  2025-11-02T00:35:09.665 - UNBLOCKED 10228(849) on netId 602
+  2025-11-02T00:35:09.664 - UNBLOCKED 10228(848) on netId 602
+  2025-11-02T00:35:09.663 - UNBLOCKED 10228(847) on netId 602
+  2025-11-02T00:35:09.651 - UNBLOCKED 10225(33) on netId 602
+  2025-11-02T00:35:09.375 - UNBLOCKED 10259(966) on netId 602
+  2025-11-02T00:35:09.368 - UNBLOCKED 10109(964) on netId 602
+  2025-11-02T00:35:09.368 - UNBLOCKED 10109(963) on netId 602
+  2025-11-02T00:35:09.367 - UNBLOCKED 10109(962) on netId 602
+  2025-11-02T00:35:09.366 - UNBLOCKED 10109(961) on netId 602
+  2025-11-02T00:35:09.365 - UNBLOCKED 10109(960) on netId 602
+  2025-11-02T00:35:09.364 - UNBLOCKED 10109(959) on netId 602
+  2025-11-02T00:32:55.582 - BLOCKED 10259(966) on netId 602
+  2025-11-02T00:32:55.576 - BLOCKED 10109(964) on netId 602
+  2025-11-02T00:32:55.574 - BLOCKED 10109(963) on netId 602
+  2025-11-02T00:32:55.572 - BLOCKED 10109(962) on netId 602
+  2025-11-02T00:32:55.566 - BLOCKED 10109(961) on netId 602
+  2025-11-02T00:32:55.560 - BLOCKED 10109(960) on netId 602
+  2025-11-02T00:32:55.559 - BLOCKED 10109(959) on netId 602
+  2025-11-02T00:31:24.915 - BLOCKED 10251(968) on netId 602
+  2025-11-02T00:31:24.912 - BLOCKED 10228(850) on netId 602
+  2025-11-02T00:31:24.912 - BLOCKED 10228(849) on netId 602
+  2025-11-02T00:31:24.911 - BLOCKED 10228(848) on netId 602
+  2025-11-02T00:31:24.911 - BLOCKED 10228(847) on netId 602
+  2025-11-02T00:31:24.911 - BLOCKED 10225(33) on netId 602
+  2025-11-02T00:17:51.472 - UNBLOCKED 10245(946) on netId 602
+  2025-11-02T00:17:51.466 - UNBLOCKED 10228(850) on netId 602
+  2025-11-02T00:17:51.466 - UNBLOCKED 10228(849) on netId 602
+  2025-11-02T00:17:51.465 - UNBLOCKED 10228(848) on netId 602
+  2025-11-02T00:17:51.465 - UNBLOCKED 10228(847) on netId 602
+  2025-11-02T00:17:51.463 - UNBLOCKED 10225(33) on netId 602
+  2025-11-02T00:11:34.648 - UNBLOCKED 10259(535) on netId 602
+  2025-11-02T00:07:33.019 - BLOCKED 10245
+  2025-11-02T00:07:19.707 - UNBLOCKED 10109(958) on netId 602
+  2025-11-02T00:07:19.705 - UNBLOCKED 10109(957) on netId 602
+  2025-11-02T00:07:19.702 - UNBLOCKED 10109(956) on netId 602
+  2025-11-02T00:07:19.699 - UNBLOCKED 10109(955) on netId 602
+  2025-11-02T00:07:19.697 - UNBLOCKED 10109(954) on netId 602
+  2025-11-02T00:07:19.696 - UNBLOCKED 10109(953) on netId 602
+  2025-11-02T00:06:05.280 - BLOCKED 10109(958) on netId 602
+  2025-11-02T00:06:05.280 - BLOCKED 10109(957) on netId 602
+  2025-11-02T00:06:05.279 - BLOCKED 10109(956) on netId 602
+  2025-11-02T00:06:05.279 - BLOCKED 10109(955) on netId 602
+  2025-11-02T00:06:05.278 - BLOCKED 10109(954) on netId 602
+  2025-11-02T00:06:05.278 - BLOCKED 10109(953) on netId 602
+  2025-11-02T00:05:05.537 - BLOCKED 10259(535) on netId 602
+  2025-11-02T00:05:05.537 - BLOCKED 10251(948) on netId 602
+  2025-11-02T00:05:05.536 - BLOCKED 10245(946) on netId 602
+  2025-11-02T00:05:05.530 - BLOCKED 10228(850) on netId 602
+  2025-11-02T00:05:05.529 - BLOCKED 10228(849) on netId 602
+  2025-11-02T00:05:05.529 - BLOCKED 10228(848) on netId 602
+  2025-11-02T00:05:05.529 - BLOCKED 10228(847) on netId 602
+  2025-11-02T00:05:05.529 - BLOCKED 10225(33) on netId 602
+  2025-11-02T00:02:01.639 - UNBLOCKED 10209
+  2025-11-02T00:00:00.761 - UNBLOCKED 10201
+  2025-11-01T23:27:13.777 - UNBLOCKED 10251
+  2025-11-01T23:27:13.171 - UNBLOCKED 10259(535) on netId 602
+  2025-11-01T23:27:13.166 - UNBLOCKED 10228(850) on netId 602
+  2025-11-01T23:27:13.166 - UNBLOCKED 10228(849) on netId 602
+  2025-11-01T23:27:13.165 - UNBLOCKED 10228(848) on netId 602
+  2025-11-01T23:27:13.165 - UNBLOCKED 10228(847) on netId 602
+  2025-11-01T23:27:13.164 - UNBLOCKED 10225(33) on netId 602
+  2025-11-01T23:10:20.315 - BLOCKED 10245(941) on netId 602
+  2025-11-01T23:10:20.314 - BLOCKED 10245(940) on netId 602
+  2025-11-01T23:10:20.070 - UNBLOCKED 10245
+  2025-11-01T23:10:20.044 - UNBLOCKED 10245(940) on netId 602
+  2025-11-01T23:10:19.771 - BLOCKED 10245
+  2025-11-01T23:08:52.680 - BLOCKED 10242(930) on netId 602
+  2025-11-01T23:08:52.680 - BLOCKED 10242(929) on netId 602
+  2025-11-01T23:08:52.680 - BLOCKED 10242(928) on netId 602
+  2025-11-01T23:08:52.679 - BLOCKED 10242(927) on netId 602
+  2025-11-01T23:08:52.679 - BLOCKED 10242(926) on netId 602
+  2025-11-01T23:08:52.678 - BLOCKED 10228(850) on netId 602
+  2025-11-01T23:08:52.677 - BLOCKED 10228(849) on netId 602
+  2025-11-01T23:08:52.677 - BLOCKED 10228(848) on netId 602
+  2025-11-01T23:08:52.676 - BLOCKED 10228(847) on netId 602
+  2025-11-01T23:08:52.675 - BLOCKED 10225(33) on netId 602
+  2025-11-01T23:08:52.661 - BLOCKED 10194(935) on netId 602
+  2025-11-01T23:08:52.661 - BLOCKED 10194(933) on netId 602
+  2025-11-01T23:08:52.524 - BLOCKED 10259(535) on netId 602
+  2025-11-01T23:06:06.460 - UNBLOCKED 10194
+  2025-11-01T23:06:03.407 - UNBLOCKED 10242
+  2025-11-01T23:05:59.951 - UNBLOCKED 10162
+  2025-11-01T23:05:58.512 - UNBLOCKED 10259(535) on netId 602
+  2025-11-01T23:05:58.511 - UNBLOCKED 10251(922) on netId 602
+  2025-11-01T23:05:58.508 - UNBLOCKED 10228(850) on netId 602
+  2025-11-01T23:05:58.508 - UNBLOCKED 10228(849) on netId 602
+  2025-11-01T23:05:58.508 - UNBLOCKED 10228(848) on netId 602
+  2025-11-01T23:05:58.507 - UNBLOCKED 10228(847) on netId 602
+  2025-11-01T23:05:58.506 - UNBLOCKED 10225(33) on netId 602
+  2025-11-01T23:02:05.958 - BLOCKED 10251
+  2025-11-01T23:02:01.179 - BLOCKED 10251(922) on netId 602
+  2025-11-01T23:02:01.179 - BLOCKED 10251(921) on netId 602
+  2025-11-01T23:02:01.112 - UNBLOCKED 10251(922) on netId 602
+  2025-11-01T23:02:01.111 - UNBLOCKED 10251(921) on netId 602
+  2025-11-01T23:02:01.079 - BLOCKED 10251(922) on netId 602
+  2025-11-01T23:02:01.078 - BLOCKED 10251(921) on netId 602
+  2025-11-01T23:02:00.950 - UNBLOCKED 10251(922) on netId 602
+  2025-11-01T23:02:00.949 - UNBLOCKED 10251(921) on netId 602
+  2025-11-01T23:02:00.949 - UNBLOCKED 10251
+  2025-11-01T22:46:12.740 - BLOCKED 10105(914) on netId 602
+  2025-11-01T22:46:12.174 - UNBLOCKED 10105(914) on netId 602
+  2025-11-01T22:46:07.152 - BLOCKED 10251
+  2025-11-01T22:46:02.462 - BLOCKED 10251(909) on netId 602
+  2025-11-01T22:46:02.462 - BLOCKED 10251(908) on netId 602
+  2025-11-01T22:46:02.377 - UNBLOCKED 10251(909) on netId 602
+  2025-11-01T22:46:02.377 - UNBLOCKED 10251(908) on netId 602
+  2025-11-01T22:46:02.338 - BLOCKED 10251(909) on netId 602
+  2025-11-01T22:46:02.337 - BLOCKED 10251(908) on netId 602
+  2025-11-01T22:46:02.128 - UNBLOCKED 10251(909) on netId 602
+  2025-11-01T22:46:02.128 - UNBLOCKED 10251(908) on netId 602
+  2025-11-01T22:45:57.596 - UNBLOCKED 10109(874) on netId 602
+  2025-11-01T22:45:57.595 - UNBLOCKED 10109(873) on netId 602
+  2025-11-01T22:45:57.586 - UNBLOCKED 10109(851) on netId 602
+  2025-11-01T22:45:57.585 - UNBLOCKED 10109(829) on netId 602
+  2025-11-01T22:45:57.585 - UNBLOCKED 10109(828) on netId 602
+  2025-11-01T22:45:57.584 - UNBLOCKED 10109(827) on netId 602
+  2025-11-01T22:45:57.521 - BLOCKED 10162
+  2025-11-01T22:02:21.902 - BLOCKED 10109(874) on netId 602
+  2025-11-01T22:02:21.900 - BLOCKED 10109(873) on netId 602
+  2025-11-01T22:02:21.899 - BLOCKED 10109(851) on netId 602
+  2025-11-01T22:02:21.899 - BLOCKED 10109(829) on netId 602
+  2025-11-01T22:02:21.898 - BLOCKED 10109(828) on netId 602
+  2025-11-01T22:02:21.896 - BLOCKED 10109(827) on netId 602
+  2025-11-01T22:02:21.893 - BLOCKED 10194
+  2025-11-01T22:02:18.055 - BLOCKED 10246
+  2025-11-01T22:02:03.002 - BLOCKED 10162(902) on netId 602
+  2025-11-01T22:02:03.001 - BLOCKED 10162(901) on netId 602
+  2025-11-01T22:02:00.566 - BLOCKED 10194(891) on netId 602
+  2025-11-01T22:02:00.565 - BLOCKED 10194(890) on netId 602
+  2025-11-01T22:01:58.289 - UNBLOCKED 10194
+  2025-11-01T22:01:54.905 - UNBLOCKED 10246
+  2025-11-01T22:01:53.768 - BLOCKED 10228(850) on netId 602
+  2025-11-01T22:01:53.768 - BLOCKED 10228(849) on netId 602
+  2025-11-01T22:01:53.767 - BLOCKED 10228(848) on netId 602
+  2025-11-01T22:01:53.766 - BLOCKED 10228(847) on netId 602
+  2025-11-01T22:01:53.368 - UNBLOCKED 10194(891) on netId 602
+  2025-11-01T22:01:53.367 - UNBLOCKED 10194(890) on netId 602
+  2025-11-01T22:01:53.346 - UNBLOCKED 10228(850) on netId 602
+  2025-11-01T22:01:53.345 - UNBLOCKED 10228(849) on netId 602
+  2025-11-01T22:01:53.345 - UNBLOCKED 10228(848) on netId 602
+  2025-11-01T22:01:53.344 - UNBLOCKED 10228(847) on netId 602
+  2025-11-01T22:01:50.350 - UNBLOCKED 10109(874) on netId 602
+  2025-11-01T22:01:50.349 - UNBLOCKED 10109(873) on netId 602
+  2025-11-01T22:01:50.348 - UNBLOCKED 10109(851) on netId 602
+  2025-11-01T22:01:50.347 - UNBLOCKED 10109(829) on netId 602
+  2025-11-01T22:01:50.347 - UNBLOCKED 10109(828) on netId 602
+  2025-11-01T22:01:50.346 - UNBLOCKED 10109(827) on netId 602
+  2025-11-01T16:14:25.945 - BLOCKED 10109(874) on netId 602
+  2025-11-01T16:14:25.944 - BLOCKED 10109(873) on netId 602
+  2025-11-01T16:14:25.939 - BLOCKED 10109(851) on netId 602
+  2025-11-01T16:14:25.938 - BLOCKED 10109(829) on netId 602
+  2025-11-01T16:14:25.937 - BLOCKED 10109(828) on netId 602
+  2025-11-01T16:14:25.936 - BLOCKED 10109(827) on netId 602
+  2025-11-01T16:13:24.816 - BLOCKED 10259(535) on netId 602
+  2025-11-01T16:04:37.078 - BLOCKED 10194(891) on netId 602
+  2025-11-01T16:04:37.077 - BLOCKED 10194(890) on netId 602
+  2025-11-01T16:04:37.011 - UNBLOCKED 10194(891) on netId 602
+  2025-11-01T16:04:37.010 - UNBLOCKED 10194(890) on netId 602
+  2025-11-01T16:03:53.432 - BLOCKED 10194(891) on netId 602
+  2025-11-01T16:03:53.431 - BLOCKED 10194(890) on netId 602
+  2025-11-01T16:03:53.058 - UNBLOCKED 10194(891) on netId 602
+  2025-11-01T16:03:53.057 - UNBLOCKED 10194(890) on netId 602
+  2025-11-01T16:03:44.548 - BLOCKED 10194
+  2025-11-01T16:03:41.622 - BLOCKED 10194(890) on netId 602
+  2025-11-01T16:03:38.744 - BLOCKED 10105(879) on netId 602
+  2025-11-01T16:03:35.740 - BLOCKED 10242
+  2025-11-01T16:03:32.235 - UNBLOCKED 10184(878) on netId 602
+  2025-11-01T16:03:32.229 - UNBLOCKED 10162(877) on netId 602
+  2025-11-01T16:03:32.228 - UNBLOCKED 10162(876) on netId 602
+  2025-11-01T16:03:28.286 - UNBLOCKED 10194
+  2025-11-01T16:03:28.141 - UNBLOCKED 10109
+  2025-11-01T16:03:26.651 - UNBLOCKED 10105(879) on netId 602
+  2025-11-01T16:03:25.954 - BLOCKED 10184
+  2025-11-01T16:03:25.291 - BLOCKED 10162(877) on netId 602
+  2025-11-01T16:03:25.291 - BLOCKED 10162(876) on netId 602
+  2025-11-01T16:03:24.089 - BLOCKED 10245(875) on netId 602
+  2025-11-01T16:03:22.527 - UNBLOCKED 10245
+  2025-11-01T16:03:21.245 - UNBLOCKED 10194(865) on netId 602
+  2025-11-01T16:03:21.244 - UNBLOCKED 10194(863) on netId 602
+  2025-11-01T16:03:21.239 - UNBLOCKED 10242(846) on netId 602
+  2025-11-01T16:03:21.239 - UNBLOCKED 10242(845) on netId 602
+  2025-11-01T16:03:21.239 - UNBLOCKED 10242(842) on netId 602
+  2025-11-01T16:03:21.239 - UNBLOCKED 10242(841) on netId 602
+  2025-11-01T16:03:21.238 - UNBLOCKED 10242(840) on netId 602
+  2025-11-01T16:03:21.238 - UNBLOCKED 10242(839) on netId 602
+  2025-11-01T16:03:21.233 - UNBLOCKED 10259(535) on netId 602
+  2025-11-01T16:03:18.258 - UNBLOCKED 10109(874) on netId 602
+  2025-11-01T16:03:18.257 - UNBLOCKED 10109(873) on netId 602
+  2025-11-01T16:03:18.256 - UNBLOCKED 10109(851) on netId 602
+
+NetTransition WakeLock activity (most recent first):
+  total acquisitions: 1
+  total releases: 1
+  cumulative duration: 0s
+  longest duration: 0s
+  2025-10-31T20:15:03.522 - RELEASE (EVENT_EXPIRE_NET_TRANSITION_WAKELOCK)
+  2025-10-31T20:15:03.481 - ACQUIRE for [601 WIFI]
+  
+  bandwidth update requests (by uid):
+
+NetworkStackClient logs:
+  2025-10-28T16:10:19.590 - Network stack init
+  2025-10-28T16:10:22.684 - Network stack service start requested
+  2025-10-28T16:10:24.228 - Network stack service connected
+  2025-10-28T16:10:24.234 - Network stack service registered
+  2025-10-28T16:10:19.588 - Network stack init
+  2025-10-28T16:10:22.680 - Starting networking module android.net.INetworkStackConnector
+  2025-10-28T16:10:22.681 - Starting networking module in network_stack process
+  2025-10-28T16:10:22.683 - Networking module service start requested
+  2025-10-28T16:10:22.684 - Starting networking module android.net.ITetheringConnector
+  2025-10-28T16:10:22.685 - Starting networking module in system_server process
+  2025-10-28T16:10:22.686 - Networking module service start requested
+  2025-10-28T16:10:24.228 - Networking module service connected
+  2025-10-28T16:10:24.881 - Networking module service connected
+  
+  pendingNetStackRequests length: 0
+
+Permission Monitor:
+  Interface filtering rules:
+
+NetworkRequestInfoLogs - system (most recent first):
+
+Network block history with toast:
+  25-10-28_16:47:20 android 'Text: Eeve' 0
+
+
+WifiValidation logs (most recent first):
+602 - "Dung Pham" - initial mode: 0
+  2025-10-31T20:20:24.132 - mCurrentMode = 0
+  2025-10-31T20:20:24.161 - mCurrentMode = 0
+601 - "Dung Pham" - initial mode: 0
+  2025-10-28T16:10:29.737 - mCurrentMode = 0
+  2025-10-28T16:10:29.782 - mCurrentMode = 0

@@ -8,44 +8,61 @@ import re
 
 
 class FileClassifier:
-    """Phân loại file theo cấu trúc mới
-    - System: Config, Action (Log/Db/Xml/Other)
-    - App: <app_name> (Log/Db/Json/Xml/Other)
-    - Connect: Network (Config + Log/Db/Json/Xml/Other), BT (Config + Log/Db/Json/Xml/Other)
-    """
+    """Phân loại file theo cấu trúc mới"""
 
     # ==================== SYSTEM ====================
     SYSTEM_CONFIG_PATHS = [
         'default.prop',
         'dpolicy',
-        'etc/',
-        'vendor/',
-        'oem/',
-        'product/',
-        'odm/',
-        'metadata/',
-        'efs/',
+        'etc',
+        'vendor',
+        'oem',
+        'product',
+        'odm',
+        'metadata',
+        'efs',
         'sepolicy_version',
-        'spu/',
-        'init',
+        'spu',
         'data/etc',
-        'data/property'
+        'data/property',
+        'data/vendor',
+        'externaldump/cmd',
+        'externaldump/proc'
     ]
 
-    SYSTEM_ACTION_PATHS = [
+    SYSTEM_CONFIG_PATTERNS = [
+        r'^init.*'  # init*
+    ]
+
+    # PRIORITY: Các đường dẫn CỤ THỂ hơn phải được kiểm tra TRƯỚC
+    SYSTEM_ACTION_LOG_PATHS = [
+        'data/vendor/log',
+        'data/log',
         'bugreports',
         'cache',
         'data/adb',
         'data/anr',
         'data/tombstones',
         'data/rdx_dump',
-        'data/log',
-        'data/system',
-        'data/system_ce',
-        'data/system_de'
+        'externaldump/bugreport',
+        'externaldump/logs',
+        'externaldump/perf'
     ]
 
-    # ==================== CONNECT NETWORK ====================
+    SYSTEM_ACTION_DB_PATHS = [
+        'data/system',
+        'data/system_ce',
+        'data/system_de',
+        # 'externaldump/dump'
+    ]
+
+    # ==================== APP ====================
+    APP_PATHS = [
+        'data/data',
+        'data/user'
+    ]
+
+    # ==================== CONNECT ====================
     CONNECT_NETWORK_CONFIG_PATHS = [
         'data/misc/net',
         'data/misc/dhcp',
@@ -54,7 +71,8 @@ class FileClassifier:
         'data/misc/apns',
         'data/misc/carrierid',
         'data/misc/network_watchlist',
-        'data/misc/pageboost'
+        'data/misc/pageboost',
+        'externaldump/net'
     ]
 
     CONNECT_NETWORK_ACTION_PATHS = [
@@ -77,10 +95,10 @@ class FileClassifier:
         'data/misc/update_engine',
         'data/misc/vold',
         'data/misc/recovery',
-        'data/misc/shared_relro'
+        'data/misc/shared_relro',
+        'externaldump/radio'
     ]
 
-    # ==================== CONNECT BT ====================
     CONNECT_BT_CONFIG_PATHS = [
         'data/misc/bluedroid',
         'data/misc/bluetooth'
@@ -92,76 +110,9 @@ class FileClassifier:
         'data/misc/audioserver'
     ]
 
-    # ==================== APP ====================
-    APP_PATHS = [
-        'data/app',
-        'data/data',
-        'data/user'
-    ]
-
-    APP_KNOWN_SUBFOLDERS = {'databases', 'shared_prefs', 'files', 'cache', 'code_cache', 'no_backup', 'app_webview'}
-
-    @staticmethod
-    def extract_package_name(path_parts):
-        """Extract Android package name from path"""
-        low_parts = [p.lower() for p in path_parts]
-
-        # Pattern 1: /data/data/<package>/
-        for i, part in enumerate(low_parts):
-            if part == 'data' and i + 1 < len(low_parts) and low_parts[i + 1] == 'data' and i + 2 < len(low_parts):
-                potential_package = path_parts[i + 2]
-                if potential_package.lower() in FileClassifier.APP_KNOWN_SUBFOLDERS and i + 3 < len(low_parts):
-                    potential_package = path_parts[i + 3]
-                if '.' in potential_package and re.match(r'^[a-z][a-z0-9_]*(\.[a-z][a-z0-9_]*)+$', potential_package, re.IGNORECASE):
-                    return potential_package
-                if potential_package and potential_package.lower() not in FileClassifier.APP_KNOWN_SUBFOLDERS:
-                    return potential_package
-
-        # Pattern 2: /data/app/<folder>/
-        for i, part in enumerate(low_parts):
-            if part == 'data' and i + 1 < len(low_parts) and low_parts[i + 1] == 'app' and i + 2 < len(low_parts):
-                next_part = path_parts[i + 2]
-                package = re.split(r'[-=]', next_part)[0]
-                if '.' in package and re.match(r'^[a-z][a-z0-9_]*(\.[a-z][a-z0-9_]*)+$', package, re.IGNORECASE):
-                    return package
-                if package and package.lower() not in FileClassifier.APP_KNOWN_SUBFOLDERS:
-                    return package
-
-        # Pattern 3: /data/user/<id>/<package>/
-        for i, part in enumerate(low_parts):
-            if part == 'data' and i + 1 < len(low_parts) and low_parts[i + 1] == 'user':
-                if i + 2 < len(low_parts) and low_parts[i + 2].isdigit():
-                    if i + 3 < len(low_parts):
-                        potential_package = path_parts[i + 3]
-                        if '.' in potential_package and re.match(r'^[a-z][a-z0-9_]*(\.[a-z][a-z0-9_]*)+$', potential_package, re.IGNORECASE):
-                            return potential_package
-                        if potential_package and potential_package.lower() not in FileClassifier.APP_KNOWN_SUBFOLDERS:
-                            return potential_package
-
-        # Pattern 4: find any part that looks like a package name
-        for part in path_parts:
-            if '.' in part and not part.startswith('.'):
-                if re.match(r'^[a-z][a-z0-9_]*(\.[a-z][a-z0-9_]*){2,}$', part, re.IGNORECASE):
-                    return part
-
-        return None
-
-    @staticmethod
-    def get_file_type_from_extension(file_ext):
-        """Xác định file type từ extension"""
-        file_ext = file_ext.lower()
-
-        if file_ext in ['.log', '.txt']:
-            return 'Log'
-        elif file_ext in ['.db', '.sqlite', '.sqlite3', '.db-wal', '.db-shm', '.sqlite-wal', '.sqlite-shm',
-                          '.db-journal', '.sqlite-journal', '.journal', '.wal', '.shm', '.sql']:
-            return 'Db'
-        elif file_ext == '.json':
-            return 'Json'
-        elif file_ext == '.xml':
-            return 'Xml'
-        else:
-            return 'Other'
+    # ======================================================
+    # ================ CLASS METHODS =======================
+    # ======================================================
 
     @staticmethod
     def path_matches_any(path_str, path_list):
@@ -174,14 +125,121 @@ class FileClassifier:
         return False
 
     @staticmethod
+    def path_matches_pattern(path_str, patterns):
+        """Kiểm tra path có khớp với regex pattern không"""
+        path_lower = path_str.lower()
+        for pattern in patterns:
+            if re.search(pattern, path_lower):
+                return True
+        return False
+
+    @staticmethod
+    def extract_app_name(path_parts):
+        """
+        Trích xuất tên app, CHỈ TÌM TỪ THƯ MỤC GỐC TƯƠNG ĐỐI
+        (Chỉ lấy data/data và data/user/* ở thư mục ngoài)
+        """
+        low_parts = [p.lower() for p in path_parts]
+        num_parts = len(low_parts)
+
+        if num_parts > 3 and low_parts[0] == 'data' and low_parts[1] == 'data':
+            # path_parts[2] là <app_name>
+            return path_parts[2]
+
+        elif num_parts > 4 and low_parts[0] == 'data' and low_parts[1] == 'user':
+            if low_parts[2].isdigit():
+                # path_parts[3] là <app_name>
+                return path_parts[3]
+
+        return None
+
+    # =========== HÀM ĐÃ CHỈNH MỚI (CÓ KIỂM TRA NỘI DUNG) =
+    @staticmethod
+    def get_file_extension_category(file_ext, file_path=None):
+        """
+        Xác định category của file dựa vào extension hoặc nội dung (nếu là .txt)
+        """
+        file_ext = file_ext.lower()
+
+        #  Ưu tiên .log
+        if file_ext == '.log':
+            return 'Log'
+
+        #  Kiểm tra .txt
+        elif file_ext == '.txt' and file_path:
+
+            # === [THÊM MỚI] 2.1: Kiểm tra tên file dump phổ biến (Nhanh và chính xác) ===
+            file_name_lower = file_path.name.lower()
+            if file_name_lower in [
+                'statsd_dump.txt',
+                'telephony_registry.txt',
+                'interrupts.txt'
+            ]:
+                return 'Log'
+
+            # === 2.2: Kiểm tra nội dung file (Nếu tên không khớp) ===
+            try:
+                head_lines = []
+                with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                    for _ in range(200): # Đọc 200 dòng
+                        line = f.readline()
+                        if not line:
+                            break
+                        head_lines.append(line)
+                head = ''.join(head_lines)
+
+                head_lower = head.lower()
+                if (
+                    # Các cấp độ log thông thường
+                    re.search(r'\b(INFO|ERROR|WARN|DEBUG|TRACE|FATAL)\b', head_lower, re.IGNORECASE)
+
+                    # === [THÊM MỚI] Các từ khóa lỗi/dump phổ biến ===
+                    or re.search(r'\b(FAIL|FAILURE|FAILED|EXCEPTION|CRASH)\b', head_lower, re.IGNORECASE)
+
+                    # Ngày định dạng đầy đủ
+                    or re.search(r'\d{4}-\d{2}-\d{2}', head_lower)
+
+                    # Định dạng logcat: MM-DD HH:MM:SS.mmm
+                    or re.search(r'\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}\.\d{3}', head_lower)
+
+                    # Dòng mở đầu bằng dấu [
+                    or re.search(r'^\[', head_lower, re.MULTILINE)
+
+                    # Dấu hiệu file telephony
+                    or 'local logs:' in head_lower or 'listen logs:' in head_lower
+                ):
+                    return 'Log'
+
+            except Exception:
+                pass
+
+            # Nếu cả tên và nội dung đều không khớp, trả về 'Other'
+            return 'Other'
+
+        # Các định dạng khác
+        elif file_ext in ['.db', '.sql', '.sqlite', '.sqlite3', '.db-wal', '.db-shm']:
+            return 'Db'
+        elif file_ext == '.json':
+            return 'Json'
+        elif file_ext == '.xml':
+            return 'Xml'
+        else:
+            return 'Other'
+
+
+
+    # ======================================================
+    # =============== CLASSIFY FUNCTION ====================
+    # ======================================================
+    @staticmethod
     def classify(file_path: Path, input_root: Path):
         """
-        Phân loại file theo cấu trúc mới
+        Phân loại file và trả về thông tin
         Returns: {
             'main_category': 'System' | 'App' | 'Connect',
             'sub_category': str,
-            'sub_type': str (Config/Action for System, Log/Db/Json/Xml/Other),
             'app_name': str | None,
+            'file_type': str,
         }
         """
         try:
@@ -196,82 +254,69 @@ class FileClassifier:
         result = {
             'main_category': None,
             'sub_category': None,
-            'sub_type': None,
             'app_name': None,
+            'file_type': 'Other',
         }
 
-        # ==================== CONNECT - NETWORK ====================
+        # ==================== SYSTEM ====================
+        if FileClassifier.path_matches_any(path_str, FileClassifier.SYSTEM_ACTION_LOG_PATHS):
+            result['main_category'] = 'System'
+            result['sub_category'] = 'Action'
+            result['file_type'] = FileClassifier.get_file_extension_category(file_ext, file_path)
+            return result
+
+        if FileClassifier.path_matches_any(path_str, FileClassifier.SYSTEM_ACTION_DB_PATHS):
+            result['main_category'] = 'System'
+            result['sub_category'] = 'Action'
+            result['file_type'] = FileClassifier.get_file_extension_category(file_ext, file_path)
+            return result
+
+        if FileClassifier.path_matches_any(path_str, FileClassifier.SYSTEM_CONFIG_PATHS) or \
+           FileClassifier.path_matches_pattern(path_str, FileClassifier.SYSTEM_CONFIG_PATTERNS):
+            result['main_category'] = 'System'
+            result['sub_category'] = 'Config'
+            result['file_type'] = 'Config'
+            return result
+
+        # ==================== CONNECT ====================
         if FileClassifier.path_matches_any(path_str, FileClassifier.CONNECT_NETWORK_CONFIG_PATHS):
             result['main_category'] = 'Connect'
             result['sub_category'] = 'Network'
-            result['sub_type'] = 'Config'
+            result['file_type'] = 'Config'
             return result
 
         if FileClassifier.path_matches_any(path_str, FileClassifier.CONNECT_NETWORK_ACTION_PATHS):
             result['main_category'] = 'Connect'
             result['sub_category'] = 'Network'
-            result['sub_type'] = FileClassifier.get_file_type_from_extension(file_ext)
+            result['file_type'] = FileClassifier.get_file_extension_category(file_ext, file_path)
             return result
 
-        # ==================== CONNECT - BT ====================
         if FileClassifier.path_matches_any(path_str, FileClassifier.CONNECT_BT_CONFIG_PATHS):
             result['main_category'] = 'Connect'
             result['sub_category'] = 'BT'
-            result['sub_type'] = 'Config'
+            result['file_type'] = 'Config'
             return result
 
         if FileClassifier.path_matches_any(path_str, FileClassifier.CONNECT_BT_ACTION_PATHS):
             result['main_category'] = 'Connect'
             result['sub_category'] = 'BT'
-            result['sub_type'] = FileClassifier.get_file_type_from_extension(file_ext)
-            return result
-
-        # ==================== SYSTEM ====================
-        if FileClassifier.path_matches_any(path_str, FileClassifier.SYSTEM_CONFIG_PATHS):
-            result['main_category'] = 'System'
-            result['sub_category'] = 'Config'
-            result['sub_type'] = 'Config'
-            return result
-
-        if FileClassifier.path_matches_any(path_str, FileClassifier.SYSTEM_ACTION_PATHS):
-            result['main_category'] = 'System'
-            result['sub_category'] = 'Action'
-            result['sub_type'] = FileClassifier.get_file_type_from_extension(file_ext)
+            result['file_type'] = FileClassifier.get_file_extension_category(file_ext, file_path)
             return result
 
         # ==================== APP ====================
-        package_name = FileClassifier.extract_package_name(path_parts)
+        app_name = FileClassifier.extract_app_name(path_parts)
 
-        if package_name or FileClassifier.path_matches_any(path_str, FileClassifier.APP_PATHS):
-            app_name = package_name if package_name else 'Unknown'
-
-            # Fallback: scan for data/data or data/user pattern
-            if not package_name:
-                low_parts = [p.lower() for p in path_parts]
-                for i, p in enumerate(low_parts):
-                    if p == 'data' and i + 1 < len(low_parts) and low_parts[i + 1] == 'data' and i + 2 < len(low_parts):
-                        candidate = path_parts[i + 2]
-                        if candidate.lower() not in FileClassifier.APP_KNOWN_SUBFOLDERS:
-                            app_name = candidate
-                            break
-                if not package_name:
-                    for i, p in enumerate(low_parts):
-                        if p == 'data' and i + 1 < len(low_parts) and low_parts[i + 1] == 'app' and i + 2 < len(low_parts):
-                            candidate = re.split(r'[-=]', path_parts[i + 2])[0]
-                            if candidate and candidate.lower() not in FileClassifier.APP_KNOWN_SUBFOLDERS:
-                                app_name = candidate
-                                break
-
+        if app_name:
             result['main_category'] = 'App'
             result['sub_category'] = app_name
             result['app_name'] = app_name
-            result['sub_type'] = FileClassifier.get_file_type_from_extension(file_ext)
+            result['file_type'] = FileClassifier.get_file_extension_category(file_ext, file_path)
             return result
 
         # ==================== DEFAULT ====================
         result['main_category'] = 'System'
         result['sub_category'] = 'Action'
-        result['sub_type'] = FileClassifier.get_file_type_from_extension(file_ext)
+        result['file_type'] = 'Other'
         return result
 
 
@@ -315,7 +360,6 @@ class ExtractionWorker(QThread):
                 self.progress.emit(10, f"Found {len(all_files)} files in folder")
 
             self.progress.emit(15, "Creating directory structure...")
-            # Tạo Root ở thư mục làm việc hiện tại
             current_dir = Path.cwd()
             case_dir = current_dir / self.case_id
             root_dir = case_dir / "Root"
@@ -345,7 +389,10 @@ class ExtractionWorker(QThread):
 
                 processed = 0
                 stats = {
-                    'System': {'Config': 0, 'Action': {'Log': 0, 'Db': 0, 'Xml': 0, 'Other': 0}},
+                    'System': {
+                        'Config': {'Config': 0},
+                        'Action': {'Log': 0, 'Db': 0, 'Xml': 0, 'Other': 0}
+                    },
                     'App': {},
                     'Connect': {
                         'Network': {'Config': 0, 'Log': 0, 'Db': 0, 'Json': 0, 'Xml': 0, 'Other': 0},
@@ -382,7 +429,7 @@ class ExtractionWorker(QThread):
             self.finished.emit(False, f"Error: {str(e)}")
 
     def create_work_structure(self, root_dir):
-        """Tạo cấu trúc thư mục Root theo cấu trúc mới"""
+        """Tạo cấu trúc thư mục Root (hard-coded)"""
         # System
         (root_dir / "System" / "Config").mkdir(parents=True, exist_ok=True)
         (root_dir / "System" / "Action" / "Log").mkdir(parents=True, exist_ok=True)
@@ -390,7 +437,7 @@ class ExtractionWorker(QThread):
         (root_dir / "System" / "Action" / "Xml").mkdir(parents=True, exist_ok=True)
         (root_dir / "System" / "Action" / "Other").mkdir(parents=True, exist_ok=True)
 
-        # Connect - Network
+        # Connect/Network
         (root_dir / "Connect" / "Network" / "Config").mkdir(parents=True, exist_ok=True)
         (root_dir / "Connect" / "Network" / "Log").mkdir(parents=True, exist_ok=True)
         (root_dir / "Connect" / "Network" / "Db").mkdir(parents=True, exist_ok=True)
@@ -398,7 +445,7 @@ class ExtractionWorker(QThread):
         (root_dir / "Connect" / "Network" / "Xml").mkdir(parents=True, exist_ok=True)
         (root_dir / "Connect" / "Network" / "Other").mkdir(parents=True, exist_ok=True)
 
-        # Connect - BT
+        # Connect/BT
         (root_dir / "Connect" / "BT" / "Config").mkdir(parents=True, exist_ok=True)
         (root_dir / "Connect" / "BT" / "Log").mkdir(parents=True, exist_ok=True)
         (root_dir / "Connect" / "BT" / "Db").mkdir(parents=True, exist_ok=True)
@@ -407,58 +454,67 @@ class ExtractionWorker(QThread):
         (root_dir / "Connect" / "BT" / "Other").mkdir(parents=True, exist_ok=True)
 
     def build_target_path(self, root_dir, classification):
-        """Xây dựng đường dẫn thư mục đích theo cấu trúc mới"""
+        """Xây dựng đường dẫn thư mục đích"""
         main_cat = classification['main_category']
         sub_cat = classification['sub_category']
-        sub_type = classification['sub_type']
+        file_type = classification['file_type']
 
         if main_cat == 'System':
             if sub_cat == 'Config':
                 return root_dir / main_cat / sub_cat
             else:  # Action
-                return root_dir / main_cat / sub_cat / sub_type
-        elif main_cat == 'App':
-            return root_dir / main_cat / sub_cat / sub_type
+                return root_dir / main_cat / sub_cat / file_type
+
         elif main_cat == 'Connect':
-            return root_dir / main_cat / sub_cat / sub_type
+            if file_type == 'Config':
+                return root_dir / main_cat / sub_cat / 'Config'
+            else:
+                return root_dir / main_cat / sub_cat / file_type
+
+        elif main_cat == 'App':
+            app_name = classification.get('app_name', 'Unknown')
+            return root_dir / main_cat / app_name / file_type
+
         else:
-            return root_dir / "System" / "Action" / "Other"
+            return root_dir / main_cat / sub_cat / file_type
 
     def process_file(self, source_path, target_dir, classification, log):
         """Xử lý và copy file"""
         try:
             target_file = target_dir / source_path.name
             shutil.copy2(source_path, target_file)
-            log.write(f"[{classification['main_category']}/{classification['sub_category']}/{classification['sub_type']}] {source_path.name}\n")
+            log.write(f"[{classification['main_category']}/{classification['sub_category']}/{classification['file_type']}] {source_path.name}\n")
             return True
         except Exception as e:
             log.write(f"[ERROR] {source_path.name}: {str(e)}\n")
             return False
 
     def update_stats(self, stats, classification):
-        """Update statistics theo cấu trúc mới"""
+        """Update statistics"""
         main_cat = classification['main_category']
         sub_cat = classification.get('sub_category', 'Unknown')
-        sub_type = classification.get('sub_type', 'Other')
+        file_type = classification.get('file_type', 'Other')
 
         if main_cat == 'System':
             if sub_cat == 'Config':
-                stats['System']['Config'] += 1
+                stats['System']['Config']['Config'] += 1
             else:  # Action
-                if sub_type not in stats['System']['Action']:
-                    stats['System']['Action'][sub_type] = 0
-                stats['System']['Action'][sub_type] += 1
+                if file_type not in stats['System']['Action']:
+                    stats['System']['Action'][file_type] = 0
+                stats['System']['Action'][file_type] += 1
+
         elif main_cat == 'Connect':
-            if sub_type not in stats['Connect'][sub_cat]:
-                stats['Connect'][sub_cat][sub_type] = 0
-            stats['Connect'][sub_cat][sub_type] += 1
+            if file_type not in stats['Connect'][sub_cat]:
+                stats['Connect'][sub_cat][file_type] = 0
+            stats['Connect'][sub_cat][file_type] += 1
+
         elif main_cat == 'App':
             app_name = classification.get('app_name', 'Unknown')
             if app_name not in stats['App']:
                 stats['App'][app_name] = {'Log': 0, 'Db': 0, 'Json': 0, 'Xml': 0, 'Other': 0}
-            if sub_type not in stats['App'][app_name]:
-                stats['App'][app_name][sub_type] = 0
-            stats['App'][app_name][sub_type] += 1
+            if file_type not in stats['App'][app_name]:
+                stats['App'][app_name][file_type] = 0
+            stats['App'][app_name][file_type] += 1
 
     def write_statistics(self, log, stats, total_processed):
         """Ghi thống kê ra file log"""
@@ -468,26 +524,27 @@ class ExtractionWorker(QThread):
 
         # System
         log.write("SYSTEM:\n")
-        log.write(f"  Config: {stats['System']['Config']}\n")
+        log.write("  Config:\n")
+        log.write(f"    Files: {stats['System']['Config']['Config']}\n")
         log.write("  Action:\n")
-        for ftype, count in sorted(stats['System']['Action'].items()):
+        for ftype in ['Log', 'Db', 'Xml', 'Other']:
+            count = stats['System']['Action'].get(ftype, 0)
             log.write(f"    {ftype}: {count}\n")
 
         # App
         log.write("\nAPP:\n")
         for app_name in sorted(stats['App'].keys()):
-            types = stats['App'][app_name]
-            total = sum(types.values())
-            log.write(f"  {app_name} (Total: {total}):\n")
-            for ftype, count in sorted(types.items()):
-                if count > 0:
-                    log.write(f"    {ftype}: {count}\n")
+            log.write(f"  {app_name}:\n")
+            for ftype in ['Log', 'Db', 'Json', 'Xml', 'Other']:
+                count = stats['App'][app_name].get(ftype, 0)
+                log.write(f"    {ftype}: {count}\n")
 
         # Connect
         log.write("\nCONNECT:\n")
         for sub in ['Network', 'BT']:
             log.write(f"  {sub}:\n")
-            for ftype, count in sorted(stats['Connect'][sub].items()):
+            for ftype in ['Config', 'Log', 'Db', 'Json', 'Xml', 'Other']:
+                count = stats['Connect'][sub].get(ftype, 0)
                 log.write(f"    {ftype}: {count}\n")
 
         log.write("\n" + "=" * 80 + "\n")
